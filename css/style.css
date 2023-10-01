@@ -1,11 +1,5 @@
-@each $breakpoint in map-keys($grid-breakpoints) {
-    @include media-breakpoint-up($breakpoint) {
-      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-  
-      .sticky#{$infix}-top-2 {
-        position: sticky;
-        top: 80;
-        z-index: $zindex-sticky;
-      }
-    }
-  }
+.sticky--top-2 {
+    position: sticky;
+    top: 80;
+    z-index: 1020;
+}
