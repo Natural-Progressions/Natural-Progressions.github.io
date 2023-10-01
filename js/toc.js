@@ -1,4 +1,4 @@
-$(function () {
+window.onload = function() {
     var navSelector = "#toc";
     Toc.init({
         $nav: $("#toc"), 
@@ -7,4 +7,4 @@ $(function () {
     $("body").scrollspy({
       target: navSelector,
     });
-  });
+  };
