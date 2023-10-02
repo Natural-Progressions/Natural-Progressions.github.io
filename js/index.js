@@ -2,7 +2,7 @@ $(function () {
     var j = [];
     $.ajax({
         type: 'GET',
-        url: url,
+        url: "/json/changelog.json",
         dataType: 'json',
         success: function(data) { j = data;},
         async: false
