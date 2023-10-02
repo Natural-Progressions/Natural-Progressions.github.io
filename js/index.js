@@ -22,7 +22,7 @@ $(function () {
     // }
 
     const request = async() => {
-        fetch("/json/changelog.json")
+        await fetch("/json/changelog.json")
         .then((response) => {
             if (!response.ok) {
                 throw new Error(`HTTP error, status = ${response.status}`);
