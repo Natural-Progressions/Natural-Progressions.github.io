@@ -11,7 +11,7 @@ $(function () {
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Core Rules</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="/core_rules.html">Assumptions and Terminology</a></li>
-                        <li><a class="dropdown-item" href="/skills.html">Skills</a></li>
+                        <li><a class="dropdown-item" href="/skills.html">Abilities and Skills</a></li>
                     </ul>
                 </li>
             </ul>
