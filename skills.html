@@ -1,0 +1,80 @@
+<html data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Natural Progressions</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+      </head>
+      <body data-bs-spy="scroll" data-bs-target="#toc">
+        <div id="containerDiv" class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="skills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                            <button class="nav-link" id="fortitude-tab" data-bs-toggle="pill" data-bs-target="#fortitude" type="button" role="tab" aria-controls="fortitude" aria-selected="false">Fortitude</button>
+                            <button class="nav-link" id="dexterity-tab" data-bs-toggle="pill" data-bs-target="#dexterity" type="button" role="tab" aria-controls="dexterity" aria-selected="false">Dexterity</button>
+                            <button class="nav-link" id="intelligence-tab" data-bs-toggle="pill" data-bs-target="#intelligence" type="button" role="tab" aria-controls="intelligence" aria-selected="false">Intelligence</button>
+                            <button class="nav-link" id="wisdom-tab" data-bs-toggle="pill" data-bs-target="#wisdom" type="button" role="tab" aria-controls="wisdom" aria-selected="false">Wisdom</button>
+                            <button class="nav-link" id="charisma-tab" data-bs-toggle="pill" data-bs-target="#charisma" type="button" role="tab" aria-controls="charisma" aria-selected="false">Charisma</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="tab-content" id="skills-tabContent">
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview" tabindex="0">
+                            <p>As in all TTRPGs, characters are the building blocks of any game in Natural Progression. The characters, or from a certain point of view, the players who play the characters, drive a campaign forward, and their decisions can not only impact a campaign itself, but the world that the campaign is set in.</p>
+                            <p>This page describes character abilities and skills, providing a breakdown of each ability and what it represents, as well as the skills associated with each ability.</p>
+                            <h1 class="text-center py-3 bg-danger-subtle">Abilities and Skills</h1>
+                            <p>All characters have stats that represent their proficiencies in general - fortitude, dexterity, intelligence, wisdom, charisma.</p>
+                            <p>Unlike other TTRPG’s that have both a modifier and a stat, in Natural Progression, modifiers and stats are one and the same. A character’s ability score is the same as their modifier. Likewise, there is no such thing as a proficiency bonus - each skill has it’s own modifier and can be increased naturally throughout gameplay.</p>
+                        </div>
+                        <div class="tab-pane fade" id="fortitude" role="tabpanel" aria-labelledby="fortitude" tabindex="0">
+                            <p>Fortitude represents a characters strength, both physical and mental. The following are skills based upon Fortitude:</p>
+                            <hr>
+                            <h2 class="text-center py-2 bg-warning-subtle">Athletics</h2>
+                            <p>Athletics is the main ability that reflects a character’s physical prowess. Its general usage is for whenever a character is doing a short term activity or something that would require a great deal of strength, such as jumping a large gap, scaling a tall building or attempting to stop an individual from tackling them.</p>
+                            <p>A character with a high Athletics modifier would likely have large muscles, or at the very least, appear fit and toned.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Constitution</h2>
+                            <p>Constitution is the ability representing a character’s ability to resist disease and other physical ailments or injuries. As such, it is the ability that directly affects a character’s hitpoints. Constitution may be used to determine if a character is affected by a poison that they ingested, or if an attack leaves them wounded.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Endurance</h2>
+                            <p>Endurance is the other ability that reflects a character’s physical prowess. Unlike Athletics, Endurance is used whenever a character is doing a physical activity for an extended period of time. As such, Endurance directly affects how many attacks a character can evade before exhaustion starts to in. Some examples include travelling at an increased rate or participating in a multi-stage tournament or performing.</p>
+                            <p>A character with a high Endurance modifier would likely have a toned body, similar to how an Atheletic character would look, but without the larger muscles.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Mental Fortitude</h2>
+                            <p>Mental Fortitude is represents exactly what is sounds like - a character’s ability to withstand mental stress, trauma and attacks. Mental Fortitude may be used to determine if a player is affected by mind control or the death of a companion.</p>
+                        </div>
+                        <div class="tab-pane fade" id="dexterity" role="tabpanel" aria-labelledby="dexterity" tabindex="0">
+                            <p>Dexterity represents a character’s reflexes and ability to perform physical activies that require precision rather than brute force. The following are skills based upon Dexterity:</p>
+                            <hr>
+                            <h2 class="text-center py-2 bg-warning-subtle">Acrobatics</h2>
+                            <p>Acrobatics is the final ability that reflects a character’s ability to perform phyisical tasks in general. Acrobatics represents a character’s ability to do balance related tasks - should a task require some form of strength to perform, Acrobatics should not be used to determine if they are successful. That task should fall to Athletics or Endurance then.</p>
+                            <p>Some examples of activities that a character might perform acrobatically include walking across a tightrope or descending down a steep hill.</p>
+                            <p>A character with a high Acrobatics modifier would likely appear toned and fit in general, but not show great strength like one might expect from a character with a high Athletics modifier.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Reflex</h2>
+                            <p>Reflex represents a character’s ability to react to surprising situations, such as an ambush or a villain who was thought to be dead reappearing. Depending on the nature of a combat, Reflex may be used to determine initiative rolls.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Sleight of Hand</h2>
+                            <p>Sleight of Hand represents a character’s ability to perform small precise movements with their hands. This ability is not only used when a character is attempting to steal something, but also when playing most instruments or when playing a card game.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Stealth</h2>
+                            <p>Stealth represents a character’s ability to get small and low to the ground. Some of examples of when Stealth may be used include when a character is attempting to follow an individual without being noticed or when attempting to make oneself small to follow a culture’s customs. Depending on the nature of a combat, Stealth may be used to determine initiative rolls.</p>
+                        </div>
+                        <div class="tab-pane fade" id="intelligence" role="tabpanel" aria-labelledby="intelligence-tab" tabindex="0">Intelligence</div>
+                        <div class="tab-pane fade" id="wisdom" role="tabpanel" aria-labelledby="wisdom-tab" tabindex="0">Wisdom</div>
+                        <div class="tab-pane fade" id="charisma" role="tabpanel" aria-labelledby="charisma-tab" tabindex="0">Charisma</div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <nav id="toc" class="sticky-top-2"></nav>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/jquery-3.7.1.min.js"></script>
+        <script src="/js/navbar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+        <script src="/js/toc.js"></script>
+      </body>
+</html>
