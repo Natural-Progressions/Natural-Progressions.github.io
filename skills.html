@@ -13,12 +13,12 @@
                 <div class="col-sm-2">
                     <div class="d-flex align-items-start">
                         <div class="nav flex-column nav-pills me-3" id="skills-tab" role="tablist" aria-orientation="vertical">
-                            <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
-                            <button class="nav-link" id="fortitude-tab" data-bs-toggle="pill" data-bs-target="#fortitude" type="button" role="tab" aria-controls="fortitude" aria-selected="false">Fortitude</button>
-                            <button class="nav-link" id="dexterity-tab" data-bs-toggle="pill" data-bs-target="#dexterity" type="button" role="tab" aria-controls="dexterity" aria-selected="false">Dexterity</button>
-                            <button class="nav-link" id="intelligence-tab" data-bs-toggle="pill" data-bs-target="#intelligence" type="button" role="tab" aria-controls="intelligence" aria-selected="false">Intelligence</button>
-                            <button class="nav-link" id="wisdom-tab" data-bs-toggle="pill" data-bs-target="#wisdom" type="button" role="tab" aria-controls="wisdom" aria-selected="false">Wisdom</button>
-                            <button class="nav-link" id="charisma-tab" data-bs-toggle="pill" data-bs-target="#charisma" type="button" role="tab" aria-controls="charisma" aria-selected="false">Charisma</button>
+                            <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true" onclick="redrawTOC()">Overview</button>
+                            <button class="nav-link" id="fortitude-tab" data-bs-toggle="pill" data-bs-target="#fortitude" type="button" role="tab" aria-controls="fortitude" aria-selected="false" onclick="redrawTOC()">Fortitude</button>
+                            <button class="nav-link" id="dexterity-tab" data-bs-toggle="pill" data-bs-target="#dexterity" type="button" role="tab" aria-controls="dexterity" aria-selected="false" onclick="redrawTOC()">Dexterity</button>
+                            <button class="nav-link" id="intelligence-tab" data-bs-toggle="pill" data-bs-target="#intelligence" type="button" role="tab" aria-controls="intelligence" aria-selected="false" onclick="redrawTOC()">Intelligence</button>
+                            <button class="nav-link" id="wisdom-tab" data-bs-toggle="pill" data-bs-target="#wisdom" type="button" role="tab" aria-controls="wisdom" aria-selected="false" onclick="redrawTOC()">Wisdom</button>
+                            <button class="nav-link" id="charisma-tab" data-bs-toggle="pill" data-bs-target="#charisma" type="button" role="tab" aria-controls="charisma" aria-selected="false" onclick="redrawTOC()">Charisma</button>
                         </div>
                     </div>
                 </div>
@@ -34,15 +34,15 @@
                         <div class="tab-pane fade" id="fortitude" role="tabpanel" aria-labelledby="fortitude" tabindex="0">
                             <p>Fortitude represents a characters strength, both physical and mental. The following are skills based upon Fortitude:</p>
                             <hr>
-                            <h2 class="text-center py-2 bg-warning-subtle">Athletics</h2>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Athletics</h2>
                             <p>Athletics is the main ability that reflects a character’s physical prowess. Its general usage is for whenever a character is doing a short term activity or something that would require a great deal of strength, such as jumping a large gap, scaling a tall building or attempting to stop an individual from tackling them.</p>
                             <p>A character with a high Athletics modifier would likely have large muscles, or at the very least, appear fit and toned.</p>
-                            <h2 class="text-center py-2 bg-warning-subtle">Constitution</h2>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Constitution</h2>
                             <p>Constitution is the ability representing a character’s ability to resist disease and other physical ailments or injuries. As such, it is the ability that directly affects a character’s hitpoints. Constitution may be used to determine if a character is affected by a poison that they ingested, or if an attack leaves them wounded.</p>
-                            <h2 class="text-center py-2 bg-warning-subtle">Endurance</h2>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Endurance</h2>
                             <p>Endurance is the other ability that reflects a character’s physical prowess. Unlike Athletics, Endurance is used whenever a character is doing a physical activity for an extended period of time. As such, Endurance directly affects how many attacks a character can evade before exhaustion starts to in. Some examples include travelling at an increased rate or participating in a multi-stage tournament or performing.</p>
                             <p>A character with a high Endurance modifier would likely have a toned body, similar to how an Atheletic character would look, but without the larger muscles.</p>
-                            <h2 class="text-center py-2 bg-warning-subtle">Mental Fortitude</h2>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Mental Fortitude</h2>
                             <p>Mental Fortitude is represents exactly what is sounds like - a character’s ability to withstand mental stress, trauma and attacks. Mental Fortitude may be used to determine if a player is affected by mind control or the death of a companion.</p>
                         </div>
                         <div class="tab-pane fade" id="dexterity" role="tabpanel" aria-labelledby="dexterity" tabindex="0">
@@ -52,11 +52,11 @@
                             <p>Acrobatics is the final ability that reflects a character’s ability to perform phyisical tasks in general. Acrobatics represents a character’s ability to do balance related tasks - should a task require some form of strength to perform, Acrobatics should not be used to determine if they are successful. That task should fall to Athletics or Endurance then.</p>
                             <p>Some examples of activities that a character might perform acrobatically include walking across a tightrope or descending down a steep hill.</p>
                             <p>A character with a high Acrobatics modifier would likely appear toned and fit in general, but not show great strength like one might expect from a character with a high Athletics modifier.</p>
-                            <h2 class="text-center py-2 bg-warning-subtle">Reflex</h2>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Reflex</h2>
                             <p>Reflex represents a character’s ability to react to surprising situations, such as an ambush or a villain who was thought to be dead reappearing. Depending on the nature of a combat, Reflex may be used to determine initiative rolls.</p>
-                            <h2 class="text-center py-2 bg-warning-subtle">Sleight of Hand</h2>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Sleight of Hand</h2>
                             <p>Sleight of Hand represents a character’s ability to perform small precise movements with their hands. This ability is not only used when a character is attempting to steal something, but also when playing most instruments or when playing a card game.</p>
-                            <h2 class="text-center py-2 bg-warning-subtle">Stealth</h2>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Stealth</h2>
                             <p>Stealth represents a character’s ability to get small and low to the ground. Some of examples of when Stealth may be used include when a character is attempting to follow an individual without being noticed or when attempting to make oneself small to follow a culture’s customs. Depending on the nature of a combat, Stealth may be used to determine initiative rolls.</p>
                         </div>
                         <div class="tab-pane fade" id="intelligence" role="tabpanel" aria-labelledby="intelligence-tab" tabindex="0">Intelligence</div>
