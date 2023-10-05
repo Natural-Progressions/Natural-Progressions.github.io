@@ -30,7 +30,7 @@ async function toggleDayNightMode() {
 
     $("#day-night-mode-icon").remove();
 
-    if ($("html").attr("data-bs-theme") == 'dark') {
+    if ($("html").attr("data-bs-theme") == "dark") {
         localStorage.setItem("dayNightMode", "light");
         $("html").attr("data-bs-theme", "light");
 
@@ -51,5 +51,9 @@ async function toggleDayNightMode() {
 $(function () {
     if (localStorage.getItem("dayNightMode") == null) {
         localStorage.setItem("dayNightMode", "light");
+    }
+
+    if (localStorage.getItem("dayNightMode") == "dark") {
+        toggleDayNightMode();
     }
 });
