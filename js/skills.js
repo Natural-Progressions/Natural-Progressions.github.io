@@ -1,6 +1,6 @@
 async function redrawTOC() {
 
-    await delay(150);
+    await delay(200);
     /* Set the skip attribute on all items that normally would get picked up */
     $('#skills-tabContent').find('h1, h2').attr('data-toc-skip','');
 
