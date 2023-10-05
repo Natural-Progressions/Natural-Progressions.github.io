@@ -13,6 +13,7 @@ async function redrawTOC() {
     /* Rerun the toc script, regenerating the table of contents */
     $.getScript( "/js/toc.js" );
 
+    await delay(200);
     /* When run this way, the first object doesn't get set to active. Set it to active */
     $("#toc").find('a').first().addClass('active');
 }
