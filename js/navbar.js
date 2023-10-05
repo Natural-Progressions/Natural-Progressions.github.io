@@ -55,6 +55,6 @@ $(function () {
 
     if (localStorage.getItem("dayNightMode") == "dark") {
         toggleDayNightMode();
-        $("day-night-mode-switch").attr('checked','');
+        $("#day-night-mode-switch").attr('checked','');
     }
 });
