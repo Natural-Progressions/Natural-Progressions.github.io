@@ -2,10 +2,10 @@ async function redrawTOC() {
 
     await delay(200);
     /* Set the skip attribute on all items that normally would get picked up */
-    $('#skills-tabContent').find('h1, h2').attr('data-toc-skip','');
+    $('#sidebar-tabContent').find('h1, h2').attr('data-toc-skip','');
 
-    /* Remove the skil attribute from the items currently being shown */
-    $('#skills-tabContent').find('.show').find('h1, h2').removeAttr('data-toc-skip','');
+    /* Remove the skip attribute from the items currently being shown */
+    $('#sidebar-tabContent').find('.show').find('h1, h2').removeAttr('data-toc-skip','');
 
     /* Delete the existing table of contents */
     $("#toc").empty();

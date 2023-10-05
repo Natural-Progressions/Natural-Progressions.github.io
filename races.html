@@ -1,0 +1,74 @@
+<html data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Natural Progressions</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+      </head>
+      <body data-bs-spy="scroll" data-bs-target="#toc">
+        <div id="containerDiv" class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="d-flex align-items-start sticky-top-2">
+                        <div class="nav flex-column nav-pills me-3" id="sidebar-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true" onclick="redrawTOC()">Overview</button>
+                            <button class="nav-link" id="dwarf-tab" data-bs-toggle="pill" data-bs-target="#dwarf" type="button" role="tab" aria-controls="dwarf" aria-selected="false" onclick="redrawTOC()">Dwarf</button>
+                            <button class="nav-link" id="elf-tab" data-bs-toggle="pill" data-bs-target="#elf" type="button" role="tab" aria-controls="elf" aria-selected="false" onclick="redrawTOC()">Elf</button>
+                            <button class="nav-link" id="halfling-tab" data-bs-toggle="pill" data-bs-target="#halfling" type="button" role="tab" aria-controls="halfling" aria-selected="false" onclick="redrawTOC()">Halfling</button>
+                            <button class="nav-link" id="human-tab" data-bs-toggle="pill" data-bs-target="#human" type="button" role="tab" aria-controls="human" aria-selected="false" onclick="redrawTOC()">Human</button>
+                            <button class="nav-link" id="half-races-tab" data-bs-toggle="pill" data-bs-target="#half-races" type="button" role="tab" aria-controls="half-races" aria-selected="false" onclick="redrawTOC()">Half-Races</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="tab-content" id="sidebar-tabContent">
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview" tabindex="0">
+                            <p>Acharacter’s Race should represent their physical characteristics, and should be something that any character, NPC or PC, could figure out by a quick glance at yours. Your character’s race should not quantify what your character values, where they are from, or any of their personal preferences - those should be shaped by their Culture, Background and Backstory.</p>
+                            <p>Mechanically, any Race is possible - the most important things are that it fits into the setting and that your Lore Master is ok with your Race. This page will both provide the general rules to follow when Homebrewing your own Races and provide some official Races.</p>
+                            <hr>
+                            <h1 class="text-center py-3 bg-danger-subtle">General Sections</h1>
+                            <p>Directly after the name of the Race, there will be a short description giving a basic overview of their racial traits. There also may be some references to a stereotypical Culture for the race, but that can be ignored if your player’s Culture does not follow those stereotypes.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Name</h2>
+                            <p>Following the general description of the race will follow the general rules and some example names for individuals of the Race. These are not hard rules, and can be ignored if you wish.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Traits</h2>
+                            <p>Every races has 4 “bonuses” between their ability modifier increases and their unique traits. For instance, the Dwarven race on the next page has a +2 to their Fortitude ability modifier (counts as 2 bonuses), a +1 to their Charisma modifier (counts as 1 bonus), as well as the Dwarven Toughness trait (counts as 1 bonus).</p>
+                            <p>Many of these traits may vary by Culture - if they do, refer to the entry in your character’s Culture rather than those in the Race.</p>
+                            <p><b>Ability Modifier Increases: </b>This section will list what abilities get increased by the Race, and by how much. The total sum of the Ability modifier increase will not exceed 4.</p>
+                            <p><b>Age: </b>This section will list both the general age at which individuals of the Race reach adulthood and their typical lifespan. The age at which an individual comes of age may vary by adulthood, but the typical lifespan rarely does.</p>
+                            <p><b>Languages: </b>This section will list what languages an individual of this Race can speak and write.</p>
+                            <p><b>Senses: </b>A Race’s senses are compared to what humans generally experience.</p>
+                            <p><b>Size: </b>Each race has an average size - both in height and weight. This dictates what size rating they have. Most races will be Medium. There can be variation in the average height and weight, but not size rating.</p>
+                            <p><b>Speed: </b>This will define the base speed at which a Race can walk in combat. This trait will not vary by Culture.</p>
+                            <p><b>Combat Training: </b>This section will give starting modifiers for specific types of weapons. Generally the bonuses will be a +1 bonus to 3 types of weapons.</p>
+                            <p><b>Magic Bonuses: </b>This section will give modifiers to specific types of magic, or allow characters to start with certain spells learned. This bonus will be at most +1 to two types of magic.</p>
+                            <p><b>Tool Bonuses: </b>This section will give modifiers to specific tools, and may give starting tools to characters. Generally the bonuses will be a +1 bonus to 4 tools.</p>
+                            <p><b>Additional Traits: </b>If the total of the Race’s Ability Modifier increases does not equal 4, there will be one trait for each “missed” Ability modifier increase - for instance, if a Race only has a sum of +2 to their Ability modifiers, there will be 2 abilities at the end of the racial traits section.</p>
+                        </div>
+                        <div class="tab-pane fade" id="dwarf" role="tabpanel" aria-labelledby="dwarf" tabindex="0">
+                        </div>
+                        <div class="tab-pane fade" id="elf" role="tabpanel" aria-labelledby="elf" tabindex="0">
+                        </div>
+                        <div class="tab-pane fade" id="halfling" role="tabpanel" aria-labelledby="halfling-tab" tabindex="0">
+                        </div>
+                        <div class="tab-pane fade" id="human" role="tabpanel" aria-labelledby="human-tab" tabindex="0">
+                        <div class="tab-pane fade" id="half-races" role="tabpanel" aria-labelledby="half-races-tab" tabindex="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <nav id="toc" class="sticky-top-2"></nav>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/jquery-3.7.1.min.js"></script>
+        <script src="/js/navbar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+        <script src="/js/toc.js"></script>
+        <script src="/js/redrawTOC.js"></script>
+      </body>
+</html>
