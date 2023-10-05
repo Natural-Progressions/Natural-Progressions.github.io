@@ -11,10 +11,11 @@ async function redrawTOC() {
     $("#toc").empty();
 
     /* Rerun the toc script, regenerating the table of contents */
-    $.getScript( "/js/toc.js" ).done(function( script, textStatus ) {
-        /* When run this way, the first object doesn't get set to active. Set it to active */
-        $("#toc").find('a').first().addClass('active');
-    });
+    $.getScript( "/js/toc.js" );
+
+    await delay(100);
+    /* When run this way, the first object doesn't get set to active. Set it to active */
+    $("#toc").find('a').first().addClass('active');
 }
 
 function delay(milliseconds){
