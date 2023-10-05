@@ -1,5 +1,5 @@
 $(function () {
-    fetch("/json/changelog.json")
+    fetch("/json/races.json")
     .then((response) => {
         if (!response.ok) {
             throw new Error(`HTTP error, status = ${response.status}`);
