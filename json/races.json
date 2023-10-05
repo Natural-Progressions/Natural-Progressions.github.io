@@ -1,0 +1,156 @@
+{
+    "entries": [
+        {
+            "Name": "Dwarf",
+            "Description": [
+                "The “Hardy Folk” of most Realms, Dwarves are some of the most enduring races in existant. Additionally, they tend to be quite stoic and stubborn, which many attribute to their hardiness.",
+                "Despite being quite vigorous, Dwarves tend to be on the shorter size, with most Races standing upwards of a foot taller on average. Their skin tones vary depending on where they live, but generally a pale white for those living in the deepest recesses of the earth, to a dark deep brown. Likewise, their hair color varies anywhere from a light tan to black. Notably, it is harder to distinguish Dwarven men from women - both are able to grow beards.",
+                "Dwarves tend to fulfill the labor portion of many societies - their natural skills allow them to mine and smith more efficiently that other Races. In combat, Dwarves like their gear to reflect their bodies. They prefer heavier armors, and weapons reflective of their work."
+            ],
+            "Names": {
+                "Description": [
+                    "Dwarves tend to fulfill the labor portion of many societies - their natural skills allow them to mine and smith more efficiently that other Races. In combat, Dwarves like their gear to reflect their bodies. They prefer heavier armors, and weapons reflective of their work."
+                ],
+                "Male Names": "Adrik, Alberich, Baern, Barendd, Brottor, Bruenor, Dain, Darrak, Delg, Eberk, Einkil, Fargrim, Flint, Gardain, Harbek, Kildrak, Morgran, Orsik, Oskar, Rangrim, Rurik, Taklinn, Thoradin, Thorin, Tordek, Traubon, Travok, Ulfgar, Veit, Vondal",
+                "Female Names": "Amber, Artin, Audhild, Bardryn, Dagnal, Diesa, Eldeth, Falkrunn, Finellen, Gunnloda, Gurdis, Helja, Hlin, Kathra, Kristryd, Ilde, Liftrasa, Mardred, Riswynn, Sannl, Torbera, Torgga, Vistra",
+                "Other Sections": {
+                    "Clan or Family Names": "Balderk, Battlehammer, Brawnanvil, Dankil, Fireforge, Frostbeard, Gorunn, Holderhek, Ironfist, Loderr, Lutgehr, Rumnaheim, Strakeln, Torunn, Ungart"
+                }
+            },
+            "Traits": {
+                "Ability Modifier Increases": [
+                    "Your <b>Fortitude</b> ability modifier increases by 2.",
+                    "Your <b>Charisma</b> ability modifier increases by 1."
+                ],
+                "Age": "Dwarves reach adulthood at the same rate as humans, but generally are still considered children until age 30. Generally, they live 250 years.",
+                "Languages": "You can speak and write Common and Dwarvish.",
+                "Senses": "Dwarves have standard senses besides their eyes. Accustomed to working long into the night blacksmithing, and mining in the deeps of the world, you have Darkvision, and can see in dim light within 60 ft of you as if it were bright light.",
+                "Size": "Despite being a shorter Race, Dwarves are not too much shorter. Their height ranges from 4 - 5 ft, and they average about 150 pounds. Dwarves have a size of Medium.",
+                "Speed": "Your base walking speed is 25 ft.",
+                "Combat Training": "You gain a +1 bonus to <b>Axes</b>, <b>Crossbows</b> and <b>Hammers</b> and <b>Picks</b>",
+                "Magic Bonuses": "You gain a +1 bonus to <b>Transmutation Magic</b>.",
+                "Tool Bonuses": "You gain a +1 bonus to 4 of the following tools: <b>Brewer’s Supplies</b>, <b>Carpenter’s Tools</b>, <b>Climber’s Kit</b>, <b>Cobbler’s Tools</b>, <b>Glassblower’s Tools</b>, <b>Jeweler’s Tools</b>, <b>Leatherworker’s Tools</b>, <b>Mason’s Tools</b>, <b>Smith’s Tools</b>, and <b>Tinker’s Tools</b>.",
+                "Other Abilities": {
+                    "Dwarven Toughness": [
+                        "The natural hardiness of both Dwarven bodies and minds makes them especially strong when dealing with poison or mind control. You gain resistance to poison damage and checks against poison or mind control."
+                    ]
+                }
+            },
+            "Half-Races": {
+                "Primary Ability Modifier": "Fortitude",
+                "Secondary Ability Modifier": "Charisma"
+            }
+        },
+        {
+            "Name": "Elf",
+            "Description": [
+                "In many realms, the Elves are the immortal, fair and wise people. They are long lived, and in their lifetimes, tend to learn wisdom that other races are unable to learn.",
+                "Elves tend to be quite slim and tall, towering above most races, especially Dwarves and Halflings. Due to this combination of being tall and slim, they are surprisingly nimble for their height. Their hair and skin color vary as much as humans, and entirely depends on their ancestry and where they live.",
+                "Within societies, Elves tend to fulfill clerical and administrative tasks, but it is not unheard of for them to be part of militaries and guards. In fact, many Elves make great scouts due to their innate abilities to blend into it."
+            ],
+            "Names": {
+                "Description": [
+                    "Elves are considered children until they declare themselves adults, some time after the hundredth birthday, and before this period they are called by child names.",
+                    "On declaring adulthood, an elf selects an adult name, although those who knew him or her as a youngster might continue to use the child name. Each elf’s adult name is a unique creation, though it might reflect the names of respected individuals or other family members. Little distinction exists between male names and female names; the groupings here reflect only general tendencies. In addition, every elf bears a family name, typically a combination of other Elvish words. Some elves traveling among humans translate their family names into Common, but others retain the Elvish version."
+                ],
+                "Male Names": "Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric, Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis",
+                "Female Names": "Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia",
+                "Other Sections": {
+                    "Child Names": "Ara, Bryn, Del, Eryn, Faen, Innil, Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall"
+                }
+            },
+            "Traits": {
+                "Ability Modifier Increases": [
+                    "Your <b>Dexterity</b> ability modifier increases by 2.",
+                    "Your <b>Wisdom</b> ability modifier increases by 1."
+                ],
+                "Age": "Elves mature at the same rate as humans, but they are not considered adults until at least age 50. There has never been an Elf who has died of old age, so it is thought that they are immortal.",
+                "Languages": "You can speak and write Common and Elvish.",
+                "Senses": "Compared to Humans, Elves have better eyes. You have Darkvision, and can see in dim light within 60 ft of you as if it were bright light.",
+                "Size": "Elves are one of the taller races, with heights ranging from 6 ft - 7 ft and tend to be rather slender, averaging about 170 pounds. Your size is Medium.",
+                "Speed": "Your base walking speed is 30 ft.",
+                "Combat Training": "You gain a +1 bonus to <b>Ambush Weapons</b>, <b>Bows and Slings</b> and <b>Dueling Blades</b>.",
+                "Magic Bonuses": "Elves tend to have magic related to their surroundings. You gain a +1 modifier to a spellcasting ability of your choice.",
+                "Tool Bonuses": "You gain a +1 bonus to 4 of the following tools: <b>Calligrapher’s Tools</b>, <b>Cartographer’s Tools</b>, <b>Cook’s Utensils</b>, <b>Healer’s Kit</b>, <b>Herbalism Kit</b>, <b>Smith’s Tools</b>, <b>Tinker’s Kit</b>, <b>Weaver’s Tools</b>, and <b>Woodcarver’s Tools</b>.",
+                "Other Abilities": {
+                    "One With Nature": [
+                        "Elves feel a unique bond with nature - almost as if the plants and animals speak with them. This gives Elves a sixth sense that allows them to more easily track their quarry and hunt for food.",
+                        "These voices are almost always with Elves, whispering in the back of their mind. You gain advantage on any <b>Nature</b> or <b>Survival</b> check."
+                    ]
+                }
+            },
+            "Half-Races": {
+                "Primary Ability Modifier": "Dexterity",
+                "Secondary Ability Modifier": "Wisdom"
+            }
+        },
+        {
+            "Name": "Halfling",
+            "Description":[
+                "Known as the “Little Folk”, Halflings are Dwarfed by every other humanoid race, including Dwarves. Generally standing no more than 4 feet tall, they are commonly mistaken as human children.",
+                "Halflings generally like to be left to their own devices, farming or spending their days with their friends and family. However, when they do leave home for an adventure, their small size helps them to be very stealthy.",
+                "In fact, it is remarked by some that it is good luck whenever a Halfling is going on an adventure. For some reason, their groups tend to succeed, even when the situation seems dire."
+            ],
+            "Names": {
+                "Description": [
+                    "A halfling has a given name, a family name, and possibly a nickname. Family names are often nicknames that stuck so tenaciously they have been passed down through the generations."
+                ],
+                "Male Names": "Alton, Ander, Cade, Corrin, Eldon, Errich, Finnan, Garret, Lindal, Lyle, Merric, Milo, Osborn, Perrin, Reed, Roscoe, Wellby",
+                "Female Names": "Andry, Bree, Callie, Cora, Euphemia, Jillian, Kithri, Lavinia, Lidda, Merla, Nedda, Paela, Portia, Seraphina, Shaena, Trym, Vani, Verna",
+                "Other Sections": {
+                    "Family Names": "Brushgather, Goodbarrel, Greenbottle, High-hill, Hilltopple, Leagallow, Tealeaf, Thorngage, Tosscobble, Underbough"
+                }
+            },
+            "Traits": {
+                "Ability Modifier Increases": [
+                    "Your <b>Dexterity</b> ability modifier increases by 1.",
+                    "You can increase the ability modifier of one ability (including <b>Dexterity</b>) by 1."
+                ],
+                "Age": "Halflings reach adulthood at 18 and generally reach 120 years old.",
+                "Languages": "You can speak and write Common.",
+                "Senses": "Halflings are thought to be descended from Humans, and have no differences in their senses when compared to them.",
+                "Size": "Halflings are even shorter than Dwarves, standing 3 - 4 feet tall and weigh about 50 pounds. Your size is Small.",
+                "Speed": "Your base walking speed is 25 ft.",
+                "Combat Training": "You gain a +1 bonus to <b>Ambush Weapons</b>, <b>Bows and Slings</b> and <b>Throwing Weapons</b>",
+                "Magic Bonuses": "Halflings do not have any innate magic, but that does not stop them from learning any magic.",
+                "Tool Bonuses": "You gain a +1 bonus to 4 of the following tools: <b>Brewer’s Supplies</b>, <b>Calligrapher’s Supplies</b>, <b>Cartographer’s Tools</b>, <b>Cobbler’s Tools</b>, <b>Cook’s Utensils</b>, <b>Fisher’s Equipment</b>, <b>Healer’s Kit</b>, <b>Herbalism Kit</b>, <b>Painter’s Supplies</b>, <b>Weaver’s Tools</b>, <b>Woodcarver’s Tools</b>",
+                "Other Abilities": {
+                    "Uncanny Luck": "Once per rest, when you roll a 1 on a d20 roll, you can reroll the die and use the new roll.",
+                    "Halfling Stealth": "Your small size allows you to hide much more easier than other races. A less perceptive individual is more likely to overlook you, your <b>Stealth</b> ability modifier increases by 2, and you can attempt to hide behind any creature that is at least one size larger than you."
+                }
+            },
+            "Half-Races": {
+                "Primary Ability Modifier": "Dexterity",
+                "Secondary Ability Modifier": "Any"
+            }
+        },
+        {
+            "Name": "Human",
+            "Description": [
+                "The most common race in all realms are Humans. No one really knows where they came from, just that they are everywhere. As such, they are the Race that other races tend to judge themselves against when comparing age and senses.",
+                "Compared to other races, Humans generally are average, or slightly above average, in just about every aspect. Their one grace is that they tend to be great thinkers, and if given enough preparation time, can outthink their opponents."
+            ],
+            "Names": {
+                "Description": "Human names tend to pull from real world names."
+            },
+            "Traits": {
+                "Ability Modifier Increases": [
+                    "Your <b>Intelligence modifier</b> increases by 1.",
+                    "You can increase the ability modifier of three abilities (including <b>Intelligence</b>) by 1."
+                ],
+                "Age": "Humans reach adulthood at 18 and generally age about 70 years.",
+                "Languages": "You can speak and write Common.",
+                "Senses": "Humans are the basis for comparing Races, so they have no unique senses.",
+                "Size": "Humans vary widely in height and build, but generally are between 5 feet to 6 and a half feet tall and generally weigh anywhere between 100 pounds and 220 pounds. Your size is Medium.",
+                "Speed": "Your base walking speed is 30 ft.",
+                "Combat Training": "You gain a +1 bonus to 3 weapon classes of your choice.",
+                "Magic Bonuses": "Humans do not have any innate magic, but that does not stop them from learning any magic.",
+                "Tool Bonuses": "You gain a +1 bonus to 4 tools of your choice."
+            },
+            "Half-Races": {
+                "Primary Ability Modifier": "Intelligence",
+                "Secondary Ability Modifier": "Any"
+            }
+        }
+    ]
+}
