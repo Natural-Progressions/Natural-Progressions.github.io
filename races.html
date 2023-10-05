@@ -14,10 +14,6 @@
                     <div class="d-flex align-items-start sticky-top-2">
                         <div class="nav flex-column nav-pills me-3" id="sidebar-tab" role="tablist" aria-orientation="vertical">
                             <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true" onclick="redrawTOC()">Overview</button>
-                            <button class="nav-link" id="dwarf-tab" data-bs-toggle="pill" data-bs-target="#dwarf" type="button" role="tab" aria-controls="dwarf" aria-selected="false" onclick="redrawTOC()">Dwarf</button>
-                            <button class="nav-link" id="elf-tab" data-bs-toggle="pill" data-bs-target="#elf" type="button" role="tab" aria-controls="elf" aria-selected="false" onclick="redrawTOC()">Elf</button>
-                            <button class="nav-link" id="halfling-tab" data-bs-toggle="pill" data-bs-target="#halfling" type="button" role="tab" aria-controls="halfling" aria-selected="false" onclick="redrawTOC()">Halfling</button>
-                            <button class="nav-link" id="human-tab" data-bs-toggle="pill" data-bs-target="#human" type="button" role="tab" aria-controls="human" aria-selected="false" onclick="redrawTOC()">Human</button>
                             <button class="nav-link" id="half-races-tab" data-bs-toggle="pill" data-bs-target="#half-races" type="button" role="tab" aria-controls="half-races" aria-selected="false" onclick="redrawTOC()">Half-Races</button>
                         </div>
                     </div>
@@ -46,14 +42,6 @@
                             <p><b>Tool Bonuses: </b>This section will give modifiers to specific tools, and may give starting tools to characters. Generally the bonuses will be a +1 bonus to 4 tools.</p>
                             <p><b>Additional Traits: </b>If the total of the Race’s Ability Modifier increases does not equal 4, there will be one trait for each “missed” Ability modifier increase - for instance, if a Race only has a sum of +2 to their Ability modifiers, there will be 2 abilities at the end of the racial traits section.</p>
                         </div>
-                        <div class="tab-pane fade" id="dwarf" role="tabpanel" aria-labelledby="dwarf" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="elf" role="tabpanel" aria-labelledby="elf" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="halfling" role="tabpanel" aria-labelledby="halfling-tab" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="human" role="tabpanel" aria-labelledby="human-tab" tabindex="0">
-                        </div>
                         <div class="tab-pane fade" id="half-races" role="tabpanel" aria-labelledby="half-races-tab" tabindex="0">
                         </div>
                     </div>
@@ -66,6 +54,7 @@
 
         <script src="/js/jquery-3.7.1.min.js"></script>
         <script src="/js/navbar.js"></script>
+        <script src="/js/races.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
