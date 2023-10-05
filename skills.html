@@ -27,9 +27,59 @@
                         <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview" tabindex="0">
                             <p>As in all TTRPGs, characters are the building blocks of any game in Natural Progression. The characters, or from a certain point of view, the players who play the characters, drive a campaign forward, and their decisions can not only impact a campaign itself, but the world that the campaign is set in.</p>
                             <p>This page describes character abilities and skills, providing a breakdown of each ability and what it represents, as well as the skills associated with each ability.</p>
+                            <hr>
                             <h1 class="text-center py-3 bg-danger-subtle">Abilities and Skills</h1>
                             <p>All characters have stats that represent their proficiencies in general - fortitude, dexterity, intelligence, wisdom, charisma.</p>
                             <p>Unlike other TTRPG’s that have both a modifier and a stat, in Natural Progression, modifiers and stats are one and the same. A character’s ability score is the same as their modifier. Likewise, there is no such thing as a proficiency bonus - each skill has it’s own modifier and can be increased naturally throughout gameplay.</p>
+                            <p>Any modifiers a character gets to abilities should be applied to all skills within associated with the ability. For example, a player who has acquires a +2 to their Fortitude should increase their Atheletics, Constitution, Endurance and Mental Fortitude modifiers.</p>
+                            <p>The tabs on this page are organized by ability, and the skills of each ability are listed and described within each tab.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Skill Check Calculations</h2>
+                            <p>When you are asked to make a skill check, use the following formula:</p>
+                            <p>1d20 + skill modifier + other modifiers (generally 0)</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Saving Throws</h2>
+                            <p>Some abilities and spells, rather than mentioning a skill check, call for a skill Saving Throw. A Saving Throw is a specific type of skill check that is used in response to something affecting your character.</p>
+                            <p>This does mean that an ability that can only be used on a check for a given skill, say Athletics, can also be used when rolling an Athletics Saving Throw.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Passive Skill Checks</h2>
+                            <p>Passive skill checks can be used for a check to determine what a character notices or portrays when they are not actively doing something that would require a check. In general, if a character is already doing something else, such as travelling stealthily (the characters have already made an active stealth check), but they want to investigate their surroundings, they players would be making a passive Investigation check. Passive skill checks are calculated as follows:</p>
+                            <p>1 + skill modifier + other modifiers</p>
+                            <p>For example, Passive Perception would be calculated as:</p>
+                            <p>1 + Peception skill modifier + other modifiers</p>
+                            <p>A good way to separate the idea of passive checks compared to active checks is that a passive check is a character’s baseline knowledge of something. It is the equivalent of rolling a natural 1 on the skill check.</p>
+                            <h3 class="text-center py-1">An Example</h3>
+                            <p>Suppose that a character has a magical item with unknown effects. A character with a high passive Perception would notice that there are markings on this item, while a character with a high passive Arcana would know that these markings are magical runes.</p>
+                            <p>However, in order to find out what these runes do, a character would have to succeed on an Arcana check or find someone who would know what the runes are, which may require a Persuasion or Tradition check.</p>
+                            <hr>
+                            <h1 class="text-center py-3 bg-danger-subtle">Performing Skill Checks Within a Game</h1>
+                            <p>When a check is needed, a player should roll a d20 and add their ability modifier, skill modifier and other modifiers (this will likely be 0) to the roll. Should this total equal or surpass the Difficulty Class of the check, the player succeeds.</p>
+                            <p>On a roll of a natural 20, the character a figured out a new technique, or improved upon their old technique and their skill modifier increases by 1, up to a limit of 11. Learning does take time, so only one skills modifier can be increased in this manner per rest. For actions that have no roll of your own associated with it, but instead have a Saving Throw, the target rolling a natural 1 can be used to increase your associated modifier.</p>
+                            <p>This limit of one increase per day and situation extends to weapons, spellcasting modifiers and tools as well. The does mean that these four categories each have a separate counter. The first natural 20 (assuming the associated modifier is not maxed out already) will increase the skill, tool or weapon modifier, and any other natural 20 for that section rolled that day will not increase the associated modifier. Therefore, a player could increase 4 different modifiers by 1 each day -- one skill, spellcasting, tool and weapon modifier</p>
+                            <p>It should be noted that there should be no such thing as an “Ability check” - a player should never roll a Fortitude check. Rather, they should roll a skill check that is most related to the activity, whether it be Athletics, Constitution, Endurance or Mental Fortitude.</p>
+                            <p>This does mean that there is no way for a character to increase their base ability modifiers outside of their Background, Class, Culture or Race. This is 100% intentional; ability modifiers are meant to represent a character’s natural strengths and weaknesses with their given Background, Class, Culture and Race.</p>
+                            <p>For more information on these four items, please refer to the Character Creation part of this site.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">An In-Depth Example</h2>
+                            <p>Suppose that a character with an Intimidation modifier of 6 under no magical effects or injuries would like to attempt to get information out a bandit that they just captured by threatening them.</p>
+                            <p>Their Lore Master calls for an Intimidation check, and to the player’s delight, they roll a natural 20. Their skill check is 20 + 6 (skill modifier) + 1 (from increasing the modifier) + 0 (other modifiers), for a total of 27. This passes the Difficulty Class of 20 set by the Lore Master, and the bandit yields the information that they have.</p>
+                            <p>If the player had not rolled a natural 20, and instead rolled an 11, their skill check total would have been 11 + 6 (skill modifier) + 0 (other modifiers), for a total of 17</p>
+                            <hr>
+                            <h1 class="text-center py-3 bg-danger-subtle">Training</h1>
+                            <p>Sometimes, the dice give many natural 20s, and on other days, they give more natural 1s. In order to help combat a player’s luck from impacting a character’s progression, characters can train at a skill in order to improve their modifiers.</p>
+                            <p>Characters must receive their training from an individual with a higher modifier than their own for the specified skill. The trainer can be another party member, or an NPC that the party (potentially) hires.</p>
+                            <p>A character can train for up to 8 hours a day. While training they cannot focus on any other tasks. Once a character hits 100 hours trained, their skill modifier increases by 1, and their hour count resets to 0 hours. If a character’s training for a day goes over 100 hours, the remainder wraps around to the next level, assuming the trainer still has a higher modifier than you after you increase yours.</p>
+                            <p>A character can work on multiple skills at a time. Should a character roll a natural 20 on a skill check while they have hours trained and have not increased a skill modifier since their last rest, their skill modifier will increase like normal and their hours of training will reset to 0 hours.</p>
+                            <p>Training can also be applied to weapon and tool modifiers as well, with the same restrictions listed in this section.</p>
+                            <hr>
+                            <h1 class="text-center py-3 bg-danger-subtle">Optional Variants</h1>
+                            <p>Listed below are some optional variants of the abilities and skills rules. These rules tend to have (slightly) more complexity than the base rules, and as such, are not for all parties.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Abilities and Skills Optional Rule 1: Modifier Maximum</h2>
+                            <p>For players that enjoy having larger (or smaller) modifiers, the skill modifier limit can be modified. A suggested increased modifier maximum is 21.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Abilities and Skills Optional Rule 2: Ability Modifiers</h2>
+                            <p>Given that ability modifiers are representing a character’s natural strengths and weaknesses, a group may choose to separate ability modifiers from skill modifiers, tallying the two totals separately. Ability modifiers would still never be increased outside of character creation, but a character's modifier to a roll could exceed 11 assuming their skill modifier is 11 (maxed out using standard rules), and their ability modifier for the skill is nonzero.</p>
+                            <p>This rule changes all skill roll calculations to add both the ability and skill modifier totals to a roll, rather than just the skill modifier total.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Abilities and Skills Optional Rule 3: Variable Ability Modifiers</h2>
+                            <p>When determining the ability modifier, the used ability does not have to be the pre-defined one as dictated in this section.</p>
+                            <p>This does mean that players will need to calculate their ability and skill modifiers separately from each other. As such, it is recommended that if using this option rule, to also use Abilities and Skills Option Rule 2: Ability Modifirs.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Abilities and Skills Optioanl Rule 4: Forgetting Training</h2>
+                            <p>For every week between training sessions for a specific skill, a character will lose 8 hours of training, decreasing to a minimum of 0 hours.</p>
                         </div>
                         <div class="tab-pane fade" id="fortitude" role="tabpanel" aria-labelledby="fortitude" tabindex="0">
                             <p>Fortitude represents a characters strength, both physical and mental. The following are skills based upon Fortitude:</p>
@@ -59,9 +109,53 @@
                             <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Stealth</h2>
                             <p>Stealth represents a character’s ability to get small and low to the ground. Some of examples of when Stealth may be used include when a character is attempting to follow an individual without being noticed or when attempting to make oneself small to follow a culture’s customs. Depending on the nature of a combat, Stealth may be used to determine initiative rolls.</p>
                         </div>
-                        <div class="tab-pane fade" id="intelligence" role="tabpanel" aria-labelledby="intelligence-tab" tabindex="0">Intelligence</div>
-                        <div class="tab-pane fade" id="wisdom" role="tabpanel" aria-labelledby="wisdom-tab" tabindex="0">Wisdom</div>
-                        <div class="tab-pane fade" id="charisma" role="tabpanel" aria-labelledby="charisma-tab" tabindex="0">Charisma</div>
+                        <div class="tab-pane fade" id="intelligence" role="tabpanel" aria-labelledby="intelligence-tab" tabindex="0">
+                            <p>Intelligence represents a character’s booksmarts and ability to connect and understand information. The following are skills based upon Intelligence:</p>
+                            <hr>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Arcana</h2>
+                            <p>Arcana represents a character’s ability to understand magic. Arcana may be used to determine the effects of a magic item or to known what spell a character is casting from their words and actions.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>History</h2>
+                            <p>History represents a character’s knowledge of factual events and their memory of their experiences. Some examples include knowning the name and outcome of a conflict between to nations or remembering the name of a merchant with which the character recently interacted.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Investigation</h2>
+                            <p>Investigation represents a character’s ability to search for a particular object and to recognize when an object would not be able to be discovered in the area. Some examples include searching an office for political papers, looking for traps in a dungeon, or recognizing a draft coming from a wall being indicative of a hidden door.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Medicine</h2>
+                            <p>Medicine represents a character’s understanding of the body and practices that can be used to help one heal. Some usages of Medicine include knowing the severity of an injury and knowing how to treat an injury.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Nature</h2>
+                            <p>Nature represents a character’s ability to identify and know the natural properties of plants and animals. Some usages of Nature include knowning what plants are edible, which animals a set of tracks might belong to, or the natural properties of a given creature.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Riddle</h2>
+                            <p>Riddle represents a character’s ability to solve puzzles or figure out hints for a given problem. Some usages include being able to figure out the meaning of an encrypted message given a cipher, or figuring out that the phrase “Speak Friend, and enter” is a riddle.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Tradition</h2>
+                            <p>Tradition is a unique skill - there technically can any number of types of Tradition skills, depending on the number of cultures, races and religions within a world. Each Tradition skill represents a character’s ability to know the customs and lore of any specific culture or race.</p>
+                            <p>Some examples would include knowing traditional greetings for a culture and understanding the important stories within a race’s lore.</p>
+                        </div>
+                        <div class="tab-pane fade" id="wisdom" role="tabpanel" aria-labelledby="wisdom-tab" tabindex="0">
+                            <p>Wisdom represents a character’s streetsmarts and ability to perceive and understand their surroundings. The following are skills based upon Wisdom:</p>
+                            <hr>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Animal Handling</h2>
+                            <p>Animal Handling represents a character’s ability to interact with beasts and understand their body language. Some usages include knowning when an animal is uncomfortable or being able to train an animal.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Insight</h2>
+                            <p>Insight represents a character’s ability to discern a another character’s true intentions and body language. Some usages include being able to tell in someone is withholding part of the truth or knowing if a character is uncomfortable.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Perception</h2>
+                            <p>Perception represents a character’s ability to perceive their surroundings. Perception differs from Investigation by origin - one may notice a draft on a room with a Perception check, but would need an Investigation check to figure out where that draft was coming from.</p>
+                            <p>Some examples including keeping a watchful eye during a night’s watch or noticing that a jewel is missing from a necklace.</p>
+                            <p>Depending on the nature of combat, Perception may be used to determine initiative rolls.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Survival</h2>
+                            <p>Survival represents a character’s ability to traverse the wild and live off of the land. Survival differs from nature in terms of detail. With a Survival check on tracks, one may be able to follow the tracks. With a Nature check on the same tracks, one may be able to discern some guesses as to what creature may have left said tracks.</p>
+                            <p>Some usages including finding a suitable campsite away from the road or being able to known where a creature may pass.</p>
+                        </div>
+                        <div class="tab-pane fade" id="charisma" role="tabpanel" aria-labelledby="charisma-tab" tabindex="0">
+                            <p>Charisma represents a character’s force of will upon others. The following are skills based upon Charisma:</p>
+                            <hr>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Deception</h2>
+                            <p>Deception represents a character’s ability to lie. Not only does it represent the way that a character may tell a lie, but it also dictates the actions that the character performs while they lie - during a poor Deception check, a charater may avoid eye contact with their target or be constantly shifting in their seat, being visibly uncomfortable.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Intimidation</h2>
+                            <p>Intimidation represents a character’s ability to threaten another individual into doing what they want. Some examples include blackmailing a corrupt politician to pass a law or to threaten someone’s life if they do not yield specific information.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Performance</h2>
+                            <p>Performance represents a character’s ability to perform a task for others. This skill check may be paired with another skill check to see how well said skill is performed.</p>
+                            <p>For example, if a character is walking across a tightrope during a circus event, they would have to make both a Performance and Acrobatics check. The Acrobatics check would dictate how well the walked across the tightrope, and the Performance check would define how entertaining their action was.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Persuasion</h2>
+                            <p>Persuasion represents a character’s ability to convince another to do what they want without lying or intimidating. Some usages include getting a powerful noble to support the character on a quest or to haggle with a merchant about the price of an object.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
