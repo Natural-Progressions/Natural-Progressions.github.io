@@ -12,3 +12,9 @@ async function redrawTOC() {
     /* Rerun the toc script */
     $.getScript( "/js/toc.js" );
 }
+
+function delay(milliseconds){
+    return new Promise(resolve => {
+        setTimeout(resolve, milliseconds);
+    });
+}
