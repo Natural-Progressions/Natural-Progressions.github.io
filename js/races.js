@@ -94,7 +94,7 @@ function generateParagraphIfNotUndefinedWithHeader(paragraph, content, header) {
 function generateParagraphsFromList(list, content) {
 
     console.log(list);
-    console.log(Object.keys(list));
+    console.log(list[0]);
     
     for (const paragraph of list) {
         generateParagraph(paragraph, content);
