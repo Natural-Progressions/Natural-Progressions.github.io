@@ -23,10 +23,24 @@ function processEntry(entry) {
     const halfRaces = entry["Half-Races"];
 
     let content = createNavEntry(name);
+    content.append(createH1(name));
+
     generateDescription(description, content);
     generateNames(names, content);
     generateTraits(traits, content);
     // TODO: Handle half-races
+}
+
+function createH1(title) {
+
+    let h1 = $("<h1>");
+
+    h1.addClass("text-center");
+    h1.addClass("py-3");
+    h1.addClass("bg-danger-subtle");
+    h1.text(title);
+
+    return h1;
 }
 
 function createH2(title) {
@@ -56,6 +70,7 @@ function createP(text) {
 
     let p = $("<p>");
     
+    p.css("white-space", "pre-wrap");
     p.text(text);
 
     return p;
@@ -181,9 +196,6 @@ function generateNames(names, content) {
 
     if (otherSections != undefined) {
         for (let title of Object.keys(otherSections)) {
-            // TODO: Figure out header
-            console.log(otherSections);
-            console.log(title);
             generateParagraphWithHeader(otherSections[title], content, title);
         }
     }
@@ -234,7 +246,6 @@ function generateTraits(traits, content) {
 
     if (otherAbilities != undefined) {
         for (let title of Object.keys(otherAbilities)) {
-            // TODO: Figure out header
             generateParagraphWithHeader(otherAbilities[title], content, title);
         }
     }
