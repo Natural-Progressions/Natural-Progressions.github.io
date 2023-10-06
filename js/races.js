@@ -70,7 +70,6 @@ function createP(text) {
 
     let p = $("<p>");
     
-    // p.css("white-space", "pre-wrap");
     p.html(text);
 
     return p;
@@ -85,7 +84,7 @@ function generateParagraph(paragraph, content) {
 }
 
 function generateParagraphWithHeader(paragraph, content, header) {
-    generateParagraph(createBoldText(header) + paragraph, content);
+    generateParagraph(createBoldText(header) + ": " + paragraph, content);
 }
 
 function generateParagraphIfNotUndefined(paragraph, content) {
