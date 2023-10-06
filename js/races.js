@@ -180,7 +180,7 @@ function generateNames(names, content) {
     generateParagraphIfNotUndefinedWithHeader(femaleNames, content, "Female Names");
 
     if (otherSections != undefined) {
-        for (let title of otherSections) {
+        for (let title of Object.entries(otherSections)) {
             // TODO: Figure out header
             generateParagraphsFromList(otherSections[title], content, title);
         }
@@ -231,9 +231,9 @@ function generateTraits(traits, content) {
     generateParagraphIfNotUndefinedWithHeader(toolBonuses, content, "Tool Bonuses");
 
     if (otherAbilities != undefined) {
-        for (let title of otherAbilities) {
+        for (let title of Object.entries(otherAbilities)) {
             // TODO: Figure out header
-            generateParagraphsFromList(otherSections[title], content, title);
+            generateParagraphsFromList(otherAbilities[title], content, title);
         }
     }
 }
