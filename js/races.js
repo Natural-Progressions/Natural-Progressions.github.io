@@ -253,7 +253,7 @@ function generateTraits(traits, content, name) {
         abilityNames = Object.keys(otherAbilities).join(", ");
     }
 
-    let tbody = $("#half-race-trait-table-body")[0];
+    let tbody = $("#half-race-trait-table-body");
 
     if (tbody == undefined) {
         return;
