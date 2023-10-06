@@ -184,11 +184,21 @@ function generateHalfRaces(halfRaces, name) {
     nameData.html(name);
 
     if (primaryAbilityModifier != undefined) {
-        primaryAbilityData.html("Your " + createBoldText(primaryAbilityModifier) + " ability modifier increases by 1");
+
+        if (primaryAbilityModifier == "Any") {
+            primaryAbilityData.html("You can increase the ability modifier of one ability by 1");
+        } else {
+            primaryAbilityData.html("Your " + createBoldText(primaryAbilityModifier) + " ability modifier increases by 1");
+        }
     }
 
     if (secondaryAbilityModifier != undefined) {
-        secondaryAbilityData.html("Your " + createBoldText(secondaryAbilityModifier) + " ability modifier increases by 1");
+
+        if (secondaryAbilityModifier == "Any") {
+            secondaryAbilityData.html("You can increase the ability modifier of one ability by 1");
+        } else {
+            secondaryAbilityData.html("Your " + createBoldText(secondaryAbilityModifier) + " ability modifier increases by 1");
+        }
     }
 
     tableRow.append(nameData);
