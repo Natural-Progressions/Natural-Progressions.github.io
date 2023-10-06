@@ -264,12 +264,12 @@ function generateTraits(traits, content, name) {
     let nameData = $("<td>");
     let abilityNamesData = $("<td>");
 
-    nameData.html(name);
+    nameData.text(name);
 
     if (abilityNames != "") {
-        abilityNamesData.html(abilityNames);
+        abilityNamesData.text(abilityNames);
     } else {
-        abilityNamesData.html("No unique traits");
+        abilityNamesData.text("No unique traits");
     }
 
     tableRow.append(nameData);
