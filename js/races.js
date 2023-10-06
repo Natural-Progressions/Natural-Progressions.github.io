@@ -27,8 +27,8 @@ function processEntry(entry) {
 
     generateDescription(description, content);
     generateNames(names, content);
-    generateTraits(traits, content);
-    // TODO: Handle half-races
+    generateTraits(traits, content, name);
+    generateHalfRaces(halfRaces, name);
 }
 
 function createH1(title) {
@@ -214,7 +214,7 @@ function generateNames(names, content) {
  *      Other Abilities: Object
  *          (variable): List of String
  */
-function generateTraits(traits, content) {
+function generateTraits(traits, content, name) {
 
     if (traits == undefined) {
         return;
@@ -243,9 +243,80 @@ function generateTraits(traits, content) {
     generateParagraphIfNotUndefinedWithHeader(magicBonuses, content, "Magic Bonuses");
     generateParagraphIfNotUndefinedWithHeader(toolBonuses, content, "Tool Bonuses");
 
+    let abilityNames = "";
+
     if (otherAbilities != undefined) {
         for (let title of Object.keys(otherAbilities)) {
             generateParagraphWithHeader(otherAbilities[title], content, title);
         }
+
+        abilityNames = Object.keys(otherAbilities).join(", ");
     }
+
+    let tbody = $("#half-race-trait-table").find("tbody")[0];
+
+    if (tbody == undefined) {
+        return;
+    }
+
+    let tableRow = $("<tr>");
+
+    let nameData = $("<td>");
+    let abilityNamesData = $("<td>");
+
+    nameData.html(name);
+
+    if (abilityNames != "") {
+        abilityNamesData.html(abilityNames);
+    } else {
+        abilityNamesData.html("No unique traits");
+    }
+
+    tableRow.append(nameData);
+    tableRow.append(abilityNamesData);
+
+    tbody.append(tableRow);
+}
+
+/*
+ *  Half-Races
+ *      Primary Ability Modifier: String
+ *      Secondary Ability Modifier: String
+ */
+function generateHalfRaces(halfRaces, name) {
+
+    if (halfRaces == undefined) {
+        return;
+    }
+
+    let tbody = $("#half-race-ability-modifier-table").find("tbody")[0];
+
+    if (tbody == undefined) {
+        return;
+    }
+
+    let tableRow = $("<tr>");
+
+    let nameData = $("<td>");
+    let primaryAbilityData = $("<td>");
+    let secondaryAbilityData = $("<td>");
+
+    const primaryAbilityModifier = halfRaces["Primary Ability Modifier"];
+    const secondaryAbilityModifier = halfRaces["Secondary Ability Modifier"];
+
+    nameData.html(name);
+
+    if (primaryAbilityModifier != undefined) {
+        primaryAbilityData.html("Your " + createBoldText(primaryAbilityModifier) + " ability modifier increases by 1");
+    }
+
+    if (secondaryAbilityModifier != undefined) {
+        secondaryAbilityData.html("Your " + createBoldText(secondaryAbilityModifier) + " ability modifier increases by 1");
+    }
+
+    tableRow.append(nameData);
+    tableRow.append(primaryAbilityData);
+    tableRow.append(secondaryAbilityData);
+
+    tbody.append(tableRow);
 }
