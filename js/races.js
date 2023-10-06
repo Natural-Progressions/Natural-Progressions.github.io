@@ -70,8 +70,8 @@ function createP(text) {
 
     let p = $("<p>");
     
-    p.css("white-space", "pre-wrap");
-    p.text(text);
+    // p.css("white-space", "pre-wrap");
+    p.html(text);
 
     return p;
 }
