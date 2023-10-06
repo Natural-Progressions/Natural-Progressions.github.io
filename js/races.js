@@ -275,6 +275,10 @@ function generateTraits(traits, content, name) {
     tableRow.append(nameData);
     tableRow.append(abilityNamesData);
 
+    console.log(nameData);
+    console.log(abilityNameData);
+    console.log(tableRow);
+
     tbody.append(tableRow);
 }
 
