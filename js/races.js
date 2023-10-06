@@ -253,7 +253,7 @@ function generateTraits(traits, content, name) {
         abilityNames = Object.keys(otherAbilities).join(", ");
     }
 
-    let tbody = $("#half-race-trait-table").find("tbody")[0];
+    let tbody = $("#half-race-trait-table-body")[0];
 
     if (tbody == undefined) {
         return;
@@ -264,22 +264,16 @@ function generateTraits(traits, content, name) {
     let nameData = $("<td>");
     let abilityNamesData = $("<td>");
 
-    nameData.text(name);
+    nameData.html(name);
 
     if (abilityNames != "") {
-        abilityNamesData.text(abilityNames);
+        abilityNamesData.html(abilityNames);
     } else {
-        abilityNamesData.text("No unique traits");
+        abilityNamesData.html("No unique traits");
     }
 
     tableRow.append(nameData);
     tableRow.append(abilityNamesData);
-
-    console.log(name);
-    console.log(abilityNames);
-    console.log(nameData);
-    console.log(abilityNamesData);
-    console.log(tableRow);
 
     tbody.append(tableRow);
 }
@@ -295,7 +289,7 @@ function generateHalfRaces(halfRaces, name) {
         return;
     }
 
-    let tbody = $("#half-race-ability-modifier-table").find("tbody")[0];
+    let tbody = $("#half-race-ability-modifier-table-body");
 
     if (tbody == undefined) {
         return;
