@@ -91,23 +91,23 @@ function generateParagraphIfNotUndefinedWithHeader(paragraph, content, header) {
     generateParagraphWithHeader(paragraph, content, header);
 }
 
-function generateParagraphsFromList(listObject, content) {
+function generateParagraphsFromList(list, content) {
 
-    console.log(listObject);
-    console.log(listObject[0]);
+    console.log(list);
+    console.log(list[0]);
     
-    for (const paragraph of listObject) {
+    for (const paragraph of list) {
         generateParagraph(paragraph, content);
     }
 }
 
-function generateParagraphsFromListIfNotUndefined(listObject, content) {
+function generateParagraphsFromListIfNotUndefined(list, content) {
 
-    if (listObject == undefined) {
+    if (list == undefined) {
         return;
     }
 
-    generateParagraphsFromList(listObject, content);
+    generateParagraphsFromList(list, content);
 }
 
 function createNavEntry(name) {
