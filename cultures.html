@@ -14,27 +14,42 @@
                     <div class="d-flex align-items-start sticky-top-2">
                         <div class="nav flex-column nav-pills me-3" id="sidebar-tab" role="tablist" aria-orientation="vertical">
                             <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true" onclick="redrawTOC()">Overview</button>
-                            <button class="nav-link" id="fortitude-tab" data-bs-toggle="pill" data-bs-target="#fortitude" type="button" role="tab" aria-controls="fortitude" aria-selected="false" onclick="redrawTOC()">Fortitude</button>
-                            <button class="nav-link" id="dexterity-tab" data-bs-toggle="pill" data-bs-target="#dexterity" type="button" role="tab" aria-controls="dexterity" aria-selected="false" onclick="redrawTOC()">Dexterity</button>
-                            <button class="nav-link" id="intelligence-tab" data-bs-toggle="pill" data-bs-target="#intelligence" type="button" role="tab" aria-controls="intelligence" aria-selected="false" onclick="redrawTOC()">Intelligence</button>
-                            <button class="nav-link" id="wisdom-tab" data-bs-toggle="pill" data-bs-target="#wisdom" type="button" role="tab" aria-controls="wisdom" aria-selected="false" onclick="redrawTOC()">Wisdom</button>
-                            <button class="nav-link" id="charisma-tab" data-bs-toggle="pill" data-bs-target="#charisma" type="button" role="tab" aria-controls="charisma" aria-selected="false" onclick="redrawTOC()">Charisma</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="tab-content" id="sidebar-tabContent">
-                        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="fortitude" role="tabpanel" aria-labelledby="fortitude" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="dexterity" role="tabpanel" aria-labelledby="dexterity" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="intelligence" role="tabpanel" aria-labelledby="intelligence-tab" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="wisdom" role="tabpanel" aria-labelledby="wisdom-tab" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="charisma" role="tabpanel" aria-labelledby="charisma-tab" tabindex="0">
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
+                            <p>Unlike a character’s Race, which represents their physical characteristics and abilities related to that, a character’s Culture should represent their values and skills.</p>
+                            <p>Depending on the setting, a Culture can be grouped by any number of things such as Race, hometown, region or kingdom.</p>
+                            <p>This differs from Background as a Culture should represent the values and experiences all members of a culture should have. A Culture should not represent how a Character adds to society, or in other words, what jobs they did in the past - that is what a Background is for.</p> 
+                            <p>As with Races, any Culture is possible, with the same restrictions: it should fit the setting and be approved by your Lore Master. This chapter will provide both the general rules for creating Cultures, and some examples as well.</p>
+                            <h1 class="text-center py-3 bg-danger-subtle">General Sections</h1>
+                            <p>Below are the differing sections that may appear on a Culture description. The only required trait is <b>Skill Modifier Increases</b> - for any fields that are not present, refer to your Race’s rules for that section.</p>
+                            <p>For categories that are defined in both your Race and Culture, refer to the bonuses listed in your Culture's version of that category.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Names</h2>
+                            <p>Cultures generally have names, or at the very least, naming conventions, that are followed. They may be as simple as following your Race’s names, or they could have their own rules.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Traits</h2>
+                            <p>Every culture has some skills in which they pride themselves. Mechanically, similar as with Races and their <b>Ability Modifier Increases</b>, there are 6 “bonuses” between skill modifier increases and additional traits. More than likely, all 6 bonuses will be skill modifier increases, but Cultures can have additional traits.</p>
+                            <p><b>Skill Modifier Increases: </b>This section will list what skills get increased by this Culture. The total sum of the Skill Modifier increases will not exceed 6.</p>
+                            <p><b>Age: </b>Individuals of differing cultures can have different expected lifespans or adulthood ages.</p>
+                            <p><b>Languages: </b>As with <b>Age</b>, the languages used for a Culture may differ from that of the character’s Race.</p>
+                            <p><b>Senses: </b>A Culture’s senses may differ from that of Races. For example, a Culture that predominantly resides underground would likely have developed or improved Darkvision of some kind, regardless of Race, as well as some sort of sunlight sensitivity.</p>
+                            <p><b>Speed: </b>As with <b>Senses</b>, individuals from a Culture may have developed a different speed from their Race. For example, a migratory Culture may have developed a speed 5 ft faster than that of their Race’s.</p>
+                            <p><b>Combat Training: </b>Like Race’s, each Culture tends to have preferences over which weapons they use. If this section exists, it overrides the bonuses given by a character’s race. This section generally has a +1 bonus to 3 weapon types.</p>
+                            <p><b>Magic Bonuses: </b>Magic is not necessarily innate. Some Cultures have magic that all members learn, which will be listed in this section. If this section exists, it overrides the bonuses given by a character’s race.</p>
+                            <p><b>Tool Bonuses: </b>Some Cultures have specific tools that they prefer. If this section exists, it overrides the bonuses given by a character’s race. This section generally has a +1 bonus to 4 tool types.</p>
+                            <p><b>Additional Traits: </b>Should there be any <b>Skill Modifier Increases</b> bonuses that are not used on Skill Modifiers, they will instead show up as additional traits at the bottom of the Culture.</p>
+                            <h1 class="text-center py-3 bg-danger-subtle">Dwarves of Dwarfhold</h1>
+                            <p>The section will define an example culture: the Dwarves of Dwarfhold.</p>
+                            <p>Appearing as a simple cave opening, only those who know of the secret door know of the beauty within. Behind the outer ways lies the kingdom of the Dwarves of Dwarfhold. Within this sacred kingdom lies carefully carved halls, lit with the fires of the Ancients, always with the sound of distant clanging.</p>
+                            <p>This realm is the premier mining realm of the land, and the home of all Dwarves. There may be other Races who reside within these walls. However, it is rare to find a non-Dwarf living in Dwarfhold.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Traits</h2>
+                            <p><b>Skill Modifier Increases: </b>You gain a +1 modifier to <b>Athletics</b>, Constitution</b>, <b>Mental Fortitude</b>, <b>Medicine</b>, <b>Deception</b>, and <b>Dwarvenhold Tradition</b></p>
+                            <p><b>Languages: </b>All individuals from Dwarfhold speak Dwarvish and Common, ignoring the languages given by their Race.</p>
+                            <p><b>Combat Training: </b>All individuals of Dwarfhold are trained in the weapons of the realm. You gain a +1 bonus to <b>Axes</b>, <b>Crossbows</b> and <b>Hammers and Picks</b>.</p>
+                            <p><b>Magic Bonuses: </b>The people of Dwarfhold are known for their ability to mutate elements into another. You gain a +1 bonus to <b>Transmutation Magic</b>.</p>
+                            <p><b>Tool Bonuses: </b>Dwarfholders set the Dwarven stereotypes in terms of the tools they excel at. You gain a +1 bonus to 4 of the following tools: <b>Brewer’s Supplies</b>, <b>Carpenter’s Tools</b>, <b>Climber’s Kit</b>, <b>Cobbler’s Tools</b>, <b>Glassblower’s Tools</b>, <b>Jeweler’s Tools</b>, <b>Leatherworker’s Tools</b>, <b>Mason’s Tools</b>, <b>Smith’s Tools</b>, and <b>Tinker’s Tools</b>.</p>
                         </div>
                     </div>
                 </div>
