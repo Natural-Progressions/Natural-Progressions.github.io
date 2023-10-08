@@ -14,28 +14,23 @@
                     <div class="d-flex align-items-start sticky-top-2">
                         <div class="nav flex-column nav-pills me-3" id="sidebar-tab" role="tablist" aria-orientation="vertical">
                             <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true" onclick="redrawTOC()">Overview</button>
-                            <button class="nav-link" id="fortitude-tab" data-bs-toggle="pill" data-bs-target="#fortitude" type="button" role="tab" aria-controls="fortitude" aria-selected="false" onclick="redrawTOC()">Fortitude</button>
-                            <button class="nav-link" id="dexterity-tab" data-bs-toggle="pill" data-bs-target="#dexterity" type="button" role="tab" aria-controls="dexterity" aria-selected="false" onclick="redrawTOC()">Dexterity</button>
-                            <button class="nav-link" id="intelligence-tab" data-bs-toggle="pill" data-bs-target="#intelligence" type="button" role="tab" aria-controls="intelligence" aria-selected="false" onclick="redrawTOC()">Intelligence</button>
-                            <button class="nav-link" id="wisdom-tab" data-bs-toggle="pill" data-bs-target="#wisdom" type="button" role="tab" aria-controls="wisdom" aria-selected="false" onclick="redrawTOC()">Wisdom</button>
-                            <button class="nav-link" id="charisma-tab" data-bs-toggle="pill" data-bs-target="#charisma" type="button" role="tab" aria-controls="charisma" aria-selected="false" onclick="redrawTOC()">Charisma</button>
+                            <button class="nav-link active" id="backgrounds-tab" data-bs-toggle="pill" data-bs-target="#backgrounds" type="button" role="tab" aria-controls="backgrounds" aria-selected="true" onclick="redrawTOC()">Backgrounds</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="tab-content" id="sidebar-tabContent">
                         <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview" tabindex="0">
+                            <p>Unlike a character’s Culture, a Background is representative of how a character adds to society, or previous jobs that they had. A Background should not describe a character’s physical characteristics or personality unless it is explicitely part of the Background.</p>
+                            <p>For example, a character with the <b>Laborer</b> background may tend to have darkened skin due to the amount of time underground and the amount of dirt and dust they are exposed to while working. They would also have their backstory tied into mining of some kind.</p>
+                            <h1 class="text-center py-3 bg-danger-subtle">General Sections</h1>
+                            <p>Below are the different sections that will appear in a Background description.</p>
+                            <p><b>Skill Modifier Increases: </b>This section will list what skills are increased by this Background. Skills, tools or even weapon modifiers may be increased by this section. The total sum of the Modifier Increases will be equal to 2.</p>
+                            <p><b>Tool Modifier Increases: </b>This section will list increases to specific tools The total sum of Modifier Increases will be equal to 2.</p>
+                            <p><b>Additional Trait: </b>Each Background comes with a unique additional trait. These traits tend to be passive and allow characters to utilize certain skills more efficiently.</p>
+                            <p><b>Starting Equipment: </b>Each Background has a set of starting equipment that a character will start with in addition to the starting equipment from their class</p>
                         </div>
-                        <div class="tab-pane fade" id="fortitude" role="tabpanel" aria-labelledby="fortitude" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="dexterity" role="tabpanel" aria-labelledby="dexterity" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="intelligence" role="tabpanel" aria-labelledby="intelligence-tab" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="wisdom" role="tabpanel" aria-labelledby="wisdom-tab" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="charisma" role="tabpanel" aria-labelledby="charisma-tab" tabindex="0">
-                        </div>
+                        <div class="tab-pane fade show active" id="backgrounds" role="tabpanel" aria-labelledby="backgrounds" tabindex="0"></div>
                     </div>
                 </div>
                 <div class="col-sm-2">
@@ -46,6 +41,8 @@
 
         <script src="/js/jquery-3.7.1.min.js"></script>
         <script src="/js/navbar.js"></script>
+        <script src="/js/jsonGenerationUtils.js"></script>
+        <script src="/js/backgrounds.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>

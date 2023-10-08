@@ -88,6 +88,62 @@ function generateParagraphsFromListIfNotUndefined(list, content) {
     generateParagraphsFromList(list, content);
 }
 
+function createCard() {
+
+    let div = $("<div>");
+
+    div.addClass("card");
+    div.addClass("w-49");
+    div.addClass("mb-3");
+
+    return div;
+}
+
+function createCardTitle(title) {
+
+    let h5 = $("<h5>");
+
+    h5.addClass("card-title");
+    h5.text(title);
+
+    return h5;
+}
+
+function createCardP(text) {
+    
+    let p = createP(text);
+
+    p.addClass("card-text");
+
+    return p;
+}
+
+function generateCardParagraph(paragraph, card) {
+    card.append(createCardP(paragraph));
+}
+
+function generateCardParagraphWithHeader(paragraph, card, header) {
+    generateCardParagraph(createBoldText(header) + ": " + paragraph, card);
+}
+
+function generateCardParagraphIfNotUndefined(paragraph, card) {
+
+    if (paragraph == undefined) {
+        return;
+    }
+
+    generateCardParagraph(paragraph, card);
+}
+
+function generateCardParagraphIfNotUndefinedWithHeader(paragraph, card, header) {
+
+    if (paragraph == undefined) {
+        return;
+    }
+
+    generateCardParagraphWithHeader(paragraph, card, header);
+}
+
 function createNavEntry(name) {
 
     let button = $("<button>");

@@ -1,0 +1,124 @@
+{
+    "entries": [
+        {
+            "Name": "Alcolyte",
+            "Skill Modifier Increases": "Your <b>Persuasion</b> and <b>Religion</b> skill modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Disguise Kit</b> and <b>Poisoner’s Kit</b> modifiers each increase by 1.",
+            "Starting Equipment": "A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a belt pouch containing 15 gp",
+            "Unique Trait": {
+                "Name": "One of the Faithful",
+                "Description": "As a member of your religion (or cult), you are respected by others within the organization. You and your companions can expect to receive free lodging, food and medical care from temples of your faith."
+            }
+        },
+        {
+            "Name": "Bureaucrat",
+            "Skill Modifier Increases": "Your <b>Investigation</b> and <b>Insight</b> skill modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Calligrapher’s Tool</b> modifier increases by 2.",
+            "Starting Equipment": "A set of fine clothes, a set of common clothes, and a purse containing 15 gp",
+            "Unique Trait": {
+                "Name": "Cog in the Machine",
+                "Description": "Your experience helping to keep your hometown running allows you unique insight into paper and power. When judging a group attempting to find a heirarchy, you generally are able to get an inkling of the power dynamics within the group. Additionally, when sifting through piles of papers, you are able to more easily sort between the interesting and the mundane."
+            }
+        },
+        {
+            "Name": "Criminal",
+            "Skill Modifier Increases": "Your <b>Deception</b> and <b>Sleight of Hand</b> skill modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Forgery Kit</b> and <b>Thieves’ Tools</b> modifiers each increase by 1.",
+            "Starting Equipment": "A crowbar, a set of dark common clothes including a hood, and a belt pouch containing 15 gp",
+            "Unique Trait": {
+                "Name": "Underground Network",
+                "Description": "Your checkered past allows you access into the criminal world; you know the better known shady characters, and can more easily recognize corrupt law enforcement and others who may be part of this world."
+            }
+        },
+        {
+            "Name": "Hermit",
+            "Skill Modifier Increases": "Your <b>Nature</b> and <b>Survival</b> skill modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Cook’s Utensils</b> and <b>Herbalism’s Kit</b> modifiers each increase by 1.",
+            "Starting Equipment": "A scroll case stuffed full of notes from your studies or prayers, a winter blanket, a set of common clothes, an herbalism kit, and 5 gp",
+            "Unique Trait": {
+                "Name": "Wanderer",
+                "Description": "Living on the edge of civilization, either by choice or by necessity, Hermits are able to quickly learn the lay of the land and form quicker opinions about unknown plants and animals. Within civilization, Hermits tend to draw suspicious looks and secretive whispers, but rarely are affected by them."
+            }
+        },
+        {
+            "Name": "Laborer",
+            "Skill Modifier Increases": "Your <b>Athletics</b> and <b>Constitution</b> skill modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Climber’s Kit</b> and <b>Fisher’s Equipment</b> modifiers each increase by 1.",
+            "Starting Equipment": "A miner’s pick or a pitchfork, a set of traveler’s clothes, and a belt pouch containing 2 gp",
+            "Unique Trait": {
+                "Name": "Menial Task Expert",
+                "Description": "Choose a type of menial, labor-class task, such as mining, farming or cleaning. You have extensive knowledge of the chosen task, and can generally use this knowledge to get discounts at lodging."
+            }
+        },
+        {
+            "Name": "Merchant",
+            "Skill Modifier Increases": "Your <b>Perception</b> and <b>Persuasion</b> skill modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Disguise Kit</b> and <b>Forgery Kit</b> modifiers each increase by 1.",
+            "Starting Equipment": "A set of artisan’s tools (one of your choice) or a mule and cart, a letter of introduction from your guild, a set of traveler’s clothes, and a belt pouch containing 15 gp",
+            "Unique Trait": {
+                "Name": "Guild Member",
+                "Description": "As a former merchant, you still have membership in one of the many guilds of the land. This membership affords you benefits such as audiences with other guild members and people of more importance and access to buildings and land owned by the guild. As with many exclusive organizations, guilds tend to have a membership fee, which tends to be about 5 gold pieces a month."
+            }
+        },
+        {
+            "Name": "Noble",
+            "Skill Modifier Increases": "Your <b>Persuasion</b> and <b>Traditions</b> skill modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Calligrapher’s Supplies</b> modifier increase by 2.",
+            "Starting Equipment": "A set of fine clothes, a signet ring, a scroll of pedigree, and a purse containing 25 gp",
+            "Unique Trait": {
+                "Name": "Innate Privelege",
+                "Description": "As a member of the noble class, you command the respect of other upper class citizens and the fealty of the commoners. Other nobles will agree to audiences and favors, though favors may exact a cost. Commoners will attempt to accomodate your wishes, but may exact revenge against a disrespectful noble.Additioally, nobles also tend to have political and ceremonial responsibilities, which vary depending on the setting."
+            }
+        },
+        {
+            "Name": "Performer",
+            "Skill Modifier Increases": "Your <b>Acrobatics</b> and <b>Performance</b> skill modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Cook’s Utensils</b> and <b>Disguise Kit</b> modifiers each increase by 1.",
+            "Starting Equipment": "A musical instrument (one of your choice), the favor of an admirer (love letter, lock of hair, or trinket), costume clothes, and a belt pouch containing 15 gp",
+            "Unique Trait": {
+                "Name": "By Popular Demand",
+                "Description": "Trained in your performance art, you can always find a place to perform. So long as you perform each night, you generally get free lodging and standard food. Additionally, settlements where you perform, people tend to recognize you, allowing you to become a local legend."
+            }
+        },
+        {
+            "Name": "Sailor",
+            "Skill Modifier Increases": "Your <b>Athletics</b> and <b>Reflex</b> skill modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Fisher’s Equipment</b> and <b>Navigator’s Tools</b> modifier each increase by 1.",
+            "Starting Equipment": "A belaying pin, silk rope (50 feet), a lucky charm such as a rabbit foot or a small stone with a hole in the center (or you may roll for a random trinket on the Trinkets table in chapter 5), a set of common clothes, and a belt pouch containing 10 gp",
+            "Unique Trait": {
+                "Name": "Ship's Passage",
+                "Description": "When you need to, you can secure free passage on a sailing ship for yourself and your adventuring companions. You might sail on the ship you served on, or another ship you have good relations with (perhaps one captained by a former crewmate). Because you’re calling in a favor, you can’t be certain of a schedule or route that will meet your every need. In return for your free passage, you and your companions are expected to assist the crew during the voyage."
+            }
+        },
+        {
+            "Name": "Scholar",
+            "Skill Modifier Increases": "Your <b>Riddle and <b>Tradition skill</b> modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Calligrapher’s</b> Supplies and <b>Cartographer’s Tools</b> modifier each increase by 1.",
+            "Starting Equipment": "A bottle of black ink, a quill, a small knife, a letter from a dead colleague posing a question you have not yet been able to answer, a set of common clothes, and a belt pouch containing 10 gp",
+            "Unique Trait": {
+                "Name": "Researcher",
+                "Description": "When attempting to learn or recall a piece of information, if you do not know it off the top of your head, you generally know where to go to find it out."
+            }
+        },
+        {
+            "Name": "Soldier",
+            "Skill Modifier Increases": "Your <b>Athletics</b> and <b>Reflex</b> skill modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Tinker’s Tools</b> modifier increases by 2.",
+            "Starting Equipment": "An insignia of rank, a trophy taken from a fallen enemy (a dagger, broken blade, or piece of a banner), a bone dice set or playing card set, a set of common clothes, and a belt pouch containing 10 gp",
+            "Unique Trait": {
+                "Name": "Military Rank",
+                "Description": "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
+            }
+        },
+        {
+            "Name": "Urchin",
+            "Skill Modifier Increases": "Your <b>Sleight of Hand</b> and <b>Stealth</b> skill modifiers each increase by 1.",
+            "Tool Modifier Increases": "Your <b>Thieves’ Tools</b> modifier increases by 2.",
+            "Starting Equipment": "A small knife, a map of the city you grew up in, a pet mouse, a token to remember your parents by, a set of common clothes, and a belt pouch containing 10 gp",
+            "Unique Trait": {
+                "Name": "Child of the City",
+                "Description": "Having grown up in the streets of the city, you have learned all of the secret passage ways, the traffic and the fastest ways between two points. While in any settlement, you are able to quickly learn the layout, and can halve the travel time in the city. While in your home city, you additionally know all of the best spots to listen, allowing you to better eavesdrop on others."
+            }
+        }
+    ]
+}
