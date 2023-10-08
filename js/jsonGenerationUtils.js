@@ -108,6 +108,7 @@ function createCardTitle(title) {
 
     h5.addClass("card-title");
     h5.addClass("text-center");
+    h5.addClass("mb-0");
     h5.text(title);
 
     div.append(h5);

@@ -5,7 +5,7 @@ async function redrawTOC() {
     $('#sidebar-tabContent').find('h1, h2, h3, h4, h5, h6').attr('data-toc-skip','');
 
     /* Remove the skip attribute from the items currently being shown */
-    $('#sidebar-tabContent').find('.show').find('h1, h2').removeAttr('data-toc-skip','');
+    $('#sidebar-tabContent').find('.show').find('h1, h2, h3, h4, h5, h6').removeAttr('data-toc-skip','');
 
     /* Delete the existing table of contents */
     $("#toc").empty();

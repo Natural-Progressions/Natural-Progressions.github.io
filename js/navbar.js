@@ -66,10 +66,12 @@ $(function () {
         localStorage.setItem("dayNightMode", "light");
     }
 
-    $('b').addClass("text-info-emphasis");
-
     if (localStorage.getItem("dayNightMode") == "dark") {
         toggleDayNightMode();
         $("#day-night-mode-switch").attr('checked','');
     }
 });
+
+window.onload = function() {
+    $('b').addClass("text-info-emphasis");
+}
