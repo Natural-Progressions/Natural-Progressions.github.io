@@ -103,6 +103,7 @@ function createCardTitle(title) {
     let h5 = $("<h5>");
 
     h5.addClass("card-title");
+    h5.addClass("text-center");
     h5.text(title);
 
     return h5;
