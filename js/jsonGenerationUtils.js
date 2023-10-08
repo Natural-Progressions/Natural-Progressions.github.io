@@ -100,13 +100,19 @@ function createCard() {
 
 function createCardTitle(title) {
 
+    let div = $("<div>");
+
+    div.addClass("card-header");
+
     let h5 = $("<h5>");
 
     h5.addClass("card-title");
     h5.addClass("text-center");
     h5.text(title);
 
-    return h5;
+    div.append(h5);
+
+    return div;
 }
 
 function createCardP(text) {
