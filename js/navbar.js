@@ -61,7 +61,7 @@ async function toggleDayNightMode() {
     }
 }
 
-$(function () {
+$(async function () {
     if (localStorage.getItem("dayNightMode") == null) {
         localStorage.setItem("dayNightMode", "light");
     }
@@ -70,10 +70,7 @@ $(function () {
         toggleDayNightMode();
         $("#day-night-mode-switch").attr('checked','');
     }
-});
 
-document.onreadystatechange = function() {
-    if (document.readyState === "complete") {
-        $('b').addClass("text-info-emphasis");
-    }
-}
+    await delay(200);
+    $('b').addClass("text-info-emphasis");
+});
