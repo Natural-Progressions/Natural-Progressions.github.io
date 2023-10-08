@@ -93,7 +93,6 @@ function createCard() {
     let div = $("<div>");
 
     div.addClass("card");
-    div.addClass("w-49");
     div.addClass("mb-3");
 
     return div;
