@@ -72,6 +72,8 @@ $(function () {
     }
 });
 
-window.onload = function() {
-    $('b').addClass("text-info-emphasis");
+document.onreadystatechange = function() {
+    if (document.readyState === "complete") {
+        $('b').addClass("text-info-emphasis");
+    }
 }

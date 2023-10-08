@@ -103,6 +103,7 @@ function createCardTitle(title) {
     let div = $("<div>");
 
     div.addClass("card-header");
+    div.addClass("mb-3");
 
     let h5 = $("<h5>");
 
