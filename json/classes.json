@@ -204,6 +204,286 @@
             }
         },
         {
+            "Name": "Actor",
+            "Description": "Everyone needs happiness. An actor is a performer who not only entertains outsiders, but keeps up the spirits of their party with their personality and skills.",
+            "Martial Archetype": {
+                "Name": "Entertainer",
+                "Skill Modifier Bonuses": "You gain a +2 increase to any 3 skill modifiers. You gain an additionaly +1 modifier to any 3 other skills. You cannot choose any skill more than once.",
+                "Tool Modifier Bonuses": "You gain a +1 modifier increase to 3 of the following tool kits: <b>Alchemist’s Supplies</b>, <b>Brewer’s Supplies</b>, <b>Calligrapher’s Supplies</b>, <b>Carpenter’s Tools</b>, <b>Cartographer’s Tools</b>, <b>Disguise Kit</b>, <b>Leatherworker’s Tools</b>, <b>Mason’s Tools</b>, <b>Painter’s Supplies</b>, <b>Tinker’s Tools</b>, <b>Weaver’s Tools</b>, <b>Woodcarver’s Tools</b>.",
+                "Weapon Modifier Bonuses": "You gain a +2 modifier increase to 2 of the following weapon groups: <b>Ambush Weapons</b>, <b>Bows and Slings</b>, <b>Combat Blades</b>, <b>Dueling Blades</b>, <b>Spears</b>, <b>Throwing Weapons</b>, <b>Natural Weapons</b>.",
+                "Armor Training": "You are trained with <b>Light</b> and <b>Medium</b> armor.",
+                "Shield Training": "You are trained with <b>Shields</b>.",
+                "Starting Equipment": "5d4 * 10 gold to spend on your starting equipment.",
+                "Features": [
+                    {
+                        "Name": "Inspiration",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": [
+                                    "At the first level, you are able to inspire your allies with your theatrics. You have a number of Inspiration Die (d4) equal to your levels in Entertainer. Once per round, you are able to give this inspiration to your allies, allowing them to an extra d4 on any attack, skill check or saving throw.",
+                                    "You can give this inspiration after the role has been made, but before you know the outcome. The player must immediately use this Inspiration Die. You regain all spent Inspiration Die upon completion of a rest."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Entertainer’s Delight",
+                        "Description": [
+                            "Starting at the second level, during a rest, you are able to entertain your allies, allowing all (including yourself) to regain extra hit points equal to your number of levels in Entertainer."
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Jack of All Trades",
+                        "Description": [
+                            "At the fourth level, as an entertainer, you tend to be good at just about anything that comes your way. If you aren’t good at it, you learn it. You increase skill modifiers (not tool nor weapon modifiers) on a roll of a natural 19, in addition to rolls of a natural 20."
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Improved Inspiration",
+                        "Description": [
+                            "At the sixth level, your Inspiration Die given by your first level Inspiration ability are d6 rather than d4s.",
+                            "Additionally, whoever gains your Inspiration Die no longer have to immediately spend them. They can be held and spent later in the day. A character can only hold one Inspiration Die - they can be given a second, but must immediately use it on the triggering roll."
+                        ]
+                    },
+                    {
+                        "Name": "Combat Inspiration",
+                        "Description": [
+                            "At the seventh level, when a player uses an Inspiration as part of an attack, the d6 rolled is applied to both the attack roll and the damage dealt."
+                        ]
+                    },
+                    {
+                        "Name": "Improved Entertainer’s Delight",
+                        "Description": [
+                            "At the eighth level, your entertainment during rests reaches new heights. Yourself and allies are cured of the Frightened condition if afflicted. Additionally, if any of the hit points gained from this ability would not be applied due to a character hitting their hit points maximum, the extra hit points become temporary hit points that are lost upon the next rest."
+                        ]
+                    },
+                    {
+                        "Name": "Expertise",
+                        "Description": [
+                            "At the ninth level, your skills with one ability become quite honed. Choose one of the following skills:",
+                            "<b>Acrobatics</b>, <b>Tradition/b> (one specific tradition skill), <b>Insight/b>, <b>Deception/b>, <b>Intimidation/b>, <b>Performance/b>, <b>Persuasion/b>",
+                            "For the chosen skills, any roll below a 11 (before modifiers are applied) is treated as a 11 (before modifiers). Additionally, your passive checks for this skill become as if you rolled a natural 11, and are now calculated as 11 + primary ability modifier + skill modifier + other modifiers"
+                        ]
+                    },
+                    {
+                        "Name": "Improved Jack of All Trades",
+                        "Description": [
+                            "At the tenth level, your way of learning has become more refined. You increase skill modifiers (not tool nor weapon modifiers) on a roll of a natural 18, 19 or 20.s"
+                        ]
+                    },
+                    {
+                        "Name": "Flourish",
+                        "Description": [
+                            "At the eleventh level, your skill with your weapon reflects your acting prowess. You are able to embed your own style into your fighting. Your movement speed increases by 10 ft. Once per turn, you can expend one of your Inspiration Die choose one of the following flourishes to embed as part of your action:"
+                        ],
+                        "Options": [
+                            {
+                                "Name": "Aggressive Flourish",
+                                "Description": [
+                                    "You gain a bonus to your weapon attack equal to your level in Entertainer for your next attack. If you score a critical hit, the target is stunned until the start of your next turn."
+                                ]
+                            },
+                            {
+                                "Name": "Defensive Flourish",
+                                "Description": [
+                                    "Your weapon gains the deflect trait (even if it is a ranged weapon). If your weapon already has the deflect trait, you can deflect an additional damage equal to your level in Entertainer.",
+                                    "If you reduce the damage to 0 and your opponent is wielding a disarmable melee weapon, you disarm your opponent, and their blade falls into your hand (assuming you have a free hand). Otherwise, it falls to the ground."
+                                ]
+                            },
+                            {
+                                "Name": "Mobile Flourish",
+                                "Description": [
+                                    "You gain a spring in your step. You gain extra movement speed as if you had taken the dash action. For every 10 feet you move in a straight line before attacking an opponent this turn, you gain an extra 1d6 weapon damage."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Magic Archetype": {
+                "Name": "Bard",
+                "Skill Modifier Bonuses": "You gain a +2 increase <b>Performance to any other 2 skill modifiers. You gain an additionally +1 modifier to any 3 other skills. You cannot choose any skill more than once.",
+                "Tool Modifier Bonuses": "You gain a +1 modifier increase to 3 of the following tool kits: <b>Alchemist’s Supplies</b>, <b>Brewer’s Supplies</b>, <b>Calligrapher’s Supplies</b>, <b>Carpenter’s Tools</b>, <b>Cartographer’s Tools</b>, <b>Disguise Kit</b>, <b>Leatherworker’s Tools</b>, <b>Mason’s Tools</b>, <b>Painter’s Supplies</b>, <b>Tinker’s Tools</b>, <b>Weaver’s Tools</b>, <b>Woodcarver’s Tools</b>.",
+                "Weapon Modifier Bonuses": "You gain a +1 modifier increase to 1 of the following weapon groups: <b>Ambush Weapons</b>, <b>Bows and Slings</b>, <b>Combat Blades</b>, <b>Dueling Blades</b>, <b>Spears</b>, <b>Throwing Weapons</b>, <b>Natural Weapons</b>",
+                "Spellcasting Modifier Bonuses": "You gain a +2 modifier increase to <b>Abjuration Magic</b>, and an additional +1 modifier to 2 other schools of magic.",
+                "Armor Training": "You are trained with <b>Light</b> Armor",
+                "Shield Training": "You are not trained with <b>Shields</b>",
+                "Starting Equipment": "5d4 * 10 gold to spend on your starting equipment",
+                "Primary Spellcasting Skill": "<b>Performance</b>",
+                "Number of Spells Known": [
+                    "At the first level, you know 4 + your <b>Performance Modifier</b> spells.",
+                    "Upon a level up, you learn 1 spell. Whenever your <b>Performance</b> Modifier increases, you learn an additional spell."
+                ],
+                "Features": [
+                    {
+                        "Name": "Magical Performance",
+                        "Description": [
+                            "At the first level, you are able to refresh your allies with your magical music. A number of times equal to your Bard level, you can perform a one minute tune, and all allies (yourself included) that can hear you gain temporary hitpoints equal to your Performance modifier."
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Unsettling Words",
+                        "Description": [
+                            "At the third level, you can spin music laced with magic that unsettle a creature and cause it to doubt itself. As an Ability Action, you can expend one use of your Magical Performance and choose one creature you can see within 60 feet of you. Roll the Magical Performance die. The creature must subtract the number rolled from the next Saving Throw it makes before the start of your next turn."
+                        ]
+                    },
+                    {
+                        "Name": "Combat Performance",
+                        "Description": [
+                            "At the fourth level, as an action, you can make a Magical Performance. All allies that can hear you gain temporary hitpoints equal to one fourth (minimum 1) as a normal Magical Performance."
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Improved Magical Performance",
+                        "Description": [
+                            "At the sixth level, your standard Magical Performance allows allies that can hear you to gain additional temporary hitpoints equal to your Bard level."
+                        ]
+                    },
+                    {
+                        "Name": "Second School of Magic Specialization",
+                        "Description": [
+                            "At the seventh level, you gain access to a second of magical specialization as defined by the level 2 Magic archetype ability. You cannot choose the same specialization more than once."
+                        ]
+                    },
+                    {
+                        "Name": "Countercharm",
+                        "Description": [
+                            "At eighth level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. Counting as 2 usages of your Magical Performance, you can start a performance that lasts until the end of your next turn.",
+                            "During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required)."
+                        ]
+                    },
+                    {
+                        "Name": "Enhanced School of Magic Specialization",
+                        "Description": [
+                            "At the ninth level, your knowledge of your chosen school of magic increases. You have gained new abilities related to the school of magic specialization chosen at the second level."
+                        ],
+                        "Options": [
+                            {
+                                "Name": "Abjuration",
+                                "Description": [
+                                    "Your studies into Abjuration magic allows you to redirect some of the magic into the spell back to yourself. Once per rest, when you cast an Abjuration spell, you can pull a strand of the magic and surround yourself with it, giving you temporary hit points equal to your Abjuration spell modifier.",
+                                    "Additionally, your bonus to your Abjuration Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Conjuration",
+                                "Description": [
+                                    "Your studies into Conjuration magic allow you to better teleport. Once per rest, you can teleport up to 30 feet to an unoccupied space you can see.",
+                                    "Additionally, your bonus to your Conjuration Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Divination",
+                                "Description": [
+                                    "Your ability to see beyond begins to manifest physically. You gain Darkvision with a range of 60 feet. If you already have Darkvision, the range expands by 60 feet.",
+                                    "Additionally, your bonus to your Divination Spell Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Enchantment",
+                                "Description": [
+                                    "Your knowledge of Enchantment magic allows you to subtlely shift the direction it flows. Once per rest when you cast an Enchantment spell that targets one creature, you can make the spell target 2 creatures.",
+                                    "Additionally, your bonus to your Enchantment Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Evocation",
+                                "Description": [
+                                    "Your experience with Evocation magic allows you to sculpt Evocation spells you cast. Once per rest, when you cast an area of effect Evocation spell, you can make a number of pockets up to or equal to your Evocation Spellcasting Modifier within the spell’s range that are not affected by the spells effects.",
+                                    "Additionally, your bonus to your Evocation Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Illusion",
+                                "Description": [
+                                    "Your studies into Illusion magic make it your go-to solution. Once per rest when you are attacked, you can use your reaction to create an illusion of yourself just in front of yourself. The attacker will automatically hit this illusion, which dispels it.",
+                                    "Additionally, your bonus to your Illusion Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Malediction",
+                                "Description": [
+                                    "Your understanding of Malediction magic allows you to kick your enemies while they’re down. When you attack a creature affected by one of your Malediction spells, you deal extra damage equal to your Malediction Spellcasting Modifier.",
+                                    "Additionally, your bonus to your Malediction Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Necromancy",
+                                "Description": [
+                                    "Your studies into Necromancy magic have given you a better understanding of life forces and how to manipulate them to your benefit. Once per rest, when you kill a creature that is not an undead or a construct with a Necromancy spell, you regain hitpoints equal to your Necromancy Spellcasting Modifier (up to your hit points maximum).",
+                                    "Additionally, your bonus to your Necromancy Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Transmutation",
+                                "Description": [
+                                    "Your studies into Transmutation magic have given you a better understanding of how magic flows. Once per rest, when you cast a Transmutation spell, you regain Mana equal to half of your Transmutation Spellcasting Bonus.",
+                                    "Additionally, your bonus to your Transmutation Spellcasting Modifier increases to +2."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Enthralling Performance",
+                        "Description": [
+                            "At the tenth level, once per rest, if you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of humanoids within 60 feet of you who watched and listened to all of it, up to a number equal to your Performance modifier. Each target must succeed on a Mental Fortitude Saving Throw against your spell save DC or be charmed by you.",
+                            "While charmed in this way, the target idolizes you, it speaks glowingly of you to anyone who talks to it, and it hinders anyone who opposes you, although it avoids violence unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of its allies.",
+                            "If a target succeeds on its saving throw, the target has no hint that you tried to charm it.",
+                            "Using this ability counts as a usage of your Magical Performance."
+                        ]
+                    },
+                    {
+                        "Name": "Magical Secrets",
+                        "Description": [
+                            "At the eleventh level, your broad knowledge of magic allows you learn magic unlike others you have known. You learn 2 new spells, regardless of their level or if they are available for Bards normally."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
             "Name": "Name",
             "Description": "",
             "Martial Archetype": {
@@ -232,6 +512,7 @@
                 "Skill Modifier Bonuses": "Bonuses",
                 "Tool Modifier Bonuses": "Bonuses",
                 "Weapon Modifier Bonuses": "Bonuses",
+                "Spellcasting Modifier Bonuses": "Bonuses",
                 "Armor Training": "Training",
                 "Shield Training": "Training",
                 "Starting Equipment": "Equipment",
@@ -280,6 +561,7 @@
                 "Skill Modifier Bonuses": "Bonuses",
                 "Tool Modifier Bonuses": "Bonuses",
                 "Weapon Modifier Bonuses": "Bonuses",
+                "Spellcasting Modifier Bonuses": "Bonuses",
                 "Armor Training": "Training",
                 "Shield Training": "Training",
                 "Starting Equipment": "Equipment",
@@ -328,6 +610,7 @@
                 "Skill Modifier Bonuses": "Bonuses",
                 "Tool Modifier Bonuses": "Bonuses",
                 "Weapon Modifier Bonuses": "Bonuses",
+                "Spellcasting Modifier Bonuses": "Bonuses",
                 "Armor Training": "Training",
                 "Shield Training": "Training",
                 "Starting Equipment": "Equipment",
@@ -376,6 +659,7 @@
                 "Skill Modifier Bonuses": "Bonuses",
                 "Tool Modifier Bonuses": "Bonuses",
                 "Weapon Modifier Bonuses": "Bonuses",
+                "Spellcasting Modifier Bonuses": "Bonuses",
                 "Armor Training": "Training",
                 "Shield Training": "Training",
                 "Starting Equipment": "Equipment",
@@ -424,54 +708,7 @@
                 "Skill Modifier Bonuses": "Bonuses",
                 "Tool Modifier Bonuses": "Bonuses",
                 "Weapon Modifier Bonuses": "Bonuses",
-                "Armor Training": "Training",
-                "Shield Training": "Training",
-                "Starting Equipment": "Equipment",
-                "Primary Spellcasting Skill": "",
-                "Number of Spells Known": [],
-                "Features": [
-                    {
-                        "Name": "Name",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "Name": "Name",
-            "Description": "",
-            "Martial Archetype": {
-                "Name": "Name",
-                "Skill Modifier Bonuses": "Bonuses",
-                "Tool Modifier Bonuses": "Bonuses",
-                "Weapon Modifier Bonuses": "Bonuses",
-                "Armor Training": "Training",
-                "Shield Training": "Training",
-                "Starting Equipment": "Equipment",
-                "Features": [
-                    {
-                        "Name": "Name",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
-                        ]
-                    }
-                ]
-            },
-            "Magic Archetype": {
-                "Name": "Name",
-                "Skill Modifier Bonuses": "Bonuses",
-                "Tool Modifier Bonuses": "Bonuses",
-                "Weapon Modifier Bonuses": "Bonuses",
+                "Spellcasting Modifier Bonuses": "Bonuses",
                 "Armor Training": "Training",
                 "Shield Training": "Training",
                 "Starting Equipment": "Equipment",
