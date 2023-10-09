@@ -169,7 +169,7 @@ function generateTitleRow(martialName, magicName, content) {
     let rightColumn = createRightColumn();
 
     if (martialName != undefined) {
-        generateH3(martialName, leftContent);
+        generateH3(martialName, leftColumn);
     }
 
     if (magicName != undefined) {
