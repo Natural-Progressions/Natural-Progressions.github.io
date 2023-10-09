@@ -208,7 +208,9 @@ function generateDescriptionRow(martialFeature, magicFeature, content) {
  */
 function generateOptions(options, column) {
 
-    console.log(options);
+    if (options == undefined) {
+        return;
+    }
 
     for (const entry of options) {
         generateParagraphsFromListIfNotUndefinedWithHeader(entry, column);
