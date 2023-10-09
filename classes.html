@@ -14,27 +14,439 @@
                     <div class="d-flex align-items-start sticky-top-2">
                         <div class="nav flex-column nav-pills me-3" id="sidebar-tab" role="tablist" aria-orientation="vertical">
                             <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true" onclick="redrawTOC()">Overview</button>
-                            <button class="nav-link" id="fortitude-tab" data-bs-toggle="pill" data-bs-target="#fortitude" type="button" role="tab" aria-controls="fortitude" aria-selected="false" onclick="redrawTOC()">Fortitude</button>
-                            <button class="nav-link" id="dexterity-tab" data-bs-toggle="pill" data-bs-target="#dexterity" type="button" role="tab" aria-controls="dexterity" aria-selected="false" onclick="redrawTOC()">Dexterity</button>
-                            <button class="nav-link" id="intelligence-tab" data-bs-toggle="pill" data-bs-target="#intelligence" type="button" role="tab" aria-controls="intelligence" aria-selected="false" onclick="redrawTOC()">Intelligence</button>
-                            <button class="nav-link" id="wisdom-tab" data-bs-toggle="pill" data-bs-target="#wisdom" type="button" role="tab" aria-controls="wisdom" aria-selected="false" onclick="redrawTOC()">Wisdom</button>
-                            <button class="nav-link" id="charisma-tab" data-bs-toggle="pill" data-bs-target="#charisma" type="button" role="tab" aria-controls="charisma" aria-selected="false" onclick="redrawTOC()">Charisma</button>
+                            <button class="nav-link" id="archetypes-tab" data-bs-toggle="pill" data-bs-target="#archetypes" type="button" role="tab" aria-controls="archetypes" aria-selected="false" onclick="redrawTOC()">Archetypes</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="tab-content" id="sidebar-tabContent">
                         <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview" tabindex="0">
+                            <p>Acharacter’s class is most likely the part that most greatly impacts a build. Unlike other TTRPGs, Natural Progressions doesn’t have the concept of subclasses. Instead, each class is split into it’s implementations of two archetypes, martial and magic.</p>
+                            <p>Despite seemingly being opposites of each other, the two archetypes for each class are brought together by the overarching theme of each class. For example, the Novitiate class is built around the concept of an individual who studies and trains within existing institutions, and the class features of the Fighter and Wizard are built around the same idea.</p>
+                            <p>The beauty of having each class implement both archetypes is that no multiclassing is necessary to have a character that has abilities from the martial and magic archetypes. As a character levels up, they can choose which archetype of their class they want to take a level in. The only limitation to this switching is that the archetype you chose at Level 1 is greater than or equal to the level of the opposite.</p>
+                            <p>For example, when a level 1 Novitiate with 1 level in Fighter, levels up to Level 2, they can choose (assuming no multiclassing) to take the second level Fighter feature, or the first level Wizard feature. Assuming they took the first level Wizard feature, when they level up to level 3 (with the same assumption of no multiclassing), they would have to take the second level Fighter feature.</p>
+                            <h1 class="text-center py-3 bg-danger-subtle">General Sections</h1>
+                            <p>Each class will start off with a description of the overarching idea behind it. Following this description will come the two archetypes, first the might implementation, then the magic.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Bonuses, Skills and Stats</h2>
+                            <p><b>Skill Modifier Bonuses: </b>The skills that have their modifier increases will be detailed here. Generally, there will be options, such as “choose 3 of the following skills”. There is no overlap when a character takes levels in both archetypes.</p>
+                            <p><b>Weapon Modifier Bonuses: </b>The weapons groups that a character has an increased weapon modifier for. There is no overlap when a character takes levels in both archetypes.</p>
+                            <p><b>Armor Training: </b>The armor types that the archetype can use. The training for light and medium armor overlaps - if the might or magic archetype is trained in light or medium armor and you have a level in each archetype, you are trained in it. For heavy armor, your initial archetype must be trained in it.</p>
+                            <p><b>Shield Training: </b>Whether you can use shields. This training overlaps - if either archetype has training and you have a level in both, you are trained in Shields.</p>
+                            <p><b>Starting Equipment: </b>Rather self explanatory. There obviously is no overlap when a character takes levels in both archetypes.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Level Features</h2>
+                            <p>Following these bonuses, there will be a table depicting what features are gained at each level, like the following:</p>
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Level</th>
+                                        <th scope="col">Feature Gained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Level 1 Feature</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Level 2 Feature</td>
+                                    </tr>
+                                    <tr>
+                                        <td>etc...</td>
+                                        <td>etc...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Finally, each feature will be defined as such:</p>
+                            <h3 class="text-center">Level X: Class Feature</h3>
+                            <p>Here a description of the feature and what is does. If there are options on the feature (such as Fighting Style in all might archetype implementations), they will be displayed as follows:</p>
+                            <p><b>Option 1: </b>Description of the option</p>
+                            <p><b>Option 2: </b>Description of the option</p>
                         </div>
-                        <div class="tab-pane fade" id="fortitude" role="tabpanel" aria-labelledby="fortitude" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="dexterity" role="tabpanel" aria-labelledby="dexterity" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="intelligence" role="tabpanel" aria-labelledby="intelligence-tab" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="wisdom" role="tabpanel" aria-labelledby="wisdom-tab" tabindex="0">
-                        </div>
-                        <div class="tab-pane fade" id="charisma" role="tabpanel" aria-labelledby="charisma-tab" tabindex="0">
+                        <div class="tab-pane fade" id="archetypes" role="tabpanel" aria-labelledby="archetypes-tab" tabindex="0">
+                            <p>Many systems end up with a divide of their player-classes being spellcasters, or completely martial. Natural Progressions has instead gone down a path that allows players to easily mix and match this types with the delineation of archetypes within each class. A natural extension of this split is to tie features and abilities to number of levels within each archetype, regardless of what class the levels are in.</p>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6 border-end">
+                                    <h2 class="text-center py-2 bg-warning-subtle">Martial</h2>
+                                </div>
+                                <div class="col-6">
+                                    <h2 class="text-center py-2 bg-warning-subtle">Magic</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 border-end">
+                                    <p><b>Health: </b>Each level in a Martial archetype increases your maximum health by 11 + your <b>Constitution</b> modifier + your <b>Reflex</b> modifier.</p>
+                                </div>
+                                <div class="col-6">
+                                    <p><b>Health: </b>Each level in a Magic archetype increases your maximum health by 11 + your <b>Constitution</b> modifier.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 border-end">
+                                    <p><b>Mana: </b>You gain no mana for levels in the Martial archetype.</p>
+                                </div>
+                                <div class="col-6">
+                                    <p><b>Mana: </b>Each level in a Magic archetype increases your maximum mana by 11 + your <b>Primary Spellcasting</b> modifier</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 border-end">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Level</th>
+                                                <th scope="col">Feature Gained</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Fighting Style, Experienced Weapon Abilities</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Extra Attack, Expert Weapon Abilities</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>Master Weapon Abilities</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-6">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Level</th>
+                                                <th scope="col">Feature Gained</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Level 1 Spellcasting</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Spellcasting Specialization</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Level 2 Spellcasting</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Arcane Recovery, Level 3 Spellcasting</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Level 4 Spellcasting</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>Level 5 Spellcasting</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>[None]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>Level 6 Spellcasting</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr>
+                            <h3 class="text-center">Features</h3>
+                            <hr>
+                            <div id="level-1-titles" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <h3 class="text-center">Level 1 Spellcasting</h3>
+                                </div>
+                            </div>
+                            <div id="level-1-features" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <p>You can learn level 1 spells. Refer to your class to determine the maximum number of spells you can know.</p>
+                                </div>
+                            </div>
+                            <div id="level-2-titles" class="row">
+                                <div class="col-6 border-end">
+                                    <hr>
+                                    <h3 class="text-center">Fighting Style</h3>
+                                </div>
+                                <div class="col-6">
+                                    <hr>
+                                    <h3 class="text-center">Spellcasting Specialization</h3>
+                                </div>
+                            </div>
+                            <div id="level-2-features" class="row">
+                                <div class="col-6 border-end">
+                                    <p>With two levels in Martial archetypes, your training with a specific way of fighting starts to show. Choose one fighting style from the following options:</p>
+                                    <p><b>Ambush: </b>You have learned that striking hard and fast while hidden is the fastest way to victory. When you attack an opponent that does not know you are present, you deal an extra 1d6 damage from your weapon.</p>
+                                    <p><b>Archery: </b>You are a skilled and focused marksman. You gain a +1 bonus to attack rolls to all ranged weapons.</p>
+                                    <p><b>Blind Fighting: </b>Choose another sense - it should make sense with your race and culture. With your chosen sense, you have honed ability to use this sense in close quarters. You gain Blindsight up to 10 ft while you can use this sense. Within this range, you can see any creature that has not successfully hidden from you.</p>
+                                    <p><b>Defense: </b>You adopt a fighting style focused on defense. Your weapon bonus to your armor class increases by +1 while you are wielding a melee weapon.</p>
+                                    <p><b>Dual Wielding: </b>You have been trained to use multiple weapons at once. You gain a +1 attack bonus to all double-ended weapons, and when wielding multiple weapons.</p>
+                                    <p><b>Dueling: </b>You have been trained to fight prolonged duels. While you are wielding a melee weapon in one hand, and no other weapons in your other hand, you gain +1 bonus to attack rolls with that weapon.</p>
+                                    <p><b>Great Weapon Fighting: </b>You have been trained to utilize the large, sweeping strikes of larger weapons. When using a weapon with 2 hands, you gain a +1 bonus to attack rolls with that weapon.</p>
+                                    <p><b>Thrown Weapon Fighting: </b>You have been trained in the art of precise weapon throwing. You gain a +1 bonus to attack rolls with thrown weapons.</p>
+                                    <p><b>Unarmed Fighting: </b>You have been trained in martial arts. You gain a +1 attack bonus to your unarmed strikes.</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>With two levels in Magic archetypes, your training with a specific way type of magic starts to show. Choose one School of Magic Specialization from the following options:</p>
+                                    <p><b>Abjuration: </b>You have been trained with an emphasis on casting Abjuration spells. When casting Abjuration spells, you gain a +1 bonus to your Abjuration Spellcasting Modifier.</p>
+                                    <p><b>Conjuration: </b>You have been trained with an emphasis on casting Conjuration spells. When casting Conjuration spells, you gain a +1 bonus to your Conjuration Spellcasting Modifier.</p>
+                                    <p><b>Divination: </b>You have been trained with an emphasis on casting Divination spells. When casting Divination spells, you gain a +1 bonus to your Divination Spellcasting Modifier.</p>
+                                    <p><b>Enchantment: </b>You have been trained with an emphasis on casting Enchantment spells. When casting Enchantment spells, you gain a +1 bonus to your Enchantment Spellcasting Modifier.</p>
+                                    <p><b>Evocation: </b>You have been trained with an emphasis on casting Evocation spells. When casting Evocation spells, you gain a +1 bonus to your Evocation Spellcasting Modifier.</p>
+                                    <p><b>Illusion: </b>You have been trained with an emphasis on casting Illusion spells. When casting Illusion spells, you gain a +1 bonus to your Illusion Spellcasting Modifier.</p>
+                                    <p><b>Malediction: </b>You have been trained with an emphasis on casting Malediction spells. When casting Malediction spells, you gain a +1 bonus to your Malediction Spellcasting Modifier.</p>
+                                    <p><b>Necromancy: </b>You have been trained with an emphasis on casting Necromancy spells. When casting Necromancy spells, you gain a +1 bonus to your Necromancy Spellcasting Modifier.</p>
+                                    <p><b>Transmutation: </b>You have been trained with an emphasis on casting Transmutation spells. When casting Transmutation spells, you gain a +1 bonus to your Transmutation Spellcasting Modifier.</p>
+                                </div>
+                            </div>
+                            <div id="level-2-titles-2" class="row">
+                                <div class="col-6 border-end">
+                                    <hr>
+                                    <h3 class="text-center">Experienced Weapon Abilities</h3>
+                                </div>
+                                <div class="col-6">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                            </div>
+                            <div id="level-2-features-2" class="row">
+                                <div class="col-6 border-end">
+                                    <p>You gain access to the Experienced Weapon Training.</p>
+                                </div>
+                                <div class="col-6">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                            </div>
+                            <div id="level-3-titles" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <hr>
+                                    <h3 class="text-center">Level 2 Spellcasting</h3>
+                                </div>
+                            </div>
+                            <div id="level-3-features" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <p>You can learn level 1 and 2 spells. Refer to your class to determine the maximum number of spells you can know.</p>
+                                </div>
+                            </div>
+                            <div id="level-4-titles" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                            </div>
+                            <div id="level-4-features" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                            </div>
+                            <div id="level-5-titles" class="row">
+                                <div class="col-6 border-end">
+                                    <hr>
+                                    <h3 class="text-center">Extra Attack</h3>
+                                </div>
+                                <div class="col-6">
+                                    <hr>
+                                    <h3 class="text-center">Arcane Recovery</h3>
+                                </div>
+                            </div>
+                            <div id="level-5-features" class="row">
+                                <div class="col-6 border-end">
+                                    <p>At 5 levels within the Martial archetype, when you take the attack action you can make two attacks as part of one action.</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>At the fifth level, your connection to magic gross stronger. After completion of a rest, you regain an additional amount of mana equal to your number of levels in the Magic archetype.</p>
+                                </div>
+                            </div>
+                            <div id="level-5-titles-2" class="row">
+                                <div class="col-6 border-end">
+                                    <hr>
+                                    <h3 class="text-center">Expert Weapon Abilities</h3>
+                                </div>
+                                <div class="col-6">
+                                    <hr>
+                                    <h3 class="text-center">Level 3 Spellcasting</h3>
+                                </div>
+                            </div>
+                            <div id="level-5-features-2" class="row">
+                                <div class="col-6 border-end">
+                                    <p>You gain access to the Experienced Weapon Training.</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>You can learn level 1, 2 and 3 spells. Refer to your class to determine the maximum number of spells you can know.</p>
+                                </div>
+                            </div>
+                            <div id="level-6-titles" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                            </div>
+                            <div id="level-6-features" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                            </div>
+                            <div id="level-7-titles" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <hr>
+                                    <h3 class="text-center">Level 4 Spellcasting</h3>
+                                </div>
+                            </div>
+                            <div id="level-7-features" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <p>You can learn spells of the first 4 levels. Refer to your class to determine the maximum number of spells you can know.</p>
+                                </div>
+                            </div>
+                            <div id="level-8-titles" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                            </div>
+                            <div id="level-8-features" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                            </div>
+                            <div id="level-9-titles" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <hr>
+                                    <h3 class="text-center">Level 5 Spellcasting</h3>
+                                </div>
+                            </div>
+                            <div id="level-9-features" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <p>You can learn spells of the first 5 levels. Refer to your class to determine the maximum number of spells you can know.</p>
+                                </div>
+                            </div>
+                            <div id="level-10-titles" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                            </div>
+                            <div id="level-10-features" class="row">
+                                <div class="col-6 border-end">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                                <div class="col-6">
+                                    <!-- Purposefully Empty -->
+                                </div>
+                            </div>
+                            <div id="level-11-titles" class="row">
+                                <div class="col-6 border-end">
+                                    <hr>
+                                    <h3 class="text-center">Master Weapon Abilities</h3>
+                                </div>
+                                <div class="col-6">
+                                    <hr>
+                                    <h3 class="text-center">Level 6 Spellcasting</h3>
+                                </div>
+                            </div>
+                            <div id="level-11-features" class="row">
+                                <div class="col-6 border-end">
+                                    <p>You gain access to the Master Weapon Training.</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>You can learn spells of any level. Refer to your class to determine the maximum number of spells you can know.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <br>
                         </div>
                     </div>
                 </div>
@@ -46,6 +458,7 @@
 
         <script src="/js/jquery-3.7.1.min.js"></script>
         <script src="/js/navbar.js"></script>
+        <script src="/js/classes.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>

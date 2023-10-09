@@ -1,0 +1,495 @@
+{
+    "entries": [
+        {
+            "Name": "Artisan",
+            "Description": "All items need to have a creator. Artisans create, improve and repair objects, and have learned a number of skills to help them with this process.",
+            "Martial Archetype": {
+                "Name": "Craftsmen",
+                "Skill Modifier Bonuses": "You gain a +1 increase to 3 of the following skills: <b>Athletics</b>, <b>Constitution</b>, <b>Endurance</b>, <b>Reflex</b>, <b>Investigation</b>, <b>Insight</b>, <b>Perception</b>, <b>Deception</b>, <b>Intimidation</b>, <b>Performance</b>.",
+                "Tool Modifier Bonuses": "You gain a +3 modifier to one of the tool kits. You gain a +2 modifier to two other tool kits, and a +1 modifier to 3 others. You cannot choose the same tool kit to gain multiple modifiers from Craftsmen.",
+                "Weapon Modifier Bonuses": "You gain a +2 modifier increase to <b>Hammers and Picks</b>, as well as another +2 modifier to another weapon group.",
+                "Armor Training": "You are trained with <b>Light</b>, <b>Medium</b> and <b>Heavy</b> armor.",
+                "Shield Training": "You are trained with <b>Shields</b>.",
+                "Starting Equipment": "5d4 * 10 gold to spend on your starting equipment",
+                "Features": [
+                    {
+                        "Name": "Crafting",
+                        "Description": [
+                            "Starting at the 1st level, assuming you have access to the required tools and access to any needed environments, such as a forge, you are able to craft 5 gp * your Craftsmen level worth of a mundane object (that is not a +1 weapon or +1 armor) per day. If you finish crafting an object on a day but have spare gp left of your daily allotance, you can begin construction on another mundane item.",
+                            "You do not need to specifically have the raw materials on hand. If you don’t have already, you just need the gold and a means to buy said materials.",
+                            "For example, should a level 3 Craftsmen wish to make a War Spear, it would take 2 days of crafting - the first day to do 15 gp worth of construction, followed by 10 gp the next day."
+                        ]
+                    },
+                    {
+                        "Name": "Battle Smith",
+                        "Description": [
+                            "At the second level, your skills with crafting have made you very precise. When you take the attack action, you are able to directly target the your opponent’s armor in a direct attempt to damage it. If your weapon attack hits your target, you are able to forgo all damage your attack would do in favor of damaging the armor. A Damaged piece of armor has a -2 to the AC until it is repaired by <b>Leatherworker’s</b>, <b>Tinkers’</b> or <b>Smith’s Tools</b>.",
+                            "The creature must be wearing armor for this ability to work. If the opponent is wearing <b>Padded</b>, <b>Leather</b> or any other armor with less than 2 AC bonus, their AC bonus from armor is reduced to 0."
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Artisan of All Trades",
+                        "Description": [
+                            "At the fourth level, the basics of tool sets that come your way, allowing you to increase your proficiency with them more easily. You increase tool modifiers (not skills nor weapons) on a roll of natural 19 in addition to natural 20s."
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Improved Crafting",
+                        "Description": [
+                            "At the sixth level, when you have access to a forge, you are able to craft mundane +1 weapons and armor. These items cost 2x their gp time price, but only their standard amount of gold of raw materials are needed to make them. In addition, a Craftsmen can turn a standard weapon or armor into its mundane +1 variant for no additional raw material, but half of the gold time.",
+                            "For example, a level 6 Craftsmen wishing to craft a +1 War Spear from scratch would need to spend 2 days crafting - 30 gp of time spent on the first day, and another 20 on the second. However, only 25 gp of raw material would be needed to craft this spear (the character would only lose 25 gp of gold).",
+                            "This same level 6 Craftsmen, if they should wish to turn a standard War Spear into a mundane +1 War Spear would only take 25 gp of crafting time on one day to complete the enhancements, with no extra raw material being needed."
+                        ]
+                    },
+                    {
+                        "Name": "Flash of Genius",
+                        "Description": [
+                            "Starting at seventh level, you gain the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an skill check, they your Craftsmen level to the roll.",
+                            "You can use this feature a number of times equal to your Craftsmen level. You regain all expended uses when you finish a rest."
+                        ]
+                    },
+                    {
+                        "Name": "Improved Artisan of All Trades",
+                        "Description": [
+                            "At the eighth level, your knowledge of tools has become more refined. You increase tool modifiers (not skill nor weapon modifiers) on ar oll of a natural 18, 19 or 20."
+                        ]
+                    },
+                    {
+                        "Name": "Tool Expertise",
+                        "Description": [
+                            "At the ninth level, your skills with one tool become insurmountable. Choose one of the tool sets.",
+                            "For the chosen tool, any roll below an 11 (before modifiers are appled) is treated as an 11 (before modifiers). Additionally, any passive checks that happen to use this tool become as if you rolled a natural 11, and are now calculated as 11 + your tool modifier + your skill modifier (if applicable) + other modifiers."
+                        ]
+                    },
+                    {
+                        "Name": "Improved Battle Smith",
+                        "Description": [
+                            "At the tenth level, when you attack a creature with damaged armor, in lieu dealing damage, you are able to expand upon the damage dealt. The armor become Shattered, giving it the creature a -5 AC bonus until repaired. This armor takes two repairs in order to be fixed - the first makes the armor Damaged (-2 AC bonus), and the second returns it to normal.",
+                            "The creature must be wearing armor for this ability to work. If the opponent is wearing an armor with less than 5 AC bonus, their AC bonus from armor is reduced to 0."
+                        ]
+                    },
+                    {
+                        "Name": "Masterwork",
+                        "Description": [
+                            "At the eleventh level, you have finished your masterpiece. Confer with your LM to determine exactly what this item is - it could be a new or powerful weapon or armor (such as a gun, a “grenade” launcher using alchemical supplies, a +3 weapon or a +3 armor), a machine, or any other non-magical object in the world. With your LM’s permission, you could also invent a magical object with the help of a magic user.",
+                            "Subtract whatever raw materials from your total gold equivalent to the gold cost of your item. You now have your masterpiece."
+                        ]
+                    }
+                ]
+            },
+            "Magic Archetype": {
+                "Name": "Artificier",
+                "Skill Modifier Bonuses": "You gain a +1 increase to 3 of the following skills: <b>Arcana</b>, <b>Reflex</b>, <b>Investigation</b>, <b>Insight</b>, <b>Perception</b>, <b>Deception</b>, <b>Intimidation</b>, <b>Performance</b>.",
+                "Tool Modifier Bonuses": "You gain a +3 modifier to one of the tool kits. You gain a +2 modifier to two other tool kits, and a +1 modifier to 3 others. You cannot choose the same tool kit to gain multiple modifiers from Artificier.",
+                "Weapon Modifier Bonuses": "You gain a +1 modifier increase to <b>Hammers and Picks</b>",
+                "Spellcasting Modifier Bonuses": "You gain a +2 modifier increase to <b>Transmutation Magic</b>, and an additional +1 modifier to 2 other schools of magic",
+                "Armor Training": "You are trained with <b>Light</b> and <b>Medium</b> armor.",
+                "Shield Training": "You are trained with <b>Shields</b>.",
+                "Starting Equipment": "5d4 * 10 gold to spend on your starting equipment",
+                "Primary Spellcasting Skill": "<b>Arcana</b>",
+                "Number of Spells Known": [
+                    "At the first level, you know 4 + your <b>Arcana</b> Modifier spells.",
+                    "Upon a level up, you learn 1 spell. Whenever your <b>Arcana</b> Modifier increases, you learn an additional spell."
+                ],
+                "Features": [
+                    {
+                        "Name": "Magical Tinkering",
+                        "Description": [
+                            "At first level, you learn how to invest a spark of magic into mundane objects. To use this ability, you must have thieves’ tools or artisan’s tools in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:",
+                            "<ul><li>The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet.</li><li>Whenever tapped by a creature, the object emits a recorded message that can be heard up to 10 feet away. You utter the message when you bestow this property on the object, and the recording can be no more than 6 seconds long.</li><li>The object continuously emits your choice of an odor or a nonverbal sound (wind, waves, chirping, or the like). The chosen phenomenon is perceivable up to 10 feet away.</li><li>A static visual effect appears on one of the object’s surfaces. This effect can be a picture, up to 25 words of text, lines and shapes, or a mixture of these elements, as you like.</li></ul>",
+                            "The chosen property lasts indefinitely. As an action, you can touch the object and end the property early.",
+                            "You can bestow magic on multiple objects, touching one object each time you use this feature, though a single object can only bear one property at a time. The maximum number of objects you can affect with this feature at one time is equal to the number of levels in Artificier. If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies."
+                        ]
+                    },
+                    {
+                        "Name": "Magic Item Crafting",
+                        "Description": [
+                            "Starting at the second level, you are able to imbue 5 gp * your Artificer level’s worth of magic into an object per day. If you finish crafting an object on a day but have spare gp left of your daily allotance, you can begin construction on another mundane item.",
+                            "For every 5 gp you imbue into a magic item, you expend 1 mana.",
+                            "In order to imbue an object, you need to have an mundane variant of it - you are not crafting the object from scratch, rather imbuing an object with magic. The total gold cost required to make a mundane object magical can be seen in the Equipment lists.",
+                            "At the second level, you can only craft Common magic items. At the fourth, you can additionally craft Uncommon. At the sixth, Rare, the eighth, Very Rare, and at the tenth level, Legendary."
+                        ]
+                    },
+                    {
+                        "Name": "Minor Alchemy",
+                        "Description": [
+                            "Starting at third level when you select this school, you can temporarily alter the physical properties of one nonmagical object, changing it from one substance into another. You perform a special alchemical procedure on one object composed entirely of wood, stone (but not a gemstone), iron, copper, or silver, transforming it into a different one of those materials. For each 10 minutes you spend performing the procedure, you can transform up to 1 cubic foot of material. After 1 hour, or until you lose your concentration (as if you were concentrating on a spell), the material reverts to its original substance."
+                        ]
+                    },
+                    {
+                        "Name": "Runic Glyph",
+                        "Description": [
+                            "At the fourth level, you learn how to imbue items with spell. You cast a spell that targets either a single creature or an area and direct it into your chosen item. If the spell is a concentration spell, the concentration is held by the item, and will run until time runs out, or the object is destroyed.",
+                            "You must pass a DC 20 + the level of the spell check of the spell’s school of magic in order to successfully imbue the object. On a success, as the spell is cast, the magic carves a rune specific to that spell into the object. When a creature that is not you gets within 5 feet of the glyph, the spell triggers.",
+                            "If you fail the check, you expend mana as if you had just cast the spell.",
+                            "The glyph is nearly invisible and requires a successful Investigation or Arcana check against your Arcana Spell Save DC to be found."
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Scrivener",
+                        "Description": [
+                            "At the seventh level, your knowledge of magic allows you to create spell scrolls. In order to do so, you need to use Calligrapher’s Supplies and spend an hour writing the scroll and imbuing the scroll with magic. Make a Calligrapher’s Supplies Arcana check against a DC of 20 + the level of spell that you are attempting to apply to the scroll. Upon a success, your scroll has successfully been made. Upon a failure, the scrolls burns itself as if it had just been used.",
+                            "Regardless of the outcome of your check, you expend mana as if you had just cast the spell."
+                        ]
+                    },
+                    {
+                        "Name": "The Right Tool for the Job",
+                        "Description": [
+                            "At eighth level, you learn how to produce exactly the tool you need: with thieves’ tools or artisan’s tools in hand, you can magically create one set of artisan’s tools in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, and they vanish when you use this feature again."
+                        ]
+                    },
+                    {
+                        "Name": "Spell-Storing Item",
+                        "Description": [
+                            "At ninth level, you learn how to store a spell in an object. You can touch a weapon or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast.",
+                            "While holding the object, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier. If the spell requires concentration, the creature must concentrate. The spell stays in the object until it has been used or dispelled.",
+                            "You can imbue a number of items in this manner equal to half of your Articier level. If you imbue one item more than this limit, the item with the oldest enchantment has the spell dispelled."
+                        ]
+                    },
+                    {
+                        "Name": "Improved Magic Item Crafting",
+                        "Description": [
+                            "At the tenth level, you can additionally add 5 * your Arcana spellcasting modifier worth of GP to the amount you can craft on a daily basis.",
+                            "Additionally, your mana usage decreases from one mana per 5 gp used, to one mana per 10 gp used."
+                        ]
+                    },
+                    {
+                        "Name": "Soul of Artifice",
+                        "Description": [
+                            "At the eleventh level, you develop a mystical connection to magic items you have attuned to, which you can draw on for protection. When you are reduced to 0 hit points, but not killed outright, you can use your Reaction to end the attunement to one of your items, causing you to drop to 1 hit point instead of 0.",
+                            "The magic imbuing the item you have lost attunement to takes the damage for you, and the item itself becomes mundane. In order to make the item magical again, it would need to go through the Magic Item Crafting process."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Name",
+            "Description": "",
+            "Martial Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Magic Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Primary Spellcasting Skill": "",
+                "Number of Spells Known": [],
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Name",
+            "Description": "",
+            "Martial Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Magic Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Primary Spellcasting Skill": "",
+                "Number of Spells Known": [],
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Name",
+            "Description": "",
+            "Martial Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Magic Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Primary Spellcasting Skill": "",
+                "Number of Spells Known": [],
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Name",
+            "Description": "",
+            "Martial Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Magic Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Primary Spellcasting Skill": "",
+                "Number of Spells Known": [],
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Name",
+            "Description": "",
+            "Martial Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Magic Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Primary Spellcasting Skill": "",
+                "Number of Spells Known": [],
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Name",
+            "Description": "",
+            "Martial Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Magic Archetype": {
+                "Name": "Name",
+                "Skill Modifier Bonuses": "Bonuses",
+                "Tool Modifier Bonuses": "Bonuses",
+                "Weapon Modifier Bonuses": "Bonuses",
+                "Armor Training": "Training",
+                "Shield Training": "Training",
+                "Starting Equipment": "Equipment",
+                "Primary Spellcasting Skill": "",
+                "Number of Spells Known": [],
+                "Features": [
+                    {
+                        "Name": "Name",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
