@@ -169,11 +169,11 @@ function generateTitleRow(martialName, magicName, content) {
     let rightColumn = createRightColumn();
 
     if (martialName != undefined) {
-        generateH3(martialName, leftColumn);
+        generateH4(martialName, leftColumn);
     }
 
     if (magicName != undefined) {
-        generateH3(magicName, rightColumn);
+        generateH4(magicName, rightColumn);
     }
 
     row.append(leftColumn);
@@ -207,6 +207,8 @@ function generateDescriptionRow(martialFeature, magicFeature, content) {
  *          Description: List of String
  */
 function generateOptions(options, column) {
+
+    console.log(options);
 
     for (const entry of options) {
         generateParagraphsFromListIfNotUndefinedWithHeader(entry, column);
@@ -257,6 +259,20 @@ function generateH2IfNotUndefined(title, content) {
 
 function generateH3(title, content) {
     content.append(createH3(title));
+}
+
+function generateH4(title, content) {
+    content.append(createH4(title));
+}
+
+function createH4(title) {
+
+    let h4 = $("<h4>");
+
+    h4.addClass("text-center");
+    h4.text(title);
+
+    return h4;
 }
 
 function generateParagraphsFromListWithHeader(list, content, header) {
