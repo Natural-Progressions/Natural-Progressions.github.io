@@ -111,7 +111,7 @@ function generateBodyRowWithHeader(martialText, magicText, content, header) {
     let rightColumn = createRightColumn();
 
     generateParagraphIfNotUndefinedWithHeader(martialText, leftColumn, header);
-    generateParagraphIfNotUndefinedWithHeader(martialText, rightColumn, header);
+    generateParagraphIfNotUndefinedWithHeader(magicText, rightColumn, header);
 
     row.append(leftColumn);
     row.append(rightColumn);
