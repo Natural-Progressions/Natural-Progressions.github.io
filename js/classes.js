@@ -91,11 +91,11 @@ function generateHeaderRow(martialName, magicName, content) {
     let rightColumn = createRightColumn();
 
     if (martialName != undefined) {
-        leftColumn.append(createH2(martialName));
+        leftColumn.append(createH2(martialName + " (Martial)"));
     }
 
     if (magicName != undefined) {
-        rightColumn.append(createH2(magicName));
+        rightColumn.append(createH2(magicName) + " (Magic)");
     }
 
     row.append(leftColumn);
@@ -152,7 +152,7 @@ function generateFeaturesTable(martialFeatures, magicFeatures, content) {
 
 function generateFeaturesTable(featureList, column) {
 
-    if (martialFeatures == undefined && magicFeatures == undefined) {
+    if (featureList == undefined) {
         return;
     }
 
