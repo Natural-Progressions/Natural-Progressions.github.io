@@ -125,9 +125,6 @@ function generateListBodyRowWithHeader(martialList, magicList, content, header) 
     let leftColumn = createLeftColumn();
     let rightColumn = createRightColumn();
 
-    console.log(martialList);
-    console.log(magicList);
-
     generateParagraphsFromListIfNotUndefinedWithHeader(martialList, leftColumn, header);
     generateParagraphsFromListIfNotUndefinedWithHeader(magicList, rightColumn, header);
 
@@ -268,7 +265,7 @@ function generateParagraphsFromListWithHeader(list, content, header) {
         if (i == 0) {
             generateParagraphIfNotUndefinedWithHeader(list.at(i), content, header);
         } else {
-            generateParagraph(paragraph, content);
+            generateParagraph(list.at(i), content);
         }
     }
 }
