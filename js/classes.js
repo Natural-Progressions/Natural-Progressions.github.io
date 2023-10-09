@@ -158,7 +158,7 @@ function generateFeaturesTable(featureList, column) {
 
     let table = createTable();
 
-    generateHeaderRow(table);
+    generateTableHeaderRow(table);
 
     let tbody = $("<tbody>");
 
@@ -182,7 +182,7 @@ function createTable() {
     return table;
 }
 
-function generateHeaderRow(table) {
+function generateTableHeaderRow(table) {
 
     let thead = $("<thead>");
     let tr = $("<tr>");
