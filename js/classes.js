@@ -125,8 +125,11 @@ function generateListBodyRowWithHeader(martialList, magicList, content, header) 
     let leftColumn = createLeftColumn();
     let rightColumn = createRightColumn();
 
-    generateParagraphsFromListIfNotUndefinedWithHeader(martialList, leftColumn);
-    generateParagraphsFromListIfNotUndefinedWithHeader(magicList, rightColumn);
+    console.log(martialList);
+    console.log(magicList);
+
+    generateParagraphsFromListIfNotUndefinedWithHeader(martialList, leftColumn, header);
+    generateParagraphsFromListIfNotUndefinedWithHeader(magicList, rightColumn, header);
 
     row.append(leftColumn);
     row.append(rightColumn);
