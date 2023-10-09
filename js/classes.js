@@ -72,7 +72,7 @@ function generateArchetypes(martialArchetype, magicArchetype, content) {
     generateBodyRowWithHeader(martialArchetype["Starting Equipment"], magicArchetype["Starting Equipment"], content, "Starting Equipment");
     generateBodyRowWithHeader(martialArchetype["Primary Spellcasting Skill"], magicArchetype["Primary Spellcasting Skill"], content, "Primary Spellcasting Skill");
     generateListBodyRowWithHeader(martialArchetype["Number of Spells Known"], magicArchetype["Number of Spells Known"], content, "Number of Spells Known");
-    // TODO: Generate table
+    generateFeaturesTable(martialArchetype["Features"], magicArchetype["Features"], content)
     generateFeatures(martialArchetype["Features"], magicArchetype["Features"], content);
 }
 
@@ -134,6 +134,91 @@ function generateListBodyRowWithHeader(martialList, magicList, content, header) 
     content.append(row);
 }
 
+function generateFeaturesTable(martialFeatures, magicFeatures, content) {
+
+    let row = createRow();
+    let leftColumn = createLeftColumn();
+    let rightColumn = createRightColumn();
+
+    generateFeaturesTable(martialFeatures, leftColumn);
+    generateFeaturesTable(magicFeatures, rightColumn);
+
+    row.append(leftColumn);
+    row.append(rightColumn);
+
+    content.append(row);
+
+}
+
+function generateFeaturesTable(featureList, column) {
+
+    if (martialFeatures == undefined && magicFeatures == undefined) {
+        return;
+    }
+
+    let table = createTable();
+
+    generateHeaderRow(table);
+
+    let tbody = $("<tbody>");
+
+    for (let i = 0; i < featureList.length; i++) {
+        addRow(featureList.at(i), tbody, i + 1);
+    }
+
+    table.append(tbody);
+
+    column.append(table);
+}
+
+function createTable() {
+
+    let table = $("<table>");
+
+    table.addClass("table");
+    table.addClass("table-striped");
+    table.addClass("table-hover");
+
+    return table;
+}
+
+function generateHeaderRow(table) {
+
+    let thead = $("<thead>");
+    let tr = $("<tr>");
+
+    let th1 = $("<th>");
+    th1.attr("scope", "col");
+    th1.text("Level");
+
+    let th2 = $("<th>");
+    th2.attr("scope", "col");
+    th2.text("Feature Gained");
+
+    tr.append(th1);
+    tr.append(th2);
+
+    thead.append(tr);
+
+    table.append(thead);
+}
+
+function addRow(feature, tbody, level) {
+
+    let tr = $("<tr>");
+
+    let td1 = $("<td>");
+    td1.text(level);
+
+    let td2 = $("<td>");
+    td2.text(feature["Name"]);
+
+    tr.append(td1);
+    tr.append(td2);
+
+    tbody.append(tr);
+}
+
 function generateFeatures(martialFeatures, magicFeatures, content) {
 
     if (martialFeatures == undefined && magicFeatures == undefined) {
@@ -146,7 +231,7 @@ function generateFeatures(martialFeatures, magicFeatures, content) {
 
     /* We want to go with the max size to make sure that every feature gets  displayed. generateFeature will be handle undefined being passed */
     for (let i = 0; i < Math.max(martialFeatures.length, magicFeatures.length); i++) {
-        generateFeature(martialFeatures.at(i), magicFeatures.at(i), content);
+        generateFeature(martialFeatures.at(i), magicFeatures.at(i), content, i);
     }
 }
 
@@ -156,17 +241,22 @@ function generateFeatures(martialFeatures, magicFeatures, content) {
  *      Description: List of String
  *      Options: List of Objects
  */
-function generateFeature(martialFeature, magicFeature, content) {
+function generateFeature(martialFeature, magicFeature, content, index) {
 
-    generateTitleRow(martialFeature["Name"], magicFeature["Name"], content);
+    generateTitleRow(martialFeature["Name"], magicFeature["Name"], content, index);
     generateDescriptionRow(martialFeature, magicFeature, content);
 }
 
-function generateTitleRow(martialName, magicName, content) {
+function generateTitleRow(martialName, magicName, content, index) {
 
     let row = createRow();
     let leftColumn = createLeftColumn();
     let rightColumn = createRightColumn();
+
+    if (index != 0) {
+        generateHR(leftColumn);
+        generateHR(rightColumn);
+    }
 
     if (martialName != undefined) {
         generateH4(martialName, leftColumn);
