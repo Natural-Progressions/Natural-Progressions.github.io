@@ -217,15 +217,9 @@
                 "Features": [
                     {
                         "Name": "Inspiration",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": [
-                                    "At the first level, you are able to inspire your allies with your theatrics. You have a number of Inspiration Die (d4) equal to your levels in Entertainer. Once per round, you are able to give this inspiration to your allies, allowing them to an extra d4 on any attack, skill check or saving throw.",
-                                    "You can give this inspiration after the role has been made, but before you know the outcome. The player must immediately use this Inspiration Die. You regain all spent Inspiration Die upon completion of a rest."
-                                ]
-                            }
+                        "Description": [
+                            "At the first level, you are able to inspire your allies with your theatrics. You have a number of Inspiration Die (d4) equal to your levels in Entertainer. Once per round, you are able to give this inspiration to your allies, allowing them to an extra d4 on any attack, skill check or saving throw.",
+                            "You can give this inspiration after the role has been made, but before you know the outcome. The player must immediately use this Inspiration Die. You regain all spent Inspiration Die upon completion of a rest."
                         ]
                     },
                     {
@@ -283,7 +277,7 @@
                         "Name": "Expertise",
                         "Description": [
                             "At the ninth level, your skills with one ability become quite honed. Choose one of the following skills:",
-                            "<b>Acrobatics</b>, <b>Tradition/b> (one specific tradition skill), <b>Insight/b>, <b>Deception/b>, <b>Intimidation/b>, <b>Performance/b>, <b>Persuasion/b>",
+                            "<b>Acrobatics</b>, <b>Tradition</b> (one specific tradition skill), <b>Insight</b>, <b>Deception</b>, <b>Intimidation</b>, <b>Performance</b>, <b>Persuasion</b>",
                             "For the chosen skills, any roll below a 11 (before modifiers are applied) is treated as a 11 (before modifiers). Additionally, your passive checks for this skill become as if you rolled a natural 11, and are now calculated as 11 + primary ability modifier + skill modifier + other modifiers"
                         ]
                     },

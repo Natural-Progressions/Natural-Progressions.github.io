@@ -303,7 +303,8 @@ function generateOptions(options, column) {
     }
 
     for (const entry of options) {
-        generateParagraphsFromListIfNotUndefinedWithHeader(entry, column);
+        console.log(entry);
+        generateParagraphsFromListIfNotUndefinedWithHeader(entry["Description"], column, entry["Name"]);
     }
 }
 
