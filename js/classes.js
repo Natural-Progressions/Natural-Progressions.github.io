@@ -72,7 +72,7 @@ function generateArchetypes(martialArchetype, magicArchetype, content) {
     generateBodyRowWithHeader(martialArchetype["Starting Equipment"], magicArchetype["Starting Equipment"], content, "Starting Equipment");
     generateBodyRowWithHeader(martialArchetype["Primary Spellcasting Skill"], magicArchetype["Primary Spellcasting Skill"], content, "Primary Spellcasting Skill");
     generateListBodyRowWithHeader(martialArchetype["Number of Spells Known"], magicArchetype["Number of Spells Known"], content, "Number of Spells Known");
-    generateFeaturesTable(martialArchetype["Features"], magicArchetype["Features"], content)
+    generateFeaturesTables(martialArchetype["Features"], magicArchetype["Features"], content)
     generateFeatures(martialArchetype["Features"], magicArchetype["Features"], content);
 }
 
@@ -95,7 +95,7 @@ function generateHeaderRow(martialName, magicName, content) {
     }
 
     if (magicName != undefined) {
-        rightColumn.append(createH2(magicName) + " (Magic)");
+        rightColumn.append(createH2(magicName + " (Magic)"));
     }
 
     row.append(leftColumn);
@@ -134,7 +134,7 @@ function generateListBodyRowWithHeader(martialList, magicList, content, header) 
     content.append(row);
 }
 
-function generateFeaturesTable(martialFeatures, magicFeatures, content) {
+function generateFeaturesTables(martialFeatures, magicFeatures, content) {
 
     let row = createRow();
     let leftColumn = createLeftColumn();
