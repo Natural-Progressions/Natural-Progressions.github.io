@@ -737,7 +737,7 @@
             }
         },
         {
-            "Name": "Name",
+            "Name": "Novitiate",
             "Description": "",
             "Martial Archetype": {
                 "Name": "Name",
@@ -786,7 +786,7 @@
             }
         },
         {
-            "Name": "Name",
+            "Name": "Outcast",
             "Description": "",
             "Martial Archetype": {
                 "Name": "Name",
@@ -835,56 +835,7 @@
             }
         },
         {
-            "Name": "Name",
-            "Description": "",
-            "Martial Archetype": {
-                "Name": "Name",
-                "Skill Modifier Bonuses": "Bonuses",
-                "Tool Modifier Bonuses": "Bonuses",
-                "Weapon Modifier Bonuses": "Bonuses",
-                "Armor Training": "Training",
-                "Shield Training": "Training",
-                "Starting Equipment": "Equipment",
-                "Features": [
-                    {
-                        "Name": "Name",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
-                        ]
-                    }
-                ]
-            },
-            "Magic Archetype": {
-                "Name": "Name",
-                "Skill Modifier Bonuses": "Bonuses",
-                "Tool Modifier Bonuses": "Bonuses",
-                "Weapon Modifier Bonuses": "Bonuses",
-                "Spellcasting Modifier Bonuses": "Bonuses",
-                "Armor Training": "Training",
-                "Shield Training": "Training",
-                "Starting Equipment": "Equipment",
-                "Primary Spellcasting Skill": "",
-                "Number of Spells Known": [],
-                "Features": [
-                    {
-                        "Name": "Name",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "Name": "Name",
+            "Name": "War Priest",
             "Description": "",
             "Martial Archetype": {
                 "Name": "Name",
