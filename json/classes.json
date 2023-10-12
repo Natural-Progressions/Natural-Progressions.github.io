@@ -738,18 +738,24 @@
         },
         {
             "Name": "Novitiate",
-            "Description": "",
+            "Description": "Some people undergo formal training to excel in abilities useful to adventurers. These Novitiates all have all attended a school or camp which has honed these skills.",
             "Martial Archetype": {
-                "Name": "Name",
-                "Skill Modifier Bonuses": "Bonuses",
-                "Tool Modifier Bonuses": "Bonuses",
-                "Weapon Modifier Bonuses": "Bonuses",
-                "Armor Training": "Training",
-                "Shield Training": "Training",
-                "Starting Equipment": "Equipment",
+                "Name": "Fighter",
+                "Skill Modifier Bonuses": "You gain as +1 increase to the skill modifier of 3 of the following skills. You cannot choose any skill more than once. <b>Athletics</b>, <b>Constitution</b>, <b>Endurance</b>, <b>Intimidation</b>, <b>Medicine</b>, <b>Mental Fortitude</b>, <b>Perception</b>, <b>Reflex</b>, <b>Stealth</b>",
+                "Tool Modifier Bonuses": "None",
+                "Weapon Modifier Bonuses": "You gain a +2 weapon bonus to any 3 weapon groups and a +1 weapon bonus to all others. You cannot choose the same weapon group more than once.",
+                "Armor Training": "You are trained with <b>all</b> armor types",
+                "Shield Training": "You are trained with <b>Shields</b>",
+                "Starting Equipment": "5d4 * 10 gold to spend on your starting equipment",
                 "Features": [
                     {
-                        "Name": "Name",
+                        "Name": "Second Wind",
+                        "Description": [
+                            "At the first level, once per combat, you are able to redouble your efforts and gain temporary hitpoints equal to your number of levels in Fighter. Any temporary hit points leftover are lost after combat."
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
                         "Description": [],
                         "Options": [
                             {
@@ -757,29 +763,401 @@
                                 "Description": []
                             }
                         ]
-                    }
-                ]
-            },
-            "Magic Archetype": {
-                "Name": "Name",
-                "Skill Modifier Bonuses": "Bonuses",
-                "Tool Modifier Bonuses": "Bonuses",
-                "Weapon Modifier Bonuses": "Bonuses",
-                "Spellcasting Modifier Bonuses": "Bonuses",
-                "Armor Training": "Training",
-                "Shield Training": "Training",
-                "Starting Equipment": "Equipment",
-                "Primary Spellcasting Skill": "",
-                "Number of Spells Known": [],
-                "Features": [
+                    },
                     {
-                        "Name": "Name",
+                        "Name": "Combat Agility",
+                        "Description": [
+                            "At the third level, your speed allows you to perform some actions more quickly. You use your ability action to take the Dash, Disengage, Dodge or Hide actions."
+                        ]
+                    },
+                    {
+                        "Name": "Enhanced Fighting Style",
+                        "Description": [
+                            "At the fourth level, your fighting style has improved, and you have gained new abilities related to <b>Fighting Style</b> at two levels in the Martial archetype."
+                        ],
+                        "Options": [
+                            {
+                                "Name": "Ambush",
+                                "Description": [
+                                    "You gain advantage when attempting to hide from an enemy that is currently engaged against another foe, whether it’s a party member or NPC. Additionally, your extra damage when attacking a foe who does not know you are present increases to 2d6."
+                                ]
+                            },
+                            {
+                                "Name": "Archery",
+                                "Description": [
+                                    "You gain the ability to focus on your target. You can use your movement (you cannot move at all for the round of combat) to gain advantage on your next attack. Additionally, your bonus to attack rolls for ranged weapons increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Blind Fighting",
+                                "Description": [
+                                    "Your Blindsight increases to a range of 15 ft, and you roll with advantage when detecting creatures within range of your Blindsight."
+                                ]
+                            },
+                            {
+                                "Name": "Defense",
+                                "Description": [
+                                    "You gain the ability to extend your protection to allies within 5 ft of you. While wielding a melee weapon, you are able to use your reaction to extend your weapon bonus to your armor class to an ally within 5 ft of you. While wielding a shield, you are able to use your reaction to add your shield bonus to your armor class to an ally’s armor class. Additionally, your weapon bonus to your armor class increase by +2 while wielding a melee weapon."
+                                ]
+                            },
+                            {
+                                "Name": "Dual Wielding",
+                                "Description": [
+                                    "You are able to add your weapon ability modifier to the damage of your offhand weapon or to the second attack of a double-ended weapon. Additionally, your attack bonus to all double-ended weapons and when wielding multiple weapons increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Dueling",
+                                "Description": [
+                                    "When you are wielding a melee weapon in one hand and no other weapons, your attacks deal an extra 1d4 damage. Additionally, your attack bonus when wielding a melee weapon in one hand and no other weapons increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Great Weapon Fighting",
+                                "Description": [
+                                    "While wielding a weapon in two hands, you can reroll your damage rolls and take the higher sum. Additionally, your attack bonus for while using a weapon with 2 hands increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Thrown Weapon Fighting",
+                                "Description": [
+                                    "Your precision has increased that you are able to ignore Half Cover when throwing a weapon. Additionally, your attack bonus while using thrown weapons increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Unarmed Fighting",
+                                "Description": [
+                                    "Your weapon die for unarmed strikes increases by one level (1d4 becomes 1d6, 1d12 becomes 2d8). Additionally, your attack bonuses for unarmed strikes increases to +2."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
                         "Description": [],
                         "Options": [
                             {
                                 "Name": "Name",
                                 "Description": []
                             }
+                        ]
+                    },
+                    {
+                        "Name": "Second Fighting Style",
+                        "Description": [
+                            "At the sixth level, you gain a second fighting style as presented at in the Level 2 Martial ability. You cannot choose the same fighting style twice. At your LM’s discretion, you can change your chosen secondary fighting style upon finishing a rest."
+                        ]
+                    },
+                    {
+                        "Name": "Action Surge",
+                        "Description": [
+                            "At the seventh level, once per rest, you can make an additional action during one round of combat."
+                        ]
+                    },
+                    {
+                        "Name": "Advanced Fighting Style",
+                        "Description": [
+                            "At the eighth level, your primary fighting style has improved even more, allowing for greater benefits."
+                        ],
+                        "Options": [
+                            {
+                                "Name": "Ambush",
+                                "Description": [
+                                    "You have an uncanny sense of how to hide and perform deadly strikes. You gain advantage on initiative rolls when ambushing, and your crit range increases by 2 when your opponent doesn’t know you are present. This bonus will generally mean your crit range is 18 - 20, but this range increase does stack with other range increases. Additionally, your extra damage when attacking a foe who does not know you are present increases to 3d6."
+                                ]
+                            },
+                            {
+                                "Name": "Archery",
+                                "Description": [
+                                    "You have become a master marksman and no longer have disadvantage when a foe is within 5 feet of you. Additionally, your attack bonus with ranged weapons increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Blind Fighting",
+                                "Description": [
+                                    "Your Blindsight increases to 25 ft, and you cannot be surprised by creatures within range of your Blindsight. Additionally, if combat starts from a creature within 25 ft of your Blindsight, you gain advantage on the initiative roll."
+                                ]
+                            },
+                            {
+                                "Name": "Defense",
+                                "Description": [
+                                    "Assuming you have the movement remaining to reach you ally, when you use your reaction to extend your weapon bonus to your armor class or to extend your shield bonus to your armor class, you are able to move to protect the ally. As part of this reaction, you are able to impose disadvantage against one attack against this ally for this round of combat. Additionally, your weapon bonus to your armor class increases to +3 while wielding a melee weapon."
+                                ]
+                            },
+                            {
+                                "Name": "Dual Wielding",
+                                "Description": [
+                                    "If you have an Extra Attack class feature, you gain an extra attack while wielding two melee weapons or a double-ended weapon. This does mean that if you have the Extra Attack (2) class feature, you would be able to make 5 attacks in one round of combat (1 from taking the attack action, 2 from Extra Attack (2), 1 from Advanged Duel Wielding, 1 from offhand attacking with your ability action). Additionally, your attack bonus to all double-ended weapons and when wielding multiple weapons increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Dueling",
+                                "Description": [
+                                    "While wielding a weapon in one hand and no other weapons, your weapon gains the deflect ability. If your weapon already has the Deflect property, roll an additional d4 to the damage deflected. If your deflect reduces the damage to 0, assuming the enemy is within your melee weapon range, you can make a melee attack against your opponent as part of your Deflect reaction. Additionally, your attack bonus when wielding a melee weapon in one hand and no other weapons increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Great Weapon Fighting",
+                                "Description": [
+                                    "Your weapon sweeps have become fast enough that when the intended target is able to avoid your attack, you are occasionally able to hit a second target within the arc of your sweep. When you are wielding a weapon with both hands, miss an attack, and there is a second enemy within melee attack range of you that’s adjacent to your original target, you may choose to make an attack with disadvantage against this second enemy. In addition, your attack bonus for while using a weapon with 2 hands increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Thrown Weapon Fighting",
+                                "Description": [
+                                    "Your attack bonus while using thrown weapons increases to +3. You can choose to forgo this increase to your attack bonus for an extra +6 damage upon a hit."
+                                ]
+                            },
+                            {
+                                "Name": "Unarmed Fighting",
+                                "Description": [
+                                    "Your fists become a flurry of blows. In conjuncture with the Unarmed Strike Master Ability, when you choose to use your ability action to make an attack, you can make two attacks instead of one during this ability action. If you do not have the Unarmed Strike Master Ability, you can make one Unarmed Strike attack as an Ability Action.",
+                                    "Additionally, your attack bonuses for unarmed strikes increases to +3."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Uncanny Dodge",
+                        "Description": [
+                            "At the ninth level, you can nimbly dodge out of the way of an effect. When you are subjected to a Reflex Saving Throw to avoid damage, if you succeed, you take no damage. Additionally, if you fail, you only take half damage."
+                        ]
+                    },
+                    {
+                        "Name": "Indomitable",
+                        "Description": [
+                            "At the tenth level, once per rest, when you fail a Saving Throw, you can choose to succeed."
+                        ]
+                    },
+                    {
+                        "Name": "Extra Attack (2)",
+                        "Description": [
+                            "At the eleventh level, when you take the attack action, you can make three attacks as part of one action. This ability does not stack with another “Extra Attack” class ability."
+                        ]
+                    }
+                ]
+            },
+            "Magic Archetype": {
+                "Name": "Wizard",
+                "Skill Modifier Bonuses": "You gain a +2 modifier to <b>Arcana</b>, and a +1 increase to the skill modifier of 2 of the following skills. You cannot choose any skill more than once. <b>History</b>, <b>Mental Fortitude</b>, <b>Reflex</b>, <b>Riddle</b>, <b>Tradition</b> (of your choice)",
+                "Tool Modifier Bonuses": "None",
+                "Weapon Modifier Bonuses": "None",
+                "Spellcasting Modifier Bonuses": "You gain a +2 modifier increase to any 3 schools of magic, and an additional +1 modifier to all others",
+                "Armor Training": "None",
+                "Shield Training": "You are not trained with <b>Shields</b>",
+                "Starting Equipment": "5d4 * 10 gold to spend on your starting equipment",
+                "Primary Spellcasting Skill": "<b>Arcana</b>",
+                "Number of Spells Known": [
+                    "At the first level, you know 5 + your <b>Arcana</b> Modifier spells.",
+                    "Upon a level up, you learn 2 spells. Whenever your <b>Arcana</b> Modifier increases, you learn an additional spell."
+                ],
+                "Features": [
+                    {
+                        "Name": "Ritual Casting",
+                        "Description": [
+                            "At the first level, you can cast any spell with a normal casting time of 1 hour or less as a ritual. Spells cast in this manner cost no mana to cast, but take 10x longer to cast. Spells with a casting time of an Ability Action or a Reaction can be cast in this manner with a casting time of 1 minute."
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Magical Spellbook",
+                        "Description": [
+                            "At the third level, your usage of your spellbook has extended from just a repository of spells; you have formed a magical connection with your book. While you are holding your spellbook, the book functions as your spellcasting focus.",
+                            "Additionally, if you ever lose your spellbook or have it stolen, you are able to magically teleport your book back into your possession with an Ability Action wave of your hand. Your and your spellbook must be on the same plane of existance for the teleportation to work. This ability is considered an unnamed Conjuration spell.",
+                            "Finally, if your spellbook is ever destroyed, you can magically recreate your spellbook by expending mana equal to the number of levels in Magic archetypes over the course of a minute. Your spellbook will be the same as it was before it was destroyed. This ability is considered an unnamed Transmutation spell."
+                        ]
+                    },
+                    {
+                        "Name": "Enhanced Spellcasting Specialization",
+                        "Description": [
+                            "At the fourth level, your knowledge of your choosen school of magic increases. You have gained new abilities related to the school of magic specialization chosen at the second level."
+                        ],
+                        "Options": [
+                            {
+                                "Name": "Abjuration",
+                                "Description": [
+                                    "Your studies into Abjuration magic allows you to redirect some of the magic into the spell back to yourself. Once per rest, when you cast an Abjuration spell, you can pull a strand of the magic and surround yourself with it, giving you temporary hit points equal to your Abjuration spell modifier.",
+                                    "Additionally, your bonus to your Abjuration Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Conjuration",
+                                "Description": [
+                                    "Your studies into Conjuration magic allow you to better teleport. Once per rest, you can teleport up to 30 feet to an unoccupied space you can see.",
+                                    "Additionally, your bonus to your Conjuration Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Divination",
+                                "Description": [
+                                    "Your ability to see beyond begins to manifest physically. You gain Darkvision with a range of 60 feet. If you already have Darkvision, the range expands by 60 feet.",
+                                    "Additionally, your bonus to your Divination Spell Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Enchantment",
+                                "Description": [
+                                    "Your knowledge of Enchantment magic allows you to subtlely shift the direction it flows. Once per rest when you cast an Enchantment spell that targets one creature, you can make the spell target 2 creatures.",
+                                    "Additionally, your bonus to your Enchantment Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Evocation",
+                                "Description": [
+                                    "Your experience with Evocation magic allows you to sculpt Evocation spells you cast. Once per rest, when you cast an area of effect Evocation spell, you can make a number of pockets up to or equal to your Evocation Spellcasting Modifier within the spell’s range that are not affected by the spells effects.",
+                                    "Additionally, your bonus to your Evocation Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Illusion",
+                                "Description": [
+                                    "Your studies into Illusion magic make it your go-to solution. Once per rest when you are attacked, you can use your reaction to create an illusion of yourself just in front of yourself. The attacker will automatically hit this illusion, which dispels it.",
+                                    "Additionally, your bonus to your Illusion Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Malediction",
+                                "Description": [
+                                    "Your understanding of Malediction magic allows you to kick your enemies while they’re down. When you attack a creature affected by one of your Malediction spells, you deal extra damage equal to your Malediction Spellcasting Modifier.",
+                                    "Additionally, your bonus to your Malediction Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Necromancy",
+                                "Description": [
+                                    "Your studies into Necromancy magic have given you a better understanding of life forces and how to manipulate them to your benefit. Once per rest, when you kill a creature that is not an undead or a construct with a Necromancy spell, you regain hitpoints equal to your Necromancy Spellcasting Modifier (up to your hit points maximum).",
+                                    "Additionally, your bonus to your Necromancy Spellcasting Modifier increases to +2."
+                                ]
+                            },
+                            {
+                                "Name": "Transmutation",
+                                "Description": [
+                                    "Your studies into Transmutation magic have given you a better understanding of how magic flows. Once per rest, when you cast a Transmutation spell, you regain Mana equal to half of your Transmutation Spellcasting Bonus.",
+                                    "Additionally, your bonus to your Transmutation Spellcasting Modifier increases to +2."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Second Spellcasting Specialization",
+                        "Description": [
+                            "When you reach the sixth level, you gain a second school of magic specialization as presented in the level 2 magic archetype ability. You cannot choose the same specialization twice. At your LM’s discretion, you can change your chosen secondary school of magic specialization upon finishing a rest."
+                        ]
+                    },
+                    {
+                        "Name": "Scrivener",
+                        "Description": [
+                            "At the seventh level, your knowledge of magic allows you to create spell scrolls. In order to do so, you need to use Calligrapher’s Supplies and spend an hour writing the scroll and imbuing the scroll with magic. Make a Calligrapher’s Supplies Arcana check against a DC of 20 + the level of spell that you are attempting to apply to the scroll. Upon a success, your scroll has successfully been made. Upon a failure, the scrolls burns itself as if it had just been used.",
+                            "Regardless of the outcome of your check, you expend mana as if you had just cast the spell."
+                        ]
+                    },
+                    {
+                        "Name": "Advanced Spellcasting Specialization",
+                        "Description": [
+                            "At the eighth level, your focus has allowed you to delve more deeply. Your primary School of Magic Specialization (chosen at Level 2) benefits increases further."
+                        ],
+                        "Options": [
+                            {
+                                "Name": "Abjuration",
+                                "Description": [
+                                    "Your understanding of Abjuration magic allows you to better control the strands of magic you manipulate. You can use this ability twice per rest now, and you can choose any creature within 30 feet to be the target.",
+                                    "Additionally, your bonus to your Abjuration Spellcasting Modifier increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Conjuration",
+                                "Description": [
+                                    "Your mastery of Conjuration magic allows creatures you summon to be more durable. Any creature you summon gains temporary hit points equal to your Wizard level + your Conjuration Spellcasting Modifier.",
+                                    "Additionally, your bonus to your Conjuration Spellcasting Modifier increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Divination",
+                                "Description": [
+                                    "Your understanding of Divination magic allows you to catch glimpses into the future. Once per rest, roll a d20 and record the roll. You can replace one attack roll, saving throw, skill check or tool check made by yourself or a creature you can see with the number rolled on the dice. You must decide to use this roll prior to the creature making their roll. If you do not use this ability prior to a rest, the d20 roll you made is lost.",
+                                    "Additionally, your bonus to your Divination Spell Modifier increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Enchantment",
+                                "Description": [
+                                    "Your understanding of Enchantment magic has deepened to the point that you can affect a creature’s perception of the effects. When you can an Enchantment spell on a target, you change the creature’s understanding so they are unaware that you charmed them.",
+                                    "Additionally, your bonus to your Enchantment Spellcasting Modifier increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Evocation",
+                                "Description": [
+                                    "Your understanding of Evocation magic has become so strong that you can more effectively target your foes. When you cast an Evocation spell that deals damage, you can add your Evocation Spellcasting Modifier to the damage of the spell. If you cast an area of effect spell, only the target at the center of the spell takes this extra damage.",
+                                    "Additionally, your bonus to your Evocation Spellcasting Modifier increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Illusion",
+                                "Description": [
+                                    "Your understanding of Illusion magic allow you to create a stronger reactive illusion. When you use your reaction to create the illusion of yourself in front of your attacker, the attacker must make an attack roll against the illusion against an AC of 10 + your Illusion Spellcasting Modifier.",
+                                    "Upon a hit, the illusion fades as before. Upon a miss, the attacker must make a Perception Saving Throw against your Illusion Spellcasting DC. Upon a failure, they believe that the illusion is you. Should they attack you while they believe this illusion is you, they will attack the illusion until dispelled, or they pass their Perception Saving Throw.",
+                                    "Additionally, your bonus to your Illusion Spellcasting Modifier increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Malediction",
+                                "Description": [
+                                    "Your mastery of Malediction magic allows your curses to become even more potent. When you cast a Malediction spell that hits its target, or the target fails their saving throw, they take Force damage equal to your Malediction Spellcasting Modifier.",
+                                    "Additionally, your bonus to your Malediction Spellcasting Modifier increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Necromancy",
+                                "Description": [
+                                    "Your mastery of Necromancy magic allows you to create stronger undead. Any undead created by a spell you cast gain hitpoints equal to your Wizard level + your Necromancy Spellcasting Modifier, and they deal extra necrotic damage equal to half of your Necromancy Spellcasting Modifier.",
+                                    "Additionally, your bonus to your Necromancy Spellcasting Modifier increases to +3."
+                                ]
+                            },
+                            {
+                                "Name": "Transmutation",
+                                "Description": [
+                                    "Your mastery over Transmutation magic gives you the ability to mutate stone. Once per rest, you can attempt to turn a creature into stone, as if you had targeted it with the spell Petrication. Alternatively, you can attempt to cure a creature that is petrified. In order to cure the creature, you must pass a Transmutation check against the DC of the save that originally petrified your target.",
+                                    "Additionally, your bonus to your Transmutation Spellcasting Modifier increases to +3."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Arcane Concentration",
+                        "Description": [
+                            "At the ninth level, your understanding magic allows you to better control your magic in the middle of battle. You are able to add your Arcana modifier to Concentration checks."
+                        ]
+                    },
+                    {
+                        "Name": "Signature Spells",
+                        "Description": [
+                            "When your character reaches level ten, your specialization with your school of magic has further increased. Choose 6 spells whos School of Magic matches your primary Spellcasting Specialization - 1 level 3 spell, 2 level 2 spells, and 3 level 3 spells. For each of your chosen spells, the the first casting of each spell per rest is done without mana."
+                        ]
+                    },
+                    {
+                        "Name": "Power Surge",
+                        "Description": [
+                            "At the eleventh level, once per rest, you can cast a spell at 2x the mana cost. A spell cast in this manner will automatically hit, or the target(s) will automatically fail their saving throws, and any effects of this spell are maximized."
                         ]
                     }
                 ]
@@ -787,18 +1165,53 @@
         },
         {
             "Name": "Outcast",
-            "Description": "",
+            "Description": "Not everyone fits into society. Outcasts, whether through banishment or their own choices, live in the wild an utilize the land in order to survive.",
             "Martial Archetype": {
-                "Name": "Name",
-                "Skill Modifier Bonuses": "Bonuses",
-                "Tool Modifier Bonuses": "Bonuses",
-                "Weapon Modifier Bonuses": "Bonuses",
-                "Armor Training": "Training",
-                "Shield Training": "Training",
-                "Starting Equipment": "Equipment",
+                "Name": "Ranger",
+                "Skill Modifier Bonuses": " You gain a +2 modifier to the following skills: <b>Nature</b>, <b>Stealth</b>, <b>Survival</b>. You additionally gain a +1 modifier to 3 of the following skills: <b>Animal Handling</b>, <b>Athletics</b>, <b>Constitution</b>, <b>Endurance</b>, <b>Investigation</b>, <b>Medicine</b>, <b>Mental Fortitude</b>, <b>Perception</b>, <b>Reflex</b>",
+                "Tool Modifier Bonuses": "You gain a +2 modifier to 2 of the following tools: <b>Climber’s Kit</b>, <b>Cook’s Utensils</b>, <b>Fishing Equipment</b>, <b>Healer’s Kit</b>, <b>Herbalism Kit</b>, <b>Tinker’s Tools</b>.",
+                "Weapon Modifier Bonuses": "You gain a +2 weapon bonus to <b>Bows and Slings</b>. You additionally gain a +2 weapon bonus to any 2 weapon groups that is not <b>Bows and Slings</b>.",
+                "Armor Training": "You are trained in <b>Light</b> and <b>Medium armor</b>",
+                "Shield Training": "You are trained in <b>Shields</b>",
+                "Starting Equipment": "5d4 * 10 gold to spend on your starting equipment",
                 "Features": [
                     {
-                        "Name": "Name",
+                        "Name": "Known Lands",
+                        "Description": [
+                            "You are particularly familiar with one region. You gain advantage when making any check related to knowledge of your known lands.",
+                            "As your character explores and learns the terrain, fauna and flora of more regions, you gain more Known Lands. When this happens is up to your LM.",
+                            "While traveling for an hour or more in your known lands, you gain the following benefits:<ul><li>Difficult terrain doesn’t slow your group’s travel.</li><li>Your group can’t become lost except by magical means.</li><li>Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</li><li>If you are traveling alone, you can move stealthily at a normal pace.</li><li>When you forage, you find twice as much food as you normally would.</li><li></li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</ul>"
+                        ]
+                    },
+                    {
+                        "Name": "Hunter's Mark",
+                        "Description": [
+                            "At the second level, as an ability action, you take a moment to learn what you can about a target - what tracks they make, their size, how they move, and any weak spots that they appear to have.",
+                            "While a target is marked, you have advantage when tracking it. Additionally, any successful attack you make against the target while it is marked deals damage equal to your number of levels in the Ranger archetype.",
+                            "You can only have one target marked at a given time. If you take the time to mark a second target while your first target is still alive, the first target is no longer marked."
+                        ]
+                    },
+                    {
+                        "Name": "Primeval Awareness",
+                        "Description": [
+                            "At the third level, your time in the wild begins to shine. You always are on alert for potential danger and cannot be surprised.",
+                            "Additionally, when in terrain that has game of some kind, you are always able to hunt food and find water for yourself and your companions."
+                        ]
+                    },
+                    {
+                        "Name": "Animal Companion",
+                        "Description": [
+                            "At the fourth level, your bond with nature has strengthened to the point that you begin to understand bestial languages. While you may not be able to speak verbally to any given animal, you are able to accurately understand their body language, allowing you to forge bonds with creatures in the wild.",
+                            "You gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a beast that is no larger than Medium and that has a challenge rating of 1/4 or lower.",
+                            "For every level you go up, your animal companion’s Health increases by their Constitution modifier. This does mean that their health will increase by 4 * their Constitution modifier when you initially get them. Likewise, their weapon and skill modifiers will increase on a roll of a natural 20 like any other scalable roll. This increased modifier is only effective on the companion that it is rolled on. Should your companion die or leave, your new companion’s modifiers will be back to their initial ones.",
+                            "The beast obeys your commands as best as it can. It takes its turn on your initiative. On your turn, you can verbally command the beast where to move (no action required by you). You can use your ability action to verbally command it to take the Attack, Dash, Disengage, or Help action. Your beast will follow it as best as it can, and will keep following the command until a new one is given. If you don’t issue a command, or the beast completes your command, the beast takes the Dodge action.",
+                            "If you are incapacitated or absent, your beast companion acts on its own, focusing on protecting you and itself. It never requires your command to use its reaction, such as when making an opportunity attack.",
+                            "While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.",
+                            "If the beast dies, you can obtain another one by spending 8 hours bonding with another beast that isn’t hostile to you, either the same type of beast as before or a different one."
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
                         "Description": [],
                         "Options": [
                             {
@@ -806,29 +1219,160 @@
                                 "Description": []
                             }
                         ]
-                    }
-                ]
-            },
-            "Magic Archetype": {
-                "Name": "Name",
-                "Skill Modifier Bonuses": "Bonuses",
-                "Tool Modifier Bonuses": "Bonuses",
-                "Weapon Modifier Bonuses": "Bonuses",
-                "Spellcasting Modifier Bonuses": "Bonuses",
-                "Armor Training": "Training",
-                "Shield Training": "Training",
-                "Starting Equipment": "Equipment",
-                "Primary Spellcasting Skill": "",
-                "Number of Spells Known": [],
-                "Features": [
+                    },
                     {
-                        "Name": "Name",
+                        "Name": "TODO",
                         "Description": [],
                         "Options": [
                             {
                                 "Name": "Name",
                                 "Description": []
                             }
+                        ]
+                    },
+                    {
+                        "Name": "Favored Enemy",
+                        "Description": [
+                            "At the seventh level, you have significance experience studying, tracking, hunting, and even talking to a certain type of enemy.",
+                            "Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.",
+                            "You have advantage on any check to track or recall information about your favored enemies. Your exception knowledge of each enemy gives you insight into their weak spots. Any successful attack you make against them deals an extra 1d6 damage.",
+                            "For each enemy, your gain the ability to speak one standard language they speak, assuming they have a language.",
+                            "With the permission of your LM, you can change your favored enemies as your character and campaign evolves."
+                        ]
+                    },
+                    {
+                        "Name": "Pass Without Trace",
+                        "Description": [
+                            "At the eighth level, your time hunting begins to wear off on your companions.",
+                            "While in your known lands, you and your party automatically pass stealth checks. Outside of them, you and your party gain a +5 bonus to your roll. While in combat you can use your ability action to hide (but not your party unless they have an ability that allows them to hide as an ability action)."
+                        ]
+                    },
+                    {
+                        "Name": "Feral Senses",
+                        "Description": [
+                            "At the ninth level, your time in the wild has taught you to hone senses other than your eyes. You gain a blind sight of 30 feet. If you are Blinded and Deafened, this range is reduced to 10 feet."
+                        ]
+                    },
+                    {
+                        "Name": "Wild Warrior",
+                        "Description": [
+                            "At the tenth level, your extreme knowledge of the wild becomes evident in your actions. You gain the following effects:<ul><li>You gain a climbing speed of 20 feet. If you already have a climbing speed, it increases by an additional 20 feet.</li><li>You gain advantage on all initiative rolls.</li><li>While in the wild, your <b>Passive Stealth</b>, <b>Passive Nature</b> and <b>Passive Survival</b> becomes 11 + your skill modifier (rather than 1 + your skill modifier). Additionally, you cannot roll below an 11 for each of these 3 skills.</li></ul>"
+                        ]
+                    },
+                    {
+                        "Name": "Pack Tactics",
+                        "Description": [
+                            "At the eleventh level, your coordinate with your animal companion has increased tenfold. When you are attacking the same creature, you both gain advantage on your attacks."
+                        ]
+                    }
+                ]
+            },
+            "Magic Archetype": {
+                "Name": "Druid",
+                "Skill Modifier Bonuses": "You gain a +2 modifier to the following skills: <b>Nature</b>, <b>Stealth</b>, <b>Survival</b>. You additionally gain a +1 modifier to 3 of the following skills: <b>Animal Handling</b>, <b>Arcana</b>, <b>Investigation</b>, <b>Medicine</b>, <b>Mental Fortitude</b>, <b>Perception</b>, <b>Reflex</b>.",
+                "Tool Modifier Bonuses": "You gain a +2 modifier to 2 of the following tools: <b>Climber’s Kit</b>, <b>Cook’s Utensils</b>, <b>Fishing Equipment</b>, <b>Healer’s Kit</b>, <b>Herbalism Kit</b>, <b>Tinker’s Tools</b>",
+                "Weapon Modifier Bonuses": "You gain a +1 modifier to one of the following weapon groups: <b>Ambush Weapons</b>, <b>Bows and Slings</b>",
+                "Spellcasting Modifier Bonuses": "You gain a +2 modifier increase to two schools of magic of your choice, and an additional +1 modifier to 2 other schools of magic.",
+                "Armor Training": "You are trained in <b>Light</b> armor.",
+                "Shield Training": "You are not trained in <b>Shields</b>.",
+                "Starting Equipment": "5d4 * 10 gold to spend on your starting equipment.",
+                "Primary Spellcasting Skill": "<b>Nature</b>",
+                "Number of Spells Known": [
+                    "At the first level, you know 4 + your <b>Nature</b> modifier spells.",
+                    "Upon a level up, you learn 1 spell. Whenever your <b>Nature</b> modifier increases, you learn an additional spell."
+                ],
+                "Features": [
+                    {
+                        "Name": "Druidcraft",
+                        "Description": [
+                            "A basic spell all Druids learn, you create one of the following effects:<ul><li>You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.</li><li>You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.</li><li>You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.</li><You instantly light or snuff out a candle, a torch, or a small campfire.</li></ul>"
+                        ]
+                    },
+                    {
+                        "Name": "Wildshape",
+                        "Description": [
+                            "At the second level, you can use your action to magically assume the shape of a beast of up to CR 1/4 times your Druid level that you have encountered (minimum CR 1/2). You can use this ability a number of times equal to your Druid level per rest.",
+                            "You can stay in a beast shape for a number of hours equal to half your Druid level (minimum 1). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using an ability action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.",
+                            "While you are transformed, the following rules apply:<ul><li>Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and <b>Intelligence</b>, <b>Wisdom</b>, and <b>Charisma</b> based modifiers. If the creature has any legendary or lair actions, you can’t use them.</li><li>When you transform, you assume the beast’s hit points. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.</li><li>You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast.</li><li>You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can’t use any of your special senses, such as darkvision, unless your new form also has that sense.</li><li>You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the LM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.</li></ul>"
+                        ]
+                    },
+                    {
+                        "Name": "Natural Recovery",
+                        "Description": [
+                            "At the third level, you gain the ability to heal using salves created from an Herbalism kit. Make a DC 20 Herbalism Kit Medicine check. Upon a success, you magically mutate the natural healing of a salve that you have already created that can be rubbed onto a creature healing 1d8 + your Nature modifier. It takes 1 hour to mutate this salve."
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Wild Speak",
+                        "Description": [
+                            "At the sixth level, you gain one of the following benefits:"
+                        ],
+                        "Options": [
+                            {
+                                "Name": "Beast Speak",
+                                "Description": [
+                                    "You gain the ability to speak the language of each beast. The sounds of the words you say are magically trasmuted as you speak, sounding to all others as beastial sounds just like the creature you are attempting to speak to.",
+                                    "Many beasts are not able to hold intelligible conversations, but rather speak in short quick bursts, as their concentration changes. While conversing with a beast, the creature is not charmed by you, and may even believe you a threat."
+                                ]
+                            },
+                            {
+                                "Name": "Plant Sense",
+                                "Description": [
+                                    "You gain the ability to magically sense the recent major events that have affected a plant you touch. The term major event is localized to what would be a major event for the plant, such as getting stepped on by some game, or getting heated from a firebolt wizzing nearby."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Nature's Ward",
+                        "Description": [
+                            "When you reach seventh level, you cannot be charmed or frightened by creatures that resides in the wild, such as beasts or elementals, and you are immune to poison and disease. It is up to your LM to determine if a creature resides in the wild."
+                        ]
+                    },
+                    {
+                        "Name": "Beast Sense",
+                        "Description": [
+                            "At the eighth level, you gain the to see and hear through a willing beast. While perceiving through the beast’s senses, you gain the benefits of any special senses possessed by that creature, though you are blinded and deafened to your own surroundings."
+                        ]
+                    },
+                    {
+                        "Name": "Land's Stride",
+                        "Description": [
+                            "Starting at ninth level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
+                            "In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such as those created by the entangle spell."
+                        ]
+                    },
+                    {
+                        "Name": "Beast Spells",
+                        "Description": [
+                            "Beginning at tenth level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren’t able to provide material components."
+                        ]
+                    },
+                    {
+                        "Name": "Nature's Sanctuary",
+                        "Description": [
+                            "When you reach 11th level, creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or plant creature attacks you, that creature must make an <b>Insight Saving Throw</b> against your <b>Druid Spell Save DC</b>. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.",
+                            "The creature is aware of this effect before it makes its attack against you. This generally means that a beast will not attack you unless you threaten it."
                         ]
                     }
                 ]
@@ -836,18 +1380,56 @@
         },
         {
             "Name": "War Priest",
-            "Description": "",
+            "Description": "For many, religion plays a prominent role in their lives. War Priests take this to the next level, devoting their lives to their god(s) and religion.",
             "Martial Archetype": {
-                "Name": "Name",
-                "Skill Modifier Bonuses": "Bonuses",
-                "Tool Modifier Bonuses": "Bonuses",
-                "Weapon Modifier Bonuses": "Bonuses",
-                "Armor Training": "Training",
-                "Shield Training": "Training",
-                "Starting Equipment": "Equipment",
+                "Name": "Paladin",
+                "Skill Modifier Bonuses": "You gain a +2 bonus to <b>Tradition</b> (of your religion). You additionally gain as +1 increase to the skill modifier of 3 of the following skills. You cannot choose any skill more than once. <b>Athletics</b>, <b>Constitution</b>, <b>Endurance</b>, <b>Insight</b>, <b>Intimidation</b>, <b>Medicine</b>, <b>Mental Fortitude</b>, <b>Persuasion</b>, <b>Perception</b>, <b>Reflex</b>.",
+                "Tool Modifier Bonuses": "You gain a +2 bonus to <b>Healer’s Kit</b>.",
+                "Weapon Modifier Bonuses": "You gain a +2 weapon bonus to any 3 weapon groups. You cannot choose the same weapon group more than once.",
+                "Armor Training": "You are trained with <b>all</b> armor types",
+                "Shield Training": "You are trained with <b>Shields</b>.",
+                "Starting Equipment": "5d4 * 10 gold to spend on your starting equipment.",
                 "Features": [
                     {
-                        "Name": "Name",
+                        "Name": "Healing of the Faithful",
+                        "Description": [
+                            "At the first level, you remember your medic training. You always have bandages and other basic medical supplies with you. You have a pool of healing power that replenishes when you take a rest. With that pool, you can restore a total number of hit points equal to your paladin level × 5.",
+                            "As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.",
+                            "Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Healing of the Faithful, expending hit points separately for each one.",
+                            "This feature has no effect on undead and constructs."
+                        ]
+                    },
+                    {
+                        "Name": "Blessed Warrior",
+                        "Description": [
+                            "In the midst of combat, you feel like you get whispers from your god, directing you to the weak points on your opponent. Once per round, you can add an extra 1d4 to your attack roll. You can choose to use this ability after you have rolled, but before the LM informs you if you have hit."
+                        ]
+                    },
+                    {
+                        "Name": "Challenge of the Righteous",
+                        "Description": [
+                            "At the third level, your religious studies have taught you that in a challenge of the righteous and the sinful, the righteous will triumph. As an ability action, you issue a challenge that compels other creatures to do battle with you.",
+                            "Pick one creature within sight. They must make a <b>Mental Fortitude Saving Throw</b> against your <b>Tradition</b> (of your religion) or <b>Intimidation</b> check. On a failed save, a creature can’t willingly move away from you. Additionally, if the creature chooses to attack, they have disadvantage attacking anyone except you.",
+                            "You can only challenge one target a time - if you choose to challenge another creature while a second is currently under the effects of Challenge of the Righteous, all effects disappate. A creature can reroll the saving throw at the end of each of their turns.",
+                            "When used outside of combat, on a failed save, the target will still suffer the above affects, but they will also attempt to initiate a duel.",
+                            "This effect ends on the creature if you are incapacitated or die or if you lose sight of the creature."
+                        ]
+                    },
+                    {
+                        "Name": "Foresight of the Gods",
+                        "Description": [
+                            "At the fourth level, your connection with your god has grown stronger. When you take a rest, your dreams can take the form of powerful visions.",
+                            "These visions are flashes of individual moments in the near future, and are usually focused on one specific person or object."
+                        ],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
                         "Description": [],
                         "Options": [
                             {
@@ -855,29 +1437,232 @@
                                 "Description": []
                             }
                         ]
+                    },
+                    {
+                        "Name": "Aura of Leadership",
+                        "Description": [
+                            "At the sixth level, your religious teachings have given you insight into how to lead better. Choose one from the following auras:"
+                        ],
+                        "Options": [
+                            {
+                                "Name": "Aura of Protection",
+                                "Description": [
+                                    "Whenever you and a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to half of your Paladin level. You must be conscious to grant this bonus."
+                                ]
+                            },
+                            {
+                                "Name": "Aura of Alacrity",
+                                "Description": [
+                                    "Your presence invigorates your companaions, allowing them to push their bodies to farther limits. Your walking speed increases by 10 feet. In addition, if you aren’t incapacitated, the walking speed of any ally who starts their turn within 5 feet of you increases by 10 feet until the end of that turn."
+                                ]
+                            },
+                            {
+                                "Name": "Aura of Courage",
+                                "Description": [
+                                    "You and friendly creatures within 10 feet of you can’t be frightened while you are conscious."
+                                ]
+                            },
+                            {
+                                "Name": "Aura of Hate",
+                                "Description": [
+                                    "You and friendly creatures gain advantage when making a melee attack against an opponent affected by Challenge of the Righteous. On a hit, you deal extra damage equal to half of your Paladin level.",
+                                    "This burning hatred causes you and friendly creatures who use this ability to focus solely on the hated opponent, opening them up to strikes from other enemies. Attacks against you and friendly abilities using this ability gain advantage."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Divine Health",
+                        "Description": [
+                            "At the seventh level, the martial connection to your god makes your immune to disease and poison (damage)."
+                        ]
+                    },
+                    {
+                        "Name": "Fruit of the Spirit",
+                        "Description": [
+                            "At the eighth level, you begin to heavily display one of the standard tenents your religions follow. Choose one of the following “fruits”; it should fit with the beliefs of your religion and god."
+                        ],
+                        "Options": [
+                            {
+                                "Name": "Dread",
+                                "Description": [
+                                    "Your religion states that all should fear your god. Once per rest, you are able to display this dread to your enemies.",
+                                    "As shadows grow around you, make a <b>Performance</b> or <b>Tradition</b> (of your religion) check constested against a <b>Mental Fortitude Saving Throw</b> from each creature of your choice that you can see. On a failure, the creature becomes Frightened of you until they exit combat. They gain no extra chances to remove this condition while in combat."
+                                ]
+                            },
+                            {
+                                "Name": "Faithfulness",
+                                "Description": [
+                                    "Your religion holds that when you follow something, you should not waver in your beliefs. You gain advantage to <b>Mental Fortitude Checks</b>."
+                                ]
+                            },
+                            {
+                                "Name": "Joy",
+                                "Description": [
+                                    "Your religion believes that a person’s greatest happiness comes from their faith. You become immune to falling into despair or becoming Frightened. Allied creatures within 30 ft of you gain advantage to Saving Throws against becoming Frightened. Once per rest, you remember this joy, regaining hit points equal to twice your Paladin level.",
+                                    "If this total takes you over your maximum hit points, any extra hit points become temporary hit points. Any temporary hit points gained from this ability that are not lost during combat will be lost upon taking a rest."
+                                ]
+                            },
+                            {
+                                "Name": "Self Sacrifice",
+                                "Description": [
+                                    "Your religion holds that a love of others is the most important attribute of someone. Once per round, when an allied creature is targeted from an attack, you can interpose yourself between the attacker and your ally. The attack roll is then made against your Armor Class, and if the attack hits, you take the damage. You must interpose before the LM states the attack roll.",
+                                    "Additionally, you must have the movement range (subtracting movement already expended in this round of combat) to reach the point where you would interpose yourself. This ability does not count as a Reaction."
+                                ]
+                            },
+                            {
+                                "Name": "Suffering",
+                                "Description": [
+                                    "Your religion holds that people only grow from suffering. Even if the suffering is moments before death, your religious tenants state that a person can take the knowledged gained from the experience into their afterlife. As a follower of your religion, it is your duty to inflict that suffering. Your crit range increases by 1 - if you have no other modifiers to you crit range, it would be 19-20."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Relentless Avenger",
+                        "Description": [
+                            "At the ninth level, you feel anger and pain when your allies are attacked. As a reaction when an ally is attacked, you can immediately make an opportunity attack against this foe. You do not need to be adjacent to this enemy already, but they need to be within your movement range (subtracting movement already expended in this round of combat). The speed and ferocity of any movement you take as part of this reaction is too fast for opponents to make opportunity attacks."
+                        ]
+                    },
+                    {
+                        "Name": "Second Aura of Leadership",
+                        "Description": [
+                            "At the tenth level, you are able to choose another aura presented in the fourth level ability <b>Aura of Leadership</b>. You cannot take an aura more than once."
+                        ]
+                    },
+                    {
+                        "Name": "Chamption of the Gods",
+                        "Description": [
+                            "At the eleventh level, your martial prowess and dedication to your religious order has caught the eye of your god. The range of all auras you have increases to 30 feet, regardless of the original range, and you gain resistance to all non-magical damage.",
+                            "Your companions have also grabbed the attention of your god, as the Companions of the Champion. While they are within 30 feet of you, they gain advantage on both Death Saving Throws and Mental Fortitude Saving Throws."
+                        ]
                     }
                 ]
             },
             "Magic Archetype": {
-                "Name": "Name",
-                "Skill Modifier Bonuses": "Bonuses",
-                "Tool Modifier Bonuses": "Bonuses",
-                "Weapon Modifier Bonuses": "Bonuses",
-                "Spellcasting Modifier Bonuses": "Bonuses",
-                "Armor Training": "Training",
-                "Shield Training": "Training",
-                "Starting Equipment": "Equipment",
-                "Primary Spellcasting Skill": "",
-                "Number of Spells Known": [],
+                "Name": "Cleric",
+                "Skill Modifier Bonuses": "You gain a +2 bonus to <b>Tradition</b> (of your religion). You additionally gain as +1 increase to the skill modifier of 3 of the following skills. You cannot choose any skill more than once. <b>Insight</b>, <b>Intimidation</b>, <b>Medicine</b>, <b>Mental Fortitude</b>, <b>Persuasion</b>, <b>Perception</b>, <b>Reflex</b>.",
+                "Tool Modifier Bonuses": "You gain a +2 bonus to <b>Healer’s Kit</b>.",
+                "Weapon Modifier Bonuses": "You gain a +1 bonus to one weapon group of your choice.",
+                "Spellcasting Modifier Bonuses": "You gain a +2 modifier increase to two Schools of Magic of your choice, and an additional +1 modifier to 2 other schools of magic.",
+                "Armor Training": "You are trained with <b>Light</b> armor",
+                "Shield Training": "You are not trained with <b>Shields</b>",
+                "Starting Equipment": "5d4 * 10 gold to spend on your starting equipment",
+                "Primary Spellcasting Skill": "<b>Tradition</b> (of your religion)",
+                "Number of Spells Known": [
+                    "At the first level, you know 4 + your <b>Tradition</b> (of your religion) Modifier spells.",
+                    "Upon a level up, you learn 1 spell. Whenever your <b>Tradition</b> (of your religion) Modifier increases, you learn an additional spell."
+                ],
                 "Features": [
                     {
-                        "Name": "Name",
+                        "Name": "Thaumaturgy",
+                        "Description": [
+                            "At the first level, you can manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:",
+                            "<ul><li>Your voice booms up to three times as loud as normal for 1 minute.</li><li>You cause flames to flicker, brighten, dim, or change color for 1 minute.</li><li>You cause harmless tremors in the ground for 1 minute.</li><li>You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</li><li>You instantaneously cause an unlocked door or window to fly open or slam shut.</li><li>You alter the appearance of your eyes for 1 minute.</li></ul>",
+                            "If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
+                        ]
+                    },
+                    {
+                        "Name": "Disciple of Life",
+                        "Description": [
+                            "At the second level, your healing spells are more effective. Whenever you cast a spell to restore hit points to a creature, the creature regains additional hit points equal to 2 + your <b>Tradition</b> (of your religion) modifier"
+                        ]
+                    },
+                    {
+                        "Name": "Channel of Divinity",
+                        "Description": [
+                            "At the third level, you gain use of one of the Channel Divinities presented below; it should fit with the beliefs of your religion and god. You can use your Channel Divinity a number of times equal to half your Cleric level per rest."
+                        ],
+                        "Options": [
+                            {
+                                "Name": "Balm of Peace",
+                                "Description": [
+                                    "You can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore a number of hit points to that creature equal to 2d6 + your <b>Tradition</b> (of your religion) modifier. A creature can receive this healing only once whenever you take this action."
+                                ]
+                            },
+                            {
+                                "Name": "Knowledge of the Ages",
+                                "Description": [
+                                    "You can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you add +10 to checks or saving throws with that skill or tool."
+                                ]
+                            },
+                            {
+                                "Name": "Path to the Grave",
+                                "Description": [
+                                    "You can use your Channel Divinity to mark another creature’s life force for termination.",
+                                    "As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack’s damage, and then the curse ends."
+                                ]
+                            },
+                            {
+                                "Name": "Preserve Life",
+                                "Description": [
+                                    "You can use your Channel Divinity to heal the badly injured.",
+                                    "As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your Cleric level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can’t use this feature on an undead or a construct."
+                                ]
+                            },
+                            {
+                                "Name": "Touch of Death",
+                                "Description": [
+                                    "You can use Channel Divinity to destroy another creature’s life force by touch. When you creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage to the target. The damage equals 5 + twice your Cleric level."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
                         "Description": [],
                         "Options": [
                             {
                                 "Name": "Name",
                                 "Description": []
                             }
+                        ]
+                    },
+                    {
+                        "Name": "TODO",
+                        "Description": [],
+                        "Options": [
+                            {
+                                "Name": "Name",
+                                "Description": []
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Second Channel Divinity",
+                        "Description": [
+                            "At the sixth level, you gain a second Channel Divinity as presented in the third level ability “Channel Divinity”. You cannot choose the same Channel Divinity more than once."
+                        ]
+                    },
+                    {
+                        "Name": "Divine Smite",
+                        "Description": [
+                            "At the seventh level, when you hit a creature with a weapon attack, you can expend 2 Mana to deal an extra 1d8 radiant damage to the target."
+                        ]
+                    },
+                    {
+                        "Name": "Channel Divinity: Aura of Healing",
+                        "Description": [
+                            "As an action, you can expend one of your Channel Divinity usages to heal yourself and all friendly creatures within 30 feet of you. All affected creatures regain hit points equal to your <b>Tradition</b> (of your religion) modifier. This healing is not affected by Disciple of Life."
+                        ]
+                    },
+                    {
+                        "Name": "Spellcasting Smite",
+                        "Description": [
+                            "At the ninth level, your Divine Smite extends to your spell attacks. When you cast a spell that deals damage, you can expend 2 Mana to deal an extra 1d8 radiant damage to the target."
+                        ]
+                    },
+                    {
+                        "Name": "Supreme Healing",
+                        "Description": [
+                            "Starting at tenth level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12."
+                        ]
+                    },
+                    {
+                        "Name": "Divine Intervention",
+                        "Description": [
+                            "At the eleventh level, you can call on your deity to intervene on your behalf when your need is great.",
+                            "Imploring your deity’s aid requires you to use your action. Describe the assistance you seek. The LM chooses the nature of the intervention; the effect of any cleric spell or cleric feature would be appropriate. You can use this ability once per 7 days."
                         ]
                     }
                 ]
