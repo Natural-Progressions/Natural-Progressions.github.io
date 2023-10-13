@@ -66,7 +66,7 @@ function generateArchetypes(martialArchetype, magicArchetype, content) {
     generateBodyRowWithHeader(martialArchetype["Skill Modifier Bonuses"], magicArchetype["Skill Modifier Bonuses"], content, "Skill Modifier Bonuses");
     generateBodyRowWithHeader(martialArchetype["Tool Modifier Bonuses"], magicArchetype["Tool Modifier Bonuses"], content, "Tool Modifier Bonuses");
     generateBodyRowWithHeader(martialArchetype["Weapon Modifier Bonuses"], magicArchetype["Weapon Modifier Bonuses"], content, "Weapon Modifier Bonuses");
-    generateBodyRowWithHeader(martialArchetype["Spellcasting Modfier Bonuses"], magicArchetype["Spellcasting Modfier Bonuses"], content, "Spellcasting Modifier Bonuses");
+    generateBodyRowWithHeader(martialArchetype["Spellcasting Modifier Bonuses"], magicArchetype["Spellcasting Modifier Bonuses"], content, "Spellcasting Modifier Bonuses");
     generateBodyRowWithHeader(martialArchetype["Armor Training"], magicArchetype["Armor Training"], content, "Armor Training");
     generateBodyRowWithHeader(martialArchetype["Shield Training"], magicArchetype["Shield Training"], content, "Shield Training");
     generateBodyRowWithHeader(martialArchetype["Starting Equipment"], magicArchetype["Starting Equipment"], content, "Starting Equipment");
