@@ -115,7 +115,7 @@
                     {
                         "Name": "Magical Tinkering",
                         "Description": [
-                            "At first level, you learn how to invest a spark of magic into mundane objects. To use this ability, you must have thieves’ tools or artisan’s tools in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:",
+                            "At first level, you learn how to invest a spark of magic into mundane objects. You touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:",
                             "<ul><li>The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet.</li><li>Whenever tapped by a creature, the object emits a recorded message that can be heard up to 10 feet away. You utter the message when you bestow this property on the object, and the recording can be no more than 6 seconds long.</li><li>The object continuously emits your choice of an odor or a nonverbal sound (wind, waves, chirping, or the like). The chosen phenomenon is perceivable up to 10 feet away.</li><li>A static visual effect appears on one of the object’s surfaces. This effect can be a picture, up to 25 words of text, lines and shapes, or a mixture of these elements, as you like.</li></ul>",
                             "The chosen property lasts indefinitely. As an action, you can touch the object and end the property early.",
                             "You can bestow magic on multiple objects, touching one object each time you use this feature, though a single object can only bear one property at a time. The maximum number of objects you can affect with this feature at one time is equal to the number of levels in Artificier. If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies."
@@ -332,19 +332,17 @@
                 ],
                 "Features": [
                     {
-                        "Name": "Magical Performance",
+                        "Name": "Stagecraft",
                         "Description": [
-                            "At the first level, you are able to refresh your allies with your magical music. A number of times equal to your Bard level, you can perform a one minute tune, and all allies (yourself included) that can hear you gain temporary hitpoints equal to your Performance modifier."
+                            "At the first level, you learn a basic spell all Bards know. You create one of the following effects within 10 feet:",
+                            "<ul><li>You summon one harmless tiny beast, such as a dove or rabbit. The creature acts normally. It disappears when it is killed, when you dismiss it (no action required), when you use this ability again, or after one minute.</li><li>You change the color and style of one mundane article of clothing you are wearing.</li><li>You exhale harmless smoke or vapor in any shape no more than half a foot (15cm) on a side.</li><li>You touch your face to instantly clean it and restore your makeup. The makeup cannot conceal your identity, and is obviously illusory if inspected very closely. It may otherwise be as outlandish or as simple as you choose. Your hair is also cleaned and resheveled.</li><li>You touch a musical instrument and cause it to play a rhythmic accompaniment. The rhythm it plays must repeat every six seconds. As a bonus action, you can change the rhythm or have it play a quick flourish, after which it returns to its earlier rhythm. The instrument stops playing if you use this ability again, if you end this effect (no action required), or after 10 minutes.</li><li>You amplify your voice or the voice of a willing creature you touch up to three times its regular volume. This effect lasts up to one minute with concentration.</li></ul>",
+                            "You can have only 3 effects lasting longer than one action occurring at once. If you already have 3 effects lasting longer than one action running and attempt to cast a fourth, the first effect is dismissed. You can dismiss any ongoing effect as an action."
                         ]
                     },
                     {
-                        "Name": "TODO",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
+                        "Name": "Magical Performance",
+                        "Description": [
+                            "At the second level, you are able to refresh your allies with your magical music. A number of times equal to your Bard level, you can perform a one minute tune, and all allies (yourself included) that can hear you gain temporary hitpoints equal to your Performance modifier."
                         ]
                     },
                     {
@@ -599,11 +597,14 @@
                                     "Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren’t wearing armor, your skin provides a +1 armor bonus to your AC."
                                 ]
                             },
-                            
                             {
                                 "Name": "Elemental",
                                 "Description": [
-                                    "Your bloodline has elemental influences within it. Choose one of the basic elements: Air, Earth, Fire or Water.\n\t<b>Air</b>You learn the Gust spell, and it does not count towards your known spells. Additionally, you can speak, read and write Auran.\n\t<b>Earth</b>You learn the Mold Earth spell, and it does not count towards your known spells. Additionally, you can speak, read and write Terran.\n\t<b>Fire</b>You learn the Control Flames spell, and it does not count towards your known spells. Additionally, you can speak, read and write Ignan.\n\t<b>Water</b>You learn the Shape Water spell, and it does not count towards your known spells. Additionally, you can speak, read and write Augan."
+                                    "Your bloodline has elemental influences within it. Choose one of the basic elements: Air, Earth, Fire or Water.",
+                                    "<b>Air</b>You learn the Gust spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Auran.",
+                                    "<b>Earth</b>You learn the Mold Earth spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Terran.",
+                                    "<b>Fire</b>You learn the Control Flames spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Ignan.",
+                                    "<b>Water</b>You learn the Shape Water spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Augan."
                                 ]
                             },
                             {
@@ -632,7 +633,8 @@
                     {
                         "Name": "Metamagic",
                         "Description": [
-                            "At the fourth level, you begin to manifest abilities related to spells that only a magical bloodline can perform. Choose two of the following options. When Metamagic is used. Roll a d20. On a roll of a 1, a Wild Magic Surge occurs."
+                            "At the fourth level, you begin to manifest abilities related to spells that only a magical bloodline can perform. Choose two of the following options. When Metamagic is used. Roll a d20. On a roll of a 1, a Wild Magic Surge occurs.",
+                            "<i>Optionally</i>, instead of rolling a d20 to determine if a Wild Magic Surge happens, it always happens when Metamagic is used."
                         ],
                         "Options": [
                             {
@@ -953,19 +955,23 @@
                 ],
                 "Features": [
                     {
-                        "Name": "Ritual Casting",
+                        "Name": "Prestidigitation",
                         "Description": [
-                            "At the first level, you can cast any spell with a normal casting time of 1 hour or less as a ritual. Spells cast in this manner cost no mana to cast, but take 10x longer to cast. Spells with a casting time of an Ability Action or a Reaction can be cast in this manner with a casting time of 1 minute."
-                        ]
-                    },
-                    {
-                        "Name": "TODO",
-                        "Description": [],
+                            "At the first level, you learn a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 10 feet:",
+                            "<ul><li>You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</li><li>You instantaneously light or snuff out a candle, a torch, or a small campfire.</li><li>You instantaneously clean or soil an object no larger than 1 cubic foot.</li><li>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</li><li>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</li><li>You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</li></ul>",
+                            "If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+                        ],
                         "Options": [
                             {
                                 "Name": "Name",
                                 "Description": []
                             }
+                        ]
+                    },
+                    {
+                        "Name": "Ritual Casting",
+                        "Description": [
+                            "At the second level, you can cast any spell with a normal casting time of 1 hour or less as a ritual. Spells cast in this manner cost no mana to cast, but take 10x longer to cast. Spells with a casting time of an Ability Action or a Reaction can be cast in this manner with a casting time of 1 minute."
                         ]
                     },
                     {
@@ -1285,7 +1291,7 @@
                     {
                         "Name": "Druidcraft",
                         "Description": [
-                            "A basic spell all Druids learn, you create one of the following effects:<ul><li>You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.</li><li>You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.</li><li>You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.</li><You instantly light or snuff out a candle, a torch, or a small campfire.</li></ul>"
+                            "A basic spell all Druids learn, you create one of the following effects within 30 feet:<ul><li>You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.</li><li>You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.</li><li>You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.</li><You instantly light or snuff out a candle, a torch, or a small campfire.</li></ul>"
                         ]
                     },
                     {
@@ -1557,7 +1563,7 @@
                     {
                         "Name": "Thaumaturgy",
                         "Description": [
-                            "At the first level, you can manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:",
+                            "At the first level, you can manifest a minor wonder, a sign of supernatural power, within 30 feet. You create one of the following magical effects within range:",
                             "<ul><li>Your voice booms up to three times as loud as normal for 1 minute.</li><li>You cause flames to flicker, brighten, dim, or change color for 1 minute.</li><li>You cause harmless tremors in the ground for 1 minute.</li><li>You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</li><li>You instantaneously cause an unlocked door or window to fly open or slam shut.</li><li>You alter the appearance of your eyes for 1 minute.</li></ul>",
                             "If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
                         ]
