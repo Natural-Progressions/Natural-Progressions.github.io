@@ -601,10 +601,10 @@
                                 "Name": "Elemental",
                                 "Description": [
                                     "Your bloodline has elemental influences within it. Choose one of the basic elements: Air, Earth, Fire or Water.",
-                                    "<b>Air</b>You learn the Gust spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Auran.",
-                                    "<b>Earth</b>You learn the Mold Earth spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Terran.",
-                                    "<b>Fire</b>You learn the Control Flames spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Ignan.",
-                                    "<b>Water</b>You learn the Shape Water spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Augan."
+                                    "<b>Air</b> You learn the Gust spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Auran.",
+                                    "<b>Earth</b> You learn the Mold Earth spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Terran.",
+                                    "<b>Fire</b> You learn the Control Flames spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Ignan.",
+                                    "<b>Water</b> You learn the Shape Water spell. It does not count towards your known spells, and you can cast it without using mana. Additionally, you can speak, read and write Augan."
                                 ]
                             },
                             {
@@ -757,19 +757,15 @@
                         ]
                     },
                     {
-                        "Name": "TODO",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
+                        "Name": "Combat Agility",
+                        "Description": [
+                            "At the second level, your speed allows you to perform some actions more quickly. You use your ability action to take the Dash, Disengage, Dodge or Hide actions."
                         ]
                     },
                     {
-                        "Name": "Combat Agility",
+                        "Name": "Tactician",
                         "Description": [
-                            "At the third level, your speed allows you to perform some actions more quickly. You use your ability action to take the Dash, Disengage, Dodge or Hide actions."
+                            "At the third level, your battle senses heighten to the point that you are able to take the Help action as a bonus action."
                         ]
                     },
                     {
