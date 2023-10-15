@@ -1431,19 +1431,9 @@
                         ]
                     },
                     {
-                        "Name": "TODO",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
-                        ]
-                    },
-                    {
                         "Name": "Aura of Leadership",
                         "Description": [
-                            "At the sixth level, your religious teachings have given you insight into how to lead better. Choose one from the following auras:"
+                            "At the fifth level, your religious teachings have given you insight into how to lead better. Choose one from the following auras:"
                         ],
                         "Options": [
                             {
@@ -1474,9 +1464,15 @@
                         ]
                     },
                     {
+                        "Name": "Undying Sentinel",
+                        "Description": [
+                            "At the sixth level, you begin to gain the eye of your god. They will intermittantly intervene to save the life of their warrior. Once per week, when you reduced to 0 hit points and are not killed outright, you drop to 1 hit point instead."
+                        ]
+                    },
+                    {
                         "Name": "Divine Health",
                         "Description": [
-                            "At the seventh level, the martial connection to your god makes your immune to disease and poison (damage)."
+                            "At the seventh level, you become blessed by your god, making you immune to disease and poison (damage)."
                         ]
                     },
                     {
@@ -1565,15 +1561,9 @@
                         ]
                     },
                     {
-                        "Name": "Disciple of Life",
-                        "Description": [
-                            "At the second level, your healing spells are more effective. Whenever you cast a spell to restore hit points to a creature, the creature regains additional hit points equal to 2 + your <b>Tradition</b> (of your religion) modifier"
-                        ]
-                    },
-                    {
                         "Name": "Channel of Divinity",
                         "Description": [
-                            "At the third level, you gain use of one of the Channel Divinities presented below; it should fit with the beliefs of your religion and god. You can use your Channel Divinity a number of times equal to half your Cleric level per rest."
+                            "At the second level, you gain use of one of the Channel Divinities presented below; it should fit with the beliefs of your religion and god. You can use your Channel Divinity a number of times equal to half your Cleric level per rest."
                         ],
                         "Options": [
                             {
@@ -1592,7 +1582,9 @@
                                 "Name": "Path to the Grave",
                                 "Description": [
                                     "You can use your Channel Divinity to mark another creature’s life force for termination.",
-                                    "As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack’s damage, and then the curse ends."
+                                    "As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack’s damage, and then the curse ends.",
+                                    "If a creature is immune to the type of damage of the attack, they are instead resistant.",
+                                    "This Channel Divinity is akin to a Malediction spell, and can be removed via Remove Curse."
                                 ]
                             },
                             {
@@ -1611,23 +1603,21 @@
                         ]
                     },
                     {
-                        "Name": "TODO",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
+                        "Name": "Disciple of Life",
+                        "Description": [
+                            "At the third level, your healing spells are more effective. Whenever you cast a spell to restore hit points to a creature, the creature regains additional hit points equal to 2 + your <b>Tradition</b> (of your religion) modifier"
                         ]
                     },
                     {
-                        "Name": "TODO",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
+                        "Name": "Harness Divine Power",
+                        "Description": [
+                            "At the fourth level, once per rest, as a bonus action, you touch your holy symbol, utter a prayer and regain mana equal to your Cleric level."
+                        ]
+                    },
+                    {
+                        "Name": "Divine Smite",
+                        "Description": [
+                            "At the fifth level, when you hit a creature with a weapon attack, you can expend 2 Mana to deal an extra 1d8 radiant damage to the target."
                         ]
                     },
                     {
@@ -1637,15 +1627,15 @@
                         ]
                     },
                     {
-                        "Name": "Divine Smite",
+                        "Name": "Spell Breaker",
                         "Description": [
-                            "At the seventh level, when you hit a creature with a weapon attack, you can expend 2 Mana to deal an extra 1d8 radiant damage to the target."
+                            "At the seventh level, whenever you restore hit points of an ally with a spell, you lace your spell with words of magic disappation, effectively dual casting <b>Dispel Magic</b> or <b>Remove Curse</b> with your healing spell. The level of <b>Dispel Magic</b> or <b>Remove Curse</b> is equal to the level of the healing spell cast."
                         ]
                     },
                     {
                         "Name": "Channel Divinity: Aura of Healing",
                         "Description": [
-                            "As an action, you can expend one of your Channel Divinity usages to heal yourself and all friendly creatures within 30 feet of you. All affected creatures regain hit points equal to your <b>Tradition</b> (of your religion) modifier. This healing is not affected by Disciple of Life."
+                            "At the eigth level, you gain an additional Channel Divinity. As an action, you can expend one of your Channel Divinity usages to heal yourself and all friendly creatures within 30 feet of you. All affected creatures regain hit points equal to your <b>Tradition</b> (of your religion) modifier. This healing is not affected by Disciple of Life."
                         ]
                     },
                     {
