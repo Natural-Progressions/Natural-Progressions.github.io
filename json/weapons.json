@@ -108,8 +108,8 @@
                     "Name": "Gauntlet",
                     "Description": "Spiked or weighted knuckles worn as a glove or held in hand. The hand with the gauntlet cannot be used to wield other equipment.",
                     "Damage Types": "Bludgeoning, Piercing, or Slashing",
-                    "Weight": 0,
-                    "Cost": 0,
+                    "Weight": 1,
+                    "Cost": 50,
                     "Training": {
                         "Untrained": {
                             "Damage": "1d4",
