@@ -15,7 +15,7 @@ $(function () {
                     </ul>
                 </li>
             </ul>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Characters</a>
                     <ul class="dropdown-menu">
@@ -30,10 +30,8 @@ $(function () {
             </ul>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Characters</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lists</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/character_creation.html">Lists</a></li>
-                        <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="/weapons.html">Weapons</a></li>
                         <li><a class="dropdown-item" href="/armor_and_shields.html">Armor and Shields</a></li>
                         <li><a class="dropdown-item" href="/tools.html">Tools</a></li>

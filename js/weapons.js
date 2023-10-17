@@ -15,14 +15,14 @@ $(function () {
 });
 
 function processWeaponGroupWrapper(weaponGroupWrapper, properties) {
-    for (const name of Object.keys(weaponGroupWrapper)) {
-        processWeaponGroup(weaponGroupWrapper[entry], name, properties);
+    for (const weaponGroupName of Object.keys(weaponGroupWrapper)) {
+        processWeaponGroup(weaponGroupWrapper[weaponGroupName], name, properties);
     }
 }
 
 function processWeaponGroup(weaponGroup, weaponGroupName, properties) {
-    for (const entry of weaponGroup) {
-        processWeapon(entry, weaponGroupName, properties);
+    for (const weaponName of weaponGroup) {
+        processWeapon(weaponName, weaponGroupName, properties);
     }
 }
 
