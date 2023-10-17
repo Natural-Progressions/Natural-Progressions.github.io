@@ -39,7 +39,7 @@ function processWeaponGroup(weaponGroup, weaponGroupName, properties) {
  */
 function processWeapon(weapon, weaponGroupName, properties) {
 
-    let name = weapon["String"];
+    let name = weapon["Name"];
     let description = weapon["Description"];
     let damageTypes = weapon["Damage Types"];
     let weight = weapon["Weight"];
