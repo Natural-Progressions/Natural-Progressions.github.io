@@ -60,7 +60,7 @@ function generateWeaponTableRow(name, weaponGroupName, damageTypes, training, we
     generateTableCell(name, tableRow);
     generateTableCell(weaponGroupName, tableRow);
     generateTableCell(damageTypes, tableRow);
-    generateTableTrainingDamage(training, tableRow);
+    // generateTableTrainingDamage(training, tableRow);
     generateTableCell(weight, tableRow);
     generateTableCell(cost, tableRow);
 
