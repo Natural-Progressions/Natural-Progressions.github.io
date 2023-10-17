@@ -76,7 +76,7 @@
                         </div>
                         <div class="tab-pane fade" id="weapons" role="tabpanel" aria-labelledby="weapons" tabindex="0">
                             <p>The number of weapons can make choosing a starting weapon(s) daunting. For games where players wish to have a reduced number of weapons to choose from, the following alternate choices are suggested:</p>
-                            <table>
+                            <table class="table table-striped table-hover">
                                 <thead>
                                     <tr>
                                         <th>Weapon Group</th>
@@ -142,10 +142,11 @@
                             <hr>
                             <div class="row">
                                 <div class="col-6">
-                                    <table id="weapon-table">
+                                    <table id="weapon-table" class="table table-striped table-hover">
                                         <thead>
                                             <tr>
                                                 <th>Weapon</th>
+                                                <th>Weapon Group</th>
                                                 <th>Damage Types</th>
                                                 <th>Untrained Damage</th>
                                                 <th>Trained Damage</th>
@@ -156,10 +157,10 @@
                                                 <th>Cost</th>
                                             </tr>
                                         </thead>
-                                        <tbody></tbody>
+                                        <tbody id="weapon-table-body"></tbody>
                                     </table>
                                 </div>
-                                <div class="col-6" id="selected-weapon"></div>
+                                <div class="col-6 border-end" id="selected-weapon"></div>
                             </div>
                         </div>
                     </div>

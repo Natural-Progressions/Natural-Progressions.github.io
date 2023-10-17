@@ -1,193 +1,106 @@
 {
-    "properties": [
-        {
-            "Name": "Affixed",
-            "Description": [
-                "This equipment is worn and wielded in the main or off hand. While dual wielding with an affixed weapon, the other weapon does not need the Light property. Affixed weapons are donned or doffed as an action and cannot be disarmed. While worn, it can be equipped for free during your turn, and while not equipped, it remains attached to your body, leaving your hand open for other things."
-            ]
-        },
-        {
-            "Name": "Awkward",
-            "Description": [
-                "You do not have adequate training or experience to weird this weapon effectively, but you can still use it. You do not add your weapon skill bonus while rolling an attack or damage with this weapon."
-            ]
-        },
-        {
-            "Name": "Barbed",
-            "Description": [
-                "When this weapon is entangling your enemy, and the enemy succeeds on the check to escape from your grapple, that enemy takes your weapon’s damage."
-            ]
-        },
-        {
-            "Name": "Balanced",
-            "Description": [
-                "When this weapon rolls a 1 on any of its damage dice, you may reroll that dice but must use the new result. If you wield this weapon with two hands, you may reroll the damage dice if it is a 1 or a 2."
-            ]
-        },
-        {
-            "Name": "Brace",
-            "Description": [
-                "As an action you choose to Brace. On your turn, choose any targets you can see that are more than 20 feet away from you. If any of those targets move within your weapon’s reach before your next turn, as a reaction you can roll one melee attack against them with advantage. If the attack hits, treat the attack as a critical hit. While bracing, if you use a different reaction, or move or get moved, you are no longer bracing. A brace attack is not an opportunity attack."
-            ]
-        },
-        {
-            "Name": "Conceal",
-            "Description": [
-                "At the start of combat, if your passive Sleight of Hand is higher than your enemy’s passive perception, or as a bonus action make a Sleight of Hand check to beat this score, you can hide these weapons from your enemy. If hidden, the first attack made with it against a single unaware enemy is treated as attacking a Stunned creature, as your enemy wasn’t expecting your weapon. Once you use the weapon, you cannot hide it again, nor can you make any further surprise attacks with any conceal weapon during that same encounter."
-            ]
-        },
-        {
-            "Name": "Deflect",
-            "Description": [
-                "When struck by a melee weapon attack, you can use your reaction to deflect some damage you would receive. If wielding one Deflect weapon, you may roll your weapon’s standard damage dice (as defined by the weapon definition in this chapter), then subtract that total from the damage you would receive from a source you can see. If you are wielding a Deflect weapon with two hands, you can roll your weapon’s damage dice twice. If you are wielding two deflect weapons, you can roll both weapon’s deflect rolls and choose the highest result or you can choose to deflect another attack using your off hand weapon, as part of the same reaction. For the off hand deflect, you only deflect half of the damage on the dice roll.",
-                "Deflect does not interact with any other weapon property, such as keen or puncture; you simply roll your weapon’s damage dice normally."
-            ]
-        },
-        {
-            "Name": "Disarm",
-            "Description": [
-                "When you hit with a Disarm attack, you deal damage equal to your weapon damage modifier, and force your enemy to roll its choice of an Athletics or Reflex Saving Throw. On a failure, it drops one held object of your choice, landing within 5ft of it in a direction of your choosing. If you have a free hand, you may come into possession of the disarmed object.",
-                "If your target is a category size larger than you or using a two-handed weapon, it gains advantage on this save, while enemies two size categories larger than you are immune to this attack from you. If it is smaller than you, it suffers disadvantage. If you land a critical hit with this attack, your weapon deals normal, non-critical damage in addition to forcing your enemy to roll the saving throw."
-            ]
-        },
-        {
-            "Name": "Double Ended",
-            "Description": [
-                "When you take the attack action, you can make one additional attack as an ability action using the damage listed - note that you do not add your weapon ability modifier for the offhand attack - if you are within 5 ft of your target and wielding your weapon with two hands."
-            ]
-        },
-        {
-            "Name": "Entangle",
-            "Description": [
-                "When you hit with an Entangle attack, you deal only your weapon ability modifier, and force the enemy to succeed on its choice of an Athletics or Reflex Saving Throw or be Restrained by you. To escape, the creature must succeed a grapple check against your weapon DC, gaining advantage if it is a size category larger than you.",
-                "If you land a critical hit, your weapon deals normal, non-critical damage in addition to forcing your enemy to roll the saving throw. Creatures two size categories larger than you are immune to Entangle attacks from you.",
-                "While you are holding the weapon entangling your target, your weapon attacks against it automatically hit, but only deal damage equal to your weapon ability modifier. You can release an entangled enemy at any time. If you drop the weapon, the creature is immediately free."
-            ]
-        },
-        {
-            "Name": "Heavy",
-            "Description": [
-                "Category size Small creatures suffer disadvantage to attack rolls and Tiny and smaller cannot wield this weapon."
-            ]
-        },
-        {
-            "Name": "Hipshot",
-            "Description": [
-                "This ranged weapon is extremely nimble and maneuverable. When you make a ranged weapon attack, you ignore the disadvantage from a hostile creature within 5ft of you."
-            ]
-        },
-        {
-            "Name": "Keen",
-            "Description": [
-                "This weapon is extraordinarily sharp or devastatingly accurate. When you score a critical hit with this weapon, add an additional damage dice to the weapon damage dice rolled. The added damage dice is not doubled from a critical hit."
-            ]
-        },
-        {
-            "Name": "Knockback",
-            "Description": [
-                "When you hit with a knockback attack, you deal only your weapon ability modifier, and your enemy must succeed on its choice of an Athletics or Reflex Saving Throw or be pushed 5 feet in a direction of your choosing. If you land a critical hit, your weapon deals normal, non-critical damage in addition to forcing your enemy to roll the saving throw. Creatures a size category larger than you gain advantage on this save. Creatures two sizes larger than you are immune to being pushed this way."
-            ]
-        },
-        {
-            "Name": "Light",
-            "Description": [
-                "In order to dual wield two weapons, both weapons you wield must have this property. You can make an attack with your off-hand weapon as a bonus action, but don’t add any ability modifier to damage. There is no requirement that your off hand weapon be melee in order to dual wield."
-            ]
-        },
-        {
-            "Name": "Lunge",
-            "Description": [
-                "If you use an attack action, you can use 5ft of movement to attack a foe up to 5ft further than normal. Each attack which uses this property costs 5ft of movement. In order to use the lunge property, there must be clear ground in the direction of your lunge. You cannot lunge if an enemy or obstacle is directly in front of you."
-            ]
-        },
-        {
-            "Name": "Melee",
-            "Description": [
-                "Melee weapons make a melee weapon attack at a target up to 5ft away."
-            ]
-        },
-        {
-            "Name": "Natural",
-            "Description": [
-                "A natural weapon is one which is part of a creature’s anatomy, such as teeth and claws. To have a natural weapon, you must either become a creature for which a natural weapon is listed in its stat block, or have a racial ability which allows you to make an attack using claws, teeth, etc in place of an unarmed attack. Natural weapons cannot be removed, disarmed, or broken in any way and are always equipped."
-            ]
-        },
-        {
-            "Name": "Nimble",
-            "Description": [
-                "When you make an attack against a creature that you are restraining or that you are restrained by, or while prone, you gain advantage to the roll. This advantage does not cancel the disadvantage that may be appled by restraining or being restrained. It replaces it."
-            ]
-        },
-        {
-            "Name": "One Handed",
-            "Description": [
-                "This weapon requires only one hand to wield properly."
-            ]
-        },
-        {
-            "Name": "Penetrate",
-            "Description": [
-                "When you attack an enemy wearing armor, you ignore half of their armor bonus to their Armor Class."
-            ]
-        },
-        {
-            "Name": "Puncture",
-            "Description": [
-                "These piercing weapons deal significantly more damage if they hit a vital weak spot in the enemy. When you roll a maximum value with any of your weapon’s damage dice, you can roll that dice again and add the result to the total damage dealt. This can keep happening as many times as you roll maximum values on damage dice, even on the new rolls."
-            ]
-        },
-        {
-            "Name": "Ranged",
-            "Description": [
-                "Ranged weapons make a ranged weapon attack within range. It must be loaded with ammunition to make an attack. The ranged numbers list its normal and maximum range. When attacking enemies beyond the normal range or with an enemy within 5ft of you, you suffer disadvantage for that attack. A ranged weapon cannot attack targets beyond its maximum range."
-            ]
-        },
-        {
-            "Name": "Reach",
-            "Description": [
-                "This weapon adds 5 feet to your reach when you make a melee weapon attack, as well as for determining your reach for opportunity attacks with it. Note that if there is a creature between you and your enemy within reach, your enemy has cover. Reach cannot be used to extend the range of a Double Ended attack."
-            ]
-        },
-        {
-            "Name": "Reload",
-            "Description": [
-                "Some ranged weapons take a time to reload, expressed in types of game actions. These game actions represent the time it takes to reset a weapon and prime it for another attack. From fastest to slowest, these are; free, reaction, ability, attack, action.",
-                "Reload weapons require two hands to reload unless otherwise stated. If dual wielding with a Reload weapon, one item must be sheathed or dropped to Reload.",
-                "Reloading as an action means that you must use your action in order to reload your weapon.",
-                "Reloading as attack means you use an attack action and one of your main hand attacks is used to reload. If you have 3 attacks, you attack once, use your second attack to reload, then attack again. Note that you must use either an attack or an action to reload, and if you do not wish to attack, then reloading your weapon takes an action.",
-                "Reloading as an ability means that your must use you ability action to reload your weapon.",
-                "Likewise, reloading as a reaction means that you must use your reaction to reload your weapon.",
-                "Reload free has no action economy cost and reloads as quickly as a bow. The only detriment is that a Reload weapon still takes two hands to reload.",
-                "You must always reload your weapon before using it for a ranged weapon attack again. If your weapon is empty at the end of your turn, it must be reloaded before you can use it again.",
-                "You have the choice of reloading your weapon with any of the options that are slower."
-            ]
-        },
-        {
-            "Name": "Thrown",
-            "Description": [
-                "Thrown weapons are used to make a ranged weapon attack by throwing them at the enemy, dealing their melee damage on hit unless a different damage value is listed after the Thrown weapon property.",
-                "You may draw and throw a weapon as part of the attack. If you throw a weapon without the Thrown property, the weapon is treated as an improvised weapon and may only cause a small amount of damage."
-            ]
-        },
-        {
-            "Name": "Trip",
-            "Description": [
-                "When you hit with a trip attack, you deal only your weapon ability modifier in damage on hit, and your enemy must succeed on its choice of an Athletics or Reflex Saving Throw or be knocked prone. If you land a critical hit, your weapon deals normal, non-critical damage in addition to forcing your enemy to roll the saving throw. Enemies a size category larger than you gain advantage on this save. Enemies two size categories larger than you are immune to being tripped in this way."
-            ]
-        },
-        {
-            "Name": "Two Handed",
-            "Description": [
-                "This weapon requires two hands to use when you attack with it. You can’t use only one hand to attack with a two handed weapon."
-            ]
-        },
-        {
-            "Name": "Versatile",
-            "Description": [
-                "This weapon may be used with one or two hands and you can switch between them at any time. When used with two hands, you use the damage dice listed in parentheses."
-            ]
-        }
-    ],
+    "properties": {
+        "Affixed": [
+            "This equipment is worn and wielded in the main or off hand. While dual wielding with an affixed weapon, the other weapon does not need the Light property. Affixed weapons are donned or doffed as an action and cannot be disarmed. While worn, it can be equipped for free during your turn, and while not equipped, it remains attached to your body, leaving your hand open for other things."
+        ],
+        "Awkward": [
+            "You do not have adequate training or experience to weird this weapon effectively, but you can still use it. You do not add your weapon skill bonus while rolling an attack or damage with this weapon."
+        ],
+        "Barbed": [
+            "When this weapon is entangling your enemy, and the enemy succeeds on the check to escape from your grapple, that enemy takes your weapon’s damage."
+        ],
+        "Balanced": [
+            "When this weapon rolls a 1 on any of its damage dice, you may reroll that dice but must use the new result. If you wield this weapon with two hands, you may reroll the damage dice if it is a 1 or a 2."
+        ],
+        "Brace": [
+            "As an action you choose to Brace. On your turn, choose any targets you can see that are more than 20 feet away from you. If any of those targets move within your weapon’s reach before your next turn, as a reaction you can roll one melee attack against them with advantage. If the attack hits, treat the attack as a critical hit. While bracing, if you use a different reaction, or move or get moved, you are no longer bracing. A brace attack is not an opportunity attack."
+        ],
+        "Conceal": [
+            "At the start of combat, if your passive Sleight of Hand is higher than your enemy’s passive perception, or as a bonus action make a Sleight of Hand check to beat this score, you can hide these weapons from your enemy. If hidden, the first attack made with it against a single unaware enemy is treated as attacking a Stunned creature, as your enemy wasn’t expecting your weapon. Once you use the weapon, you cannot hide it again, nor can you make any further surprise attacks with any conceal weapon during that same encounter."
+        ],
+        "Deflect": [
+            "When struck by a melee weapon attack, you can use your reaction to deflect some damage you would receive. If wielding one Deflect weapon, you may roll your weapon’s standard damage dice (as defined by the weapon definition in this chapter), then subtract that total from the damage you would receive from a source you can see. If you are wielding a Deflect weapon with two hands, you can roll your weapon’s damage dice twice. If you are wielding two deflect weapons, you can roll both weapon’s deflect rolls and choose the highest result or you can choose to deflect another attack using your off hand weapon, as part of the same reaction. For the off hand deflect, you only deflect half of the damage on the dice roll.",
+            "Deflect does not interact with any other weapon property, such as keen or puncture; you simply roll your weapon’s damage dice normally."
+        ],
+        "Disarm": [
+            "When you hit with a Disarm attack, you deal damage equal to your weapon damage modifier, and force your enemy to roll its choice of an Athletics or Reflex Saving Throw. On a failure, it drops one held object of your choice, landing within 5ft of it in a direction of your choosing. If you have a free hand, you may come into possession of the disarmed object.",
+            "If your target is a category size larger than you or using a two-handed weapon, it gains advantage on this save, while enemies two size categories larger than you are immune to this attack from you. If it is smaller than you, it suffers disadvantage. If you land a critical hit with this attack, your weapon deals normal, non-critical damage in addition to forcing your enemy to roll the saving throw."
+        ],
+        "Double Ended": [
+            "When you take the attack action, you can make one additional attack as an ability action using the damage listed - note that you do not add your weapon ability modifier for the offhand attack - if you are within 5 ft of your target and wielding your weapon with two hands."
+        ],
+        "Entangle": [
+            "When you hit with an Entangle attack, you deal only your weapon ability modifier, and force the enemy to succeed on its choice of an Athletics or Reflex Saving Throw or be Restrained by you. To escape, the creature must succeed a grapple check against your weapon DC, gaining advantage if it is a size category larger than you.",
+            "If you land a critical hit, your weapon deals normal, non-critical damage in addition to forcing your enemy to roll the saving throw. Creatures two size categories larger than you are immune to Entangle attacks from you.",
+            "While you are holding the weapon entangling your target, your weapon attacks against it automatically hit, but only deal damage equal to your weapon ability modifier. You can release an entangled enemy at any time. If you drop the weapon, the creature is immediately free."
+        ],
+        "Heavy": [
+            "Category size Small creatures suffer disadvantage to attack rolls and Tiny and smaller cannot wield this weapon."
+        ],
+        "Hipshot": [
+            "This ranged weapon is extremely nimble and maneuverable. When you make a ranged weapon attack, you ignore the disadvantage from a hostile creature within 5ft of you."
+        ],
+        "Keen": [
+            "This weapon is extraordinarily sharp or devastatingly accurate. When you score a critical hit with this weapon, add an additional damage dice to the weapon damage dice rolled. The added damage dice is not doubled from a critical hit."
+        ],
+        "Knockback": [
+            "When you hit with a knockback attack, you deal only your weapon ability modifier, and your enemy must succeed on its choice of an Athletics or Reflex Saving Throw or be pushed 5 feet in a direction of your choosing. If you land a critical hit, your weapon deals normal, non-critical damage in addition to forcing your enemy to roll the saving throw. Creatures a size category larger than you gain advantage on this save. Creatures two sizes larger than you are immune to being pushed this way."
+        ],
+        "Light": [
+            "In order to dual wield two weapons, both weapons you wield must have this property. You can make an attack with your off-hand weapon as a bonus action, but don’t add any ability modifier to damage. There is no requirement that your off hand weapon be melee in order to dual wield."
+        ],
+        "Lunge": [
+            "If you use an attack action, you can use 5ft of movement to attack a foe up to 5ft further than normal. Each attack which uses this property costs 5ft of movement. In order to use the lunge property, there must be clear ground in the direction of your lunge. You cannot lunge if an enemy or obstacle is directly in front of you."
+        ],
+        "Melee": [
+            "Melee weapons make a melee weapon attack at a target up to 5ft away."
+        ],
+        "Natural": [
+            "A natural weapon is one which is part of a creature’s anatomy, such as teeth and claws. To have a natural weapon, you must either become a creature for which a natural weapon is listed in its stat block, or have a racial ability which allows you to make an attack using claws, teeth, etc in place of an unarmed attack. Natural weapons cannot be removed, disarmed, or broken in any way and are always equipped."
+        ],
+        "Nimble": [
+            "When you make an attack against a creature that you are restraining or that you are restrained by, or while prone, you gain advantage to the roll. This advantage does not cancel the disadvantage that may be appled by restraining or being restrained. It replaces it."
+        ],
+        "One Handed": [
+            "This weapon requires only one hand to wield properly."
+        ],
+        "Penetrate": [
+            "When you attack an enemy wearing armor, you ignore half of their armor bonus to their Armor Class."
+        ],
+        "Puncture": [
+            "These piercing weapons deal significantly more damage if they hit a vital weak spot in the enemy. When you roll a maximum value with any of your weapon’s damage dice, you can roll that dice again and add the result to the total damage dealt. This can keep happening as many times as you roll maximum values on damage dice, even on the new rolls."
+        ],
+        "Ranged": [
+            "Ranged weapons make a ranged weapon attack within range. It must be loaded with ammunition to make an attack. The ranged numbers list its normal and maximum range. When attacking enemies beyond the normal range or with an enemy within 5ft of you, you suffer disadvantage for that attack. A ranged weapon cannot attack targets beyond its maximum range."
+        ],
+        "Reach": [
+            "This weapon adds 5 feet to your reach when you make a melee weapon attack, as well as for determining your reach for opportunity attacks with it. Note that if there is a creature between you and your enemy within reach, your enemy has cover. Reach cannot be used to extend the range of a Double Ended attack."
+        ],
+        "Reload": [
+            "Some ranged weapons take a time to reload, expressed in types of game actions. These game actions represent the time it takes to reset a weapon and prime it for another attack. From fastest to slowest, these are; free, reaction, ability, attack, action.",
+            "Reload weapons require two hands to reload unless otherwise stated. If dual wielding with a Reload weapon, one item must be sheathed or dropped to Reload.",
+            "Reloading as an action means that you must use your action in order to reload your weapon.",
+            "Reloading as attack means you use an attack action and one of your main hand attacks is used to reload. If you have 3 attacks, you attack once, use your second attack to reload, then attack again. Note that you must use either an attack or an action to reload, and if you do not wish to attack, then reloading your weapon takes an action.",
+            "Reloading as an ability means that your must use you ability action to reload your weapon.",
+            "Likewise, reloading as a reaction means that you must use your reaction to reload your weapon.",
+            "Reload free has no action economy cost and reloads as quickly as a bow. The only detriment is that a Reload weapon still takes two hands to reload.",
+            "You must always reload your weapon before using it for a ranged weapon attack again. If your weapon is empty at the end of your turn, it must be reloaded before you can use it again.",
+            "You have the choice of reloading your weapon with any of the options that are slower."
+        ],
+        "Thrown": [
+            "Thrown weapons are used to make a ranged weapon attack by throwing them at the enemy, dealing their melee damage on hit unless a different damage value is listed after the Thrown weapon property.",
+            "You may draw and throw a weapon as part of the attack. If you throw a weapon without the Thrown property, the weapon is treated as an improvised weapon and may only cause a small amount of damage."
+        ],
+        "Trip": [
+            "When you hit with a trip attack, you deal only your weapon ability modifier in damage on hit, and your enemy must succeed on its choice of an Athletics or Reflex Saving Throw or be knocked prone. If you land a critical hit, your weapon deals normal, non-critical damage in addition to forcing your enemy to roll the saving throw. Enemies a size category larger than you gain advantage on this save. Enemies two size categories larger than you are immune to being tripped in this way."
+        ],
+        "Two Handed": [
+            "This weapon requires two hands to use when you attack with it. You can’t use only one hand to attack with a two handed weapon."
+        ],
+        "Versatile": [
+            "This weapon may be used with one or two hands and you can switch between them at any time. When used with two hands, you use the damage dice listed in parentheses."
+        ]
+    },
     "entries": [
         {
             "Ambush Weapons": [
@@ -228,7 +141,7 @@
 								"Nimble"
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "1d6",
                             "Properties": [
                                 "One Handed",
@@ -280,7 +193,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -320,7 +233,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -360,7 +273,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -400,7 +313,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -440,7 +353,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -480,7 +393,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -520,7 +433,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -560,7 +473,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -604,7 +517,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -644,7 +557,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -684,7 +597,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -724,7 +637,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -764,7 +677,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -804,7 +717,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -844,7 +757,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -884,7 +797,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -924,7 +837,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -964,7 +877,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1008,7 +921,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1048,7 +961,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1088,7 +1001,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1128,7 +1041,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1168,7 +1081,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1208,7 +1121,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1248,7 +1161,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1288,7 +1201,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1328,7 +1241,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1368,7 +1281,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1412,7 +1325,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1452,7 +1365,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1492,7 +1405,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1532,7 +1445,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1572,7 +1485,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1612,7 +1525,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1652,7 +1565,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1692,7 +1605,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1732,7 +1645,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1772,7 +1685,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1816,7 +1729,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1856,7 +1769,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1896,7 +1809,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1936,7 +1849,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -1976,7 +1889,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2016,7 +1929,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2056,7 +1969,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2096,7 +2009,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2136,7 +2049,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2176,7 +2089,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2220,7 +2133,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2260,7 +2173,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2300,7 +2213,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2340,7 +2253,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2380,7 +2293,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2420,7 +2333,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2460,7 +2373,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2500,7 +2413,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2540,7 +2453,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2580,7 +2493,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2624,7 +2537,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2664,7 +2577,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2704,7 +2617,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2744,7 +2657,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2784,7 +2697,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2824,7 +2737,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2864,7 +2777,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2904,7 +2817,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2944,7 +2857,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -2984,7 +2897,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3028,7 +2941,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3068,7 +2981,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3108,7 +3021,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3148,7 +3061,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3188,7 +3101,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3228,7 +3141,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3268,7 +3181,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3308,7 +3221,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3348,7 +3261,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3388,7 +3301,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3432,7 +3345,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3472,7 +3385,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3512,7 +3425,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3552,7 +3465,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3592,7 +3505,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3632,7 +3545,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3672,7 +3585,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3712,7 +3625,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3752,7 +3665,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3792,7 +3705,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3836,7 +3749,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3876,7 +3789,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3916,7 +3829,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3956,7 +3869,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -3996,7 +3909,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4036,7 +3949,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4076,7 +3989,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4116,7 +4029,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4156,7 +4069,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4196,7 +4109,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4240,7 +4153,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4280,7 +4193,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4320,7 +4233,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4360,7 +4273,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4400,7 +4313,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4440,7 +4353,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4480,7 +4393,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4520,7 +4433,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4560,7 +4473,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4600,7 +4513,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4644,7 +4557,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4684,7 +4597,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4724,7 +4637,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4764,7 +4677,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4804,7 +4717,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4844,7 +4757,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4884,7 +4797,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4924,7 +4837,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -4964,7 +4877,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -5004,7 +4917,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -5048,7 +4961,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -5088,7 +5001,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -5128,7 +5041,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -5168,7 +5081,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -5208,7 +5121,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -5248,7 +5161,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -5288,7 +5201,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -5328,7 +5241,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -5368,7 +5281,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""
@@ -5408,7 +5321,7 @@
                                 ""
                             ]
                         },
-                        "Export": {
+                        "Expert": {
                             "Damage": "",
                             "Properties": [
                                 ""

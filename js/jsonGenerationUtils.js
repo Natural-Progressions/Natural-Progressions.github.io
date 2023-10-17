@@ -184,3 +184,20 @@ function createNavEntry(name) {
 
     return content;
 }
+
+function createTableRow() {
+    return $("<tr>");
+}
+
+function createTableCell() {
+    return $("<td>");
+}
+
+function generateTableCell(data, row) {
+    
+    let cell = createTableCell();
+
+    cell.html(data);
+
+    row.append(cell);
+}
