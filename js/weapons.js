@@ -191,11 +191,11 @@ function generateTrainingTable(training, column) {
     generateTrainingTableHeader(table);
 
     /* Hardcoding to ensure order is correct */
-    generateTrainingTableRow(training["Untrained"], table);
-    generateTrainingTableRow(training["Trained"], table);
-    generateTrainingTableRow(training["Experienced"], table);
-    generateTrainingTableRow(training["Expert"], table);
-    generateTrainingTableRow(training["Master"], table);
+    generateTrainingTableRow("Untrained", training["Untrained"], table);
+    generateTrainingTableRow("Trained", training["Trained"], table);
+    generateTrainingTableRow("Experienced", training["Experienced"], table);
+    generateTrainingTableRow("Expert", training["Expert"], table);
+    generateTrainingTableRow("Master", training["Master"], table);
 
     column.append(table);
 }
@@ -219,13 +219,14 @@ function generateTrainingTableHeader(table) {
  *      Damage: String
  *      Properties: List of String
  */
-function generateTrainingTableRow(trainingLevel, table) {
+function generateTrainingTableRow(trainingTitle, trainingLevel, table) {
 
     let damage = trainingLevel["Damage"];
     let properties = trainingLevel["Properties"];
 
     let row = createTableRow();
 
+    generateTableCell(trainingTitle, row);
     generateTableCell(damage, row);
     generateTableCell(properties.join(", "), row);
 
