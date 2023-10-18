@@ -54,12 +54,12 @@ function generatePropertyDescription(property, card) {
 
 function getSize(property) {
     
-    /* Starting number to account for the margin and title of the card */
-    let size = 120;
+    let size = 0;
 
     for (const paragraph of property) {
         size += paragraph.length;
     }
+    
     return size;
 }
 
@@ -152,4 +152,10 @@ function generateTableTrainingDamage(training, tableRow) {
  */
 function generateTrainingTableCell(trainingLevel, tableRow) {
     generateTableCell(trainingLevel["Damage"], tableRow);
+}
+
+function delay(milliseconds){
+    return new Promise(resolve => {
+        setTimeout(resolve, milliseconds);
+    });
 }
