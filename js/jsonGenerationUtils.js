@@ -195,9 +195,27 @@ function createTableRow() {
     return $("<tr>");
 }
 
+function createTableHeader() {
+    return $("<thead>");
+}
+
+function createTableHeaderCell() {
+    return $("<th>");
+}
+
 function createTableCell() {
     return $("<td>");
 }
+
+function generateTableHeaderCell(data, row) {
+
+    let cell = createTableHeaderCell();
+
+    cell.html(data);
+
+    row.append(cell);
+}
+
 
 function generateTableCell(data, row) {
     

@@ -1,3 +1,9 @@
+/*
+ *  Detail:
+ *      Map of String -> String
+ */
+var nameToDetailHTML = {};
+
 $(function () {
     fetch("/json/weapons.json")
     .then((response) => {
@@ -9,7 +15,10 @@ $(function () {
     })
     .then((data) => {
         
+        /* Generates the property cards */
         generatePropertyCards(data["properties"]);
+
+        /* Generates the table entries and viewable panels */
         for (const entry of data["entries"]) {
             processWeaponGroupWrapper(entry, data["properties"]);
         }
@@ -59,7 +68,7 @@ function getSize(property) {
     for (const paragraph of property) {
         size += paragraph.length;
     }
-    
+
     return size;
 }
 
@@ -101,6 +110,49 @@ function processWeaponGroup(weaponGroup, weaponGroupName, properties) {
 function processWeapon(weapon, weaponGroupName, properties) {
 
     let name = weapon["Name"];
+    let damageTypes = weapon["Damage Types"];
+    let weight = weapon["Weight"];
+    let cost = weapon["Cost"];
+    let training = weapon["Training"];
+
+    let weaponTableBody = $("#weapon-table-body");
+
+    let tableRow = createWeaponTableRow(name, weaponGroupName, damageTypes, training, weight, cost);
+    
+    tableRow.click(function(){ displayDetails(name.toLowerCase(), weapon, properties) });
+    weaponTableBody.append(tableRow);
+}
+
+function createWeaponTableRow(name, weaponGroupName, damageTypes, training, weight, cost) {
+
+    let tableRow = createTableRow();
+
+    if (name != undefined) {
+        tableRow.attr("id", name.toLowerCase());
+    }
+
+    generateTableCell(name, tableRow);
+    generateTableCell(weaponGroupName, tableRow);
+    generateTableCell(damageTypes, tableRow);
+    generateTableCell(weight, tableRow);
+    generateTableCell(cost, tableRow);
+
+    return tableRow;
+}
+
+function displayDetails(lowercaseName, weapon, properties) {
+
+    let column = $("#selected-weapon");
+
+    /* Clear out the selected information */
+    column.empty();
+
+    if (nameToDetailHTML[lowercaseName] != undefined) {
+        column.html(nameToDetailHTML[lowercaseName]);
+        return;
+    }
+
+    let name = weapon["Name"];
     let description = weapon["Description"];
     let damageTypes = weapon["Damage Types"];
     let weight = weapon["Weight"];
@@ -108,24 +160,16 @@ function processWeapon(weapon, weaponGroupName, properties) {
     let training = weapon["Training"];
     let masterAbility = weapon["Master Ability"];
 
-    let weaponTableBody = $("#weapon-table-body");
+    column.append(createH2(name));
+    generateParagraphIfNotUndefined(description, column);
+    generateParagraphIfNotUndefinedWithHeader(damageTypes, column, "Damage Types");
+    generateParagraphIfNotUndefinedWithHeader(weight + " lbs", column, "Weight");
+    generateParagraphIfNotUndefinedWithHeader(cost + " gold", column, "Cost");
+    generateTrainingTable(training, column);
+    generateParagraphIfNotUndefinedWithHeader(masterAbility, column, "Master Ability");
+    // TODO: Handle properties"
 
-    generateWeaponTableRow(name, weaponGroupName, damageTypes, training, weight, cost, weaponTableBody);
-    // TODO: Handle creation of selected data + the act of selecting rows
-}
-
-function generateWeaponTableRow(name, weaponGroupName, damageTypes, training, weight, cost, weaponTableBody) {
-
-    let tableRow = createTableRow();
-
-    generateTableCell(name, tableRow);
-    generateTableCell(weaponGroupName, tableRow);
-    generateTableCell(damageTypes, tableRow);
-    // generateTableTrainingDamage(training, tableRow);
-    generateTableCell(weight, tableRow);
-    generateTableCell(cost, tableRow);
-
-    weaponTableBody.append(tableRow);
+    nameToDetailHTML[lowercaseName] = column.html();
 }
 
 /*
@@ -136,13 +180,36 @@ function generateWeaponTableRow(name, weaponGroupName, damageTypes, training, we
  *      Expert: Object
  *      Master: Object
  */
-function generateTableTrainingDamage(training, tableRow) {
+function generateTrainingTable(training, column) {
+
+    let table = $("<table>")
+
+    table.addClass("table");
+    table.addClass("table-striped");
+    table.addClass("table-hover");
+
+    generateTrainingTableHeader(table);
+
     /* Hardcoding to ensure order is correct */
-    generateTrainingTableCell(training["Untrained"], tableRow);
-    generateTrainingTableCell(training["Trained"], tableRow);
-    generateTrainingTableCell(training["Experienced"], tableRow);
-    generateTrainingTableCell(training["Expert"], tableRow);
-    generateTrainingTableCell(training["Master"], tableRow);
+    generateTrainingTableRow(training["Untrained"], table);
+    generateTrainingTableRow(training["Trained"], table);
+    generateTrainingTableRow(training["Experienced"], table);
+    generateTrainingTableRow(training["Expert"], table);
+    generateTrainingTableRow(training["Master"], table);
+}
+
+function generateTrainingTableHeader(table) {
+
+    let thead = createTableHeader();
+    let tr = createTableRow();
+
+    generateTableHeaderCell("Training Level", tr);
+    generateTableHeaderCell("Damage", tr);
+    generateTableHeaderCell("Properties", tr);
+
+    thead.append(tr);
+
+    table.append(thead);
 }
 
 /*
@@ -150,8 +217,17 @@ function generateTableTrainingDamage(training, tableRow) {
  *      Damage: String
  *      Properties: List of String
  */
-function generateTrainingTableCell(trainingLevel, tableRow) {
-    generateTableCell(trainingLevel["Damage"], tableRow);
+function generateTrainingTableRow(trainingLevel, table) {
+
+    let damage = trainingLevel["Damage"];
+    let properties = trainingLevel["Properties"];
+
+    let row = createTableRow();
+
+    generateTableCell(damage, row);
+    generateTableCell(properties.join(", "), row);
+
+    table.append(row);
 }
 
 function delay(milliseconds){
