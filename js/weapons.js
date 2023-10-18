@@ -48,7 +48,7 @@ function addProperty(name, property, column) {
 /*
  *  Description: List of String
  */
-function generateCardParagraphsFromList(property, column) {
+function generatePropertyDescription(property, card) {
     generateParagraphsFromList(property, card);
 }
 
