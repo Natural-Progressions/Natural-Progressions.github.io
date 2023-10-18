@@ -196,6 +196,8 @@ function generateTrainingTable(training, column) {
     generateTrainingTableRow(training["Experienced"], table);
     generateTrainingTableRow(training["Expert"], table);
     generateTrainingTableRow(training["Master"], table);
+
+    column.append(table);
 }
 
 function generateTrainingTableHeader(table) {
