@@ -54,14 +54,13 @@ function generatePropertyDescription(property, card) {
 
 function getSize(property) {
     
-    let size = 0;
+    /* Starting number to account for the margin and title of the card */
+    let size = 120;
 
     for (const paragraph of property) {
         size += paragraph.length;
     }
-
-    /* 180 to account for the margin and title of the card */
-    return size + 180;
+    return size;
 }
 
 function createCardBody(name) {
