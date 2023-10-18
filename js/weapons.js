@@ -60,7 +60,8 @@ function getSize(property) {
         size += paragraph.length;
     }
 
-    return size;
+    /* 180 to account for the margin and title of the card */
+    return size + 180;
 }
 
 function createCardBody(name) {
