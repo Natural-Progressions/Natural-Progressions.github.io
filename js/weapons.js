@@ -8,12 +8,73 @@ $(function () {
         return response.json();
     })
     .then((data) => {
-        // TODO: Handle creation of properties card
+        
+        generatePropertyCards(data["properties"]);
         for (const entry of data["entries"]) {
             processWeaponGroupWrapper(entry, data["properties"]);
         }
     })
 });
+
+function generatePropertyCards(properties) {
+
+    let leftColumn = $("#left-side");
+    let rightColumn = $("#right-side");
+    let leftCount = 0;
+    let rightCount = 0;
+
+    for (const propertyName of Object.keys(properties)) {
+        if (leftCount > rightCount) {
+            addProperty(propertyName, properties[propertyName], rightColumn);
+            rightCount += getSize(properties[propertyName]);
+        } else {
+            addProperty(propertyName, properties[propertyName], leftColumn);
+            leftCount += getSize(properties[propertyName]);
+        }
+    }
+}
+
+function addProperty(name, property, column) {
+    
+    let card = createCard();
+    let cardBody = createCardBody(name);
+
+    generatePropertyDescription(property, cardBody);
+
+    card.append(cardBody);
+    column.append(card);
+}
+
+/*
+ *  Description: List of String
+ */
+function generateCardParagraphsFromList(property, column) {
+    generateParagraphsFromList(property, card);
+}
+
+function getSize(property) {
+    
+    let size = 0;
+
+    for (const paragraph of property) {
+        size += paragraph.length;
+    }
+
+    return size;
+}
+
+function createCardBody(name) {
+
+    let div = $("<div>");
+
+    div.addClass("card-body");
+
+    if (name != undefined) {
+        div.append(createCardTitle(name));
+    }
+
+    return div;
+}
 
 function processWeaponGroupWrapper(weaponGroupWrapper, properties) {
     for (const weaponGroupName of Object.keys(weaponGroupWrapper)) {

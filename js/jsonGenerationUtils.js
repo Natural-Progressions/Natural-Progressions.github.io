@@ -129,6 +129,12 @@ function createCardP(text) {
 function generateCardParagraph(paragraph, card) {
     card.append(createCardP(paragraph));
 }
+function generateCardParagraphsFromList(list, card) {
+    
+    for (const paragraph of list) {
+        generateCardParagraph(paragraph, card);
+    }
+}
 
 function generateCardParagraphWithHeader(paragraph, card, header) {
     generateCardParagraph(createBoldText(header) + ": " + paragraph, card);
