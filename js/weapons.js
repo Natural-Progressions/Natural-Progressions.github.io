@@ -119,8 +119,14 @@ function processWeapon(weapon, weaponGroupName, properties) {
 
     let tableRow = createWeaponTableRow(name, weaponGroupName, damageTypes, training, weight, cost);
     
-    tableRow.click(function(){ displayDetails(name.toLowerCase(), weapon, properties) });
+    tableRow.click(function(){ displayDetails(createNiceId(name), weapon, properties) });
     weaponTableBody.append(tableRow);
+}
+
+function createNiceId(value) {
+
+    const id = value ? value.replace(/\W/g, '_') : '_';
+    return id.charAt(0).match(/[\d_]/g)?.length ? `id_${id}` : id;
 }
 
 function createWeaponTableRow(name, weaponGroupName, damageTypes, training, weight, cost) {
@@ -128,7 +134,7 @@ function createWeaponTableRow(name, weaponGroupName, damageTypes, training, weig
     let tableRow = createTableRow();
 
     if (name != undefined) {
-        tableRow.attr("id", name.toLowerCase());
+        tableRow.attr("id", createNiceId(name));
     }
 
     generateTableCell(name, tableRow);
