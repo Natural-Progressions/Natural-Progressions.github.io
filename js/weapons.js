@@ -145,7 +145,10 @@ function displayDetails(lowercaseName, weapon, properties) {
     let column = $("#selected-weapon");
 
     /* Clear out the selected information */
+    $("#weapon-table tr").removeClass("table-info");
     column.empty();
+
+    $(`#${lowercaseName}`).addClass("table-info");
 
     if (nameToDetailHTML[lowercaseName] != undefined) {
         column.html(nameToDetailHTML[lowercaseName]);
@@ -167,7 +170,7 @@ function displayDetails(lowercaseName, weapon, properties) {
     generateParagraphIfNotUndefinedWithHeader(cost + " gold", column, "Cost");
     generateTrainingTable(training, column);
     generateParagraphIfNotUndefinedWithHeader(masterAbility, column, "Master Ability");
-    // TODO: Handle properties"
+    generateProperties(training, column, properties);
 
     nameToDetailHTML[lowercaseName] = column.html();
 }
@@ -231,6 +234,45 @@ function generateTrainingTableRow(trainingTitle, trainingLevel, table) {
     generateTableCell(properties.join(", "), row);
 
     table.append(row);
+}
+
+function generateProperties(training, column, allProperties) {
+
+    let usedProperties = getProperties(training);
+
+    for (const propertyName of usedProperties) {
+        addProperty(propertyName, allProperties[propertyName], column);
+    }
+}
+
+/*
+ *  Training:
+ *      Untrained: Object
+ *      Trained: Object
+ *      Experienced: Object
+ *      Expert: Object
+ *      Master: Object
+ *
+ *  Training Level
+ *      Damage: String
+ *      Properties: List of String
+ */
+function getProperties(training) {
+
+    const uniqueProperties = new Set();
+
+    for (const trainingLevel of Object.keys(training)) {
+
+        if (training[trainingLevel]["Properties"] == undefined) {
+            continue;
+        }
+
+        for (const propertyName of training[trainingLevel]["Properties"]) {
+            uniqueProperties.add(propertyName);
+        }
+    }
+
+    return Array.from(uniqueProperties).sort((a, b) => a - b);;
 }
 
 function delay(milliseconds){
