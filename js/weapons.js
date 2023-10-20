@@ -276,7 +276,7 @@ function getProperties(training) {
         }
     }
 
-    return Array.from(uniqueProperties).sort((a, b) => a - b);;
+    return Array.from(uniqueProperties).sort();
 }
 
 function delay(milliseconds){
