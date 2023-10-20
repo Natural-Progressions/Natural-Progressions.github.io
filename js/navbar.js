@@ -96,7 +96,7 @@ $(window).resize(function() {
 
 function resetStickyTop2Heights() {
     /* 180 = 100 + lowered height of sticky-top-2 */
-    $(".sticky-top-2").css(screen.height - 180);
+    $(".sticky-top-2").css("height", `${screen.height - 180}`);
 }
 
 $( function() {
