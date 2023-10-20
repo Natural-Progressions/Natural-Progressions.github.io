@@ -225,3 +225,11 @@ function generateTableCell(data, row) {
 
     row.append(cell);
 }
+
+function generateHR(content) {
+    content.append(createHR());
+}
+
+function createHR() {
+    return $("<hr>");
+}

@@ -240,6 +240,8 @@ function generateProperties(training, column, allProperties) {
 
     let usedProperties = getProperties(training);
 
+    generateHR(column);
+
     for (const propertyName of usedProperties) {
         addProperty(propertyName, allProperties[propertyName], column);
     }

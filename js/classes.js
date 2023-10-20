@@ -76,14 +76,6 @@ function generateArchetypes(martialArchetype, magicArchetype, content) {
     generateFeatures(martialArchetype["Features"], magicArchetype["Features"], content);
 }
 
-function generateHR(content) {
-    content.append(createHR());
-}
-
-function createHR() {
-    return $("<hr>");
-}
-
 function generateHeaderRow(martialName, magicName, content) {
 
     let row = createRow();
