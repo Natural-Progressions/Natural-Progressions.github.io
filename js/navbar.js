@@ -86,3 +86,19 @@ $(async function () {
     await delay(200);
     $('b').addClass("text-info-emphasis");
 });
+
+$(window).resize(function() {
+    if(globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
+    globalResizeTimer = window.setTimeout(function() {
+       resetStickyTop2Heights();
+    }, 200);
+});
+
+function resetStickyTop2Heights() {
+    /* 180 = 100 + lowered height of sticky-top-2 */
+    $(".sticky-top-2").css(screen.height - 180);
+}
+
+$( function() {
+    resetStickyTop2Heights();
+});

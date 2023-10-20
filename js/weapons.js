@@ -123,12 +123,6 @@ function processWeapon(weapon, weaponGroupName, properties) {
     weaponTableBody.append(tableRow);
 }
 
-function createNiceId(value) {
-
-    const id = value ? value.replace(/\W/g, '_') : '_';
-    return id.charAt(0).match(/[\d_]/g)?.length ? `id_${id}` : id;
-}
-
 function createWeaponTableRow(name, weaponGroupName, damageTypes, training, weight, cost) {
 
     let tableRow = createTableRow();
@@ -190,6 +184,8 @@ function displayDetails(lowercaseName, weapon, properties) {
  *      Master: Object
  */
 function generateTrainingTable(training, column) {
+
+    generateHR(column);
 
     let table = $("<table>")
 
