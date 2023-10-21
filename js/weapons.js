@@ -30,6 +30,10 @@ $(function () {
                     target: 5,
                     visible: false
                 }
+            ],
+            lengthMenu: [
+                [-1, 10, 25, 50, 100],
+                ['All', 10, 25, 50, 100]
             ]
         });
     })

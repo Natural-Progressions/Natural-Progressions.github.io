@@ -170,37 +170,37 @@
                 },
                 {
                     "Name": "Hidden Blade",
-                    "Description": "",
-                    "Damage Types": "",
-                    "Weight": 0,
-                    "Cost": 0,
+                    "Description": "A mechanical means to instantly deploy a piercing dagger from under the wrist built into a bracer. The master takes full advantage of a surprise attack, ending a life in an instant.",
+                    "Damage Types": "Piercing",
+                    "Weight": 1,
+                    "Cost": 10,
                     "Training": {
                         "Untrained": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Trained": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Experienced": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Expert": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Master": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
@@ -211,36 +211,36 @@
                 {
                     "Name": "Interceptor",
                     "Description": "",
-                    "Damage Types": "",
-                    "Weight": 0,
-                    "Cost": 0,
+                    "Damage Types": "[None]",
+                    "Weight": 1,
+                    "Cost": 3,
                     "Training": {
                         "Untrained": {
-                            "Damage": "",
+                            "Damage": "0",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Trained": {
-                            "Damage": "",
+                            "Damage": "0",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Experienced": {
-                            "Damage": "",
+                            "Damage": "0",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Expert": {
-                            "Damage": "",
+                            "Damage": "0",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Master": {
-                            "Damage": "",
+                            "Damage": "0",
                             "Properties": [
                                 ""
                             ]
@@ -251,36 +251,36 @@
                 {
                     "Name": "Katar",
                     "Description": "",
-                    "Damage Types": "",
-                    "Weight": 0,
-                    "Cost": 0,
+                    "Damage Types": "Piercing or Slashing",
+                    "Weight": 1,
+                    "Cost": 5,
                     "Training": {
                         "Untrained": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Trained": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Experienced": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Expert": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Master": {
-                            "Damage": "",
+                            "Damage": "1d6",
                             "Properties": [
                                 ""
                             ]
@@ -291,36 +291,36 @@
                 {
                     "Name": "Knuckle Axe",
                     "Description": "",
-                    "Damage Types": "",
-                    "Weight": 0,
-                    "Cost": 0,
+                    "Damage Types": "Piercing or Slashing",
+                    "Weight": 1,
+                    "Cost": 25,
                     "Training": {
                         "Untrained": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Trained": {
-                            "Damage": "",
+                            "Damage": "1d6",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Experienced": {
-                            "Damage": "",
+                            "Damage": "1d6",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Expert": {
-                            "Damage": "",
+                            "Damage": "1d6",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Master": {
-                            "Damage": "",
+                            "Damage": "1d6",
                             "Properties": [
                                 ""
                             ]
@@ -331,36 +331,36 @@
                 {
                     "Name": "Punch Dagger",
                     "Description": "",
-                    "Damage Types": "",
-                    "Weight": 0,
-                    "Cost": 0,
+                    "Damage Types": "Piercing or Slashing",
+                    "Weight": 0.5,
+                    "Cost": 1,
                     "Training": {
                         "Untrained": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Trained": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Experienced": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Expert": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Master": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
@@ -371,36 +371,36 @@
                 {
                     "Name": "Side Baton",
                     "Description": "",
-                    "Damage Types": "",
-                    "Weight": 0,
-                    "Cost": 0,
+                    "Damage Types": "Bludgeoning",
+                    "Weight": 2,
+                    "Cost": 10,
                     "Training": {
                         "Untrained": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Trained": {
-                            "Damage": "",
+                            "Damage": "1d6",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Experienced": {
-                            "Damage": "",
+                            "Damage": "1d6",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Expert": {
-                            "Damage": "",
+                            "Damage": "1d6",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Master": {
-                            "Damage": "",
+                            "Damage": "1d8",
                             "Properties": [
                                 ""
                             ]
@@ -411,36 +411,36 @@
                 {
                     "Name": "Unarmed Strike",
                     "Description": "",
-                    "Damage Types": "",
+                    "Damage Types": "Bludgeoning",
                     "Weight": 0,
                     "Cost": 0,
                     "Training": {
                         "Untrained": {
-                            "Damage": "",
+                            "Damage": "1d1",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Trained": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Experienced": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Expert": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Master": {
-                            "Damage": "",
+                            "Damage": "1d6",
                             "Properties": [
                                 ""
                             ]
@@ -451,36 +451,36 @@
                 {
                     "Name": "Whip Dagger",
                     "Description": "",
-                    "Damage Types": "",
-                    "Weight": 0,
-                    "Cost": 0,
+                    "Damage Types": "Piercing",
+                    "Weight": 2,
+                    "Cost": 15,
                     "Training": {
                         "Untrained": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Trained": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Experienced": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Expert": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
                         },
                         "Master": {
-                            "Damage": "",
+                            "Damage": "1d4",
                             "Properties": [
                                 ""
                             ]
