@@ -129,6 +129,8 @@ function createWeaponTableRow(name, weaponGroupName, damageTypes, training, weig
 
     let tableRow = createTableRow();
 
+    tableRow.attr("data-search", getProperties(training).join(" "));
+
     if (name != undefined) {
         tableRow.attr("id", createNiceId(name));
     }

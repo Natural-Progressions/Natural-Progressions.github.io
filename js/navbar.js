@@ -88,10 +88,7 @@ $(async function () {
 });
 
 $(window).resize(function() {
-    if(globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
-    globalResizeTimer = window.setTimeout(function() {
-       resetStickyTop2Heights();
-    }, 200);
+    resetStickyTop2Heights();
 });
 
 function resetStickyTop2Heights() {
