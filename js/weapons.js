@@ -27,8 +27,8 @@ $(function () {
         new DataTable('#weapon-table', {
             columnDefs: [
                 {
-                    target = 6,
-                    visible = false
+                    target: 6,
+                    visible: false
                 }
             ]
         });
