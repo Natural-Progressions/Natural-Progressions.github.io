@@ -23,7 +23,15 @@ $(function () {
             processWeaponGroupWrapper(entry, data["properties"]);
         }
 
-        new DataTable('#weapon-table');
+        /* We don't want to the properties tab to be visible, but we want it to be searchable */
+        new DataTable('#weapon-table', {
+            columnDefs: [
+                {
+                    target = 6,
+                    visible = false
+                }
+            ]
+        });
     })
 });
 
@@ -129,8 +137,6 @@ function createWeaponTableRow(name, weaponGroupName, damageTypes, training, weig
 
     let tableRow = createTableRow();
 
-    tableRow.attr("data-search", getProperties(training).join(" "));
-
     if (name != undefined) {
         tableRow.attr("id", createNiceId(name));
     }
@@ -140,6 +146,7 @@ function createWeaponTableRow(name, weaponGroupName, damageTypes, training, weig
     generateTableCell(damageTypes, tableRow);
     generateTableCell(weight, tableRow);
     generateTableCell(cost, tableRow);
+    generateTableCell(getProperties(training).join(" "), tableRow);
 
     return tableRow;
 }
