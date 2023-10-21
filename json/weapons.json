@@ -178,39 +178,63 @@
                         "Untrained": {
                             "Damage": "1d4",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Melee",
+                                "Awkward",
+                                "Affixed",
+                                "Conceal",
+                                "Light"
                             ]
                         },
                         "Trained": {
                             "Damage": "1d4",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Melee",
+                                "Affixed",
+                                "Conceal",
+                                "Light"
                             ]
                         },
                         "Experienced": {
                             "Damage": "1d4",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Melee",
+                                "Affixed",
+                                "Conceal",
+                                "Light",
+                                "Nimble"
                             ]
                         },
                         "Expert": {
                             "Damage": "1d4",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Melee",
+                                "Affixed",
+                                "Conceal",
+                                "Light",
+                                "Nimble"
                             ]
                         },
                         "Master": {
                             "Damage": "1d4",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Melee",
+                                "Affixed",
+                                "Conceal",
+                                "Light",
+                                "Nimble"
                             ]
                         }
                     },
-                    "Master Ability": "Description"
+                    "Master Ability": "Surprised creatures take maximum damage from this weapon."
                 },
                 {
                     "Name": "Interceptor",
-                    "Description": "",
+                    "Description": "A generic term for clothing used to deflect, such as a thick wool cloak, silk scarf, or wide brimmed hat. While you may wear an interceptor, it must be equipped to be used but gives you +1 weapon AC when equipped. The master can catch missile weapons in flight, even protecting an ally.",
                     "Damage Types": "[None]",
                     "Weight": 1,
                     "Cost": 3,
@@ -218,39 +242,61 @@
                         "Untrained": {
                             "Damage": "0",
                             "Properties": [
-                                ""
+                                "You cannot wield an intercepter without training"
                             ]
                         },
                         "Trained": {
                             "Damage": "0",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Affixed",
+                                "Conceal",
+                                "Deflect (d4)",
+                                "Light"
                             ]
                         },
                         "Experienced": {
                             "Damage": "0",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Affixed",
+                                "Conceal",
+                                "Deflect (d6)",
+                                "Disarm",
+                                "Light"
                             ]
                         },
                         "Expert": {
                             "Damage": "0",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Affixed",
+                                "Conceal",
+                                "Deflect (d6)",
+                                "Disarm",
+                                "Entangle",
+                                "Light"
                             ]
                         },
                         "Master": {
                             "Damage": "0",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Affixed",
+                                "Conceal",
+                                "Deflect (d8)",
+                                "Disarm",
+                                "Entangle",
+                                "Light",
+                                "Trip"
                             ]
                         }
                     },
-                    "Master Ability": "Description"
+                    "Master Ability": "Your deflect can be used against ranged weapon attacks. When a creature you can see attacks a target within 5 ft of you (yourself included) you can use your reaction to decrease the damage taken."
                 },
                 {
                     "Name": "Katar",
-                    "Description": "",
+                    "Description": "A wide, leaf shaped blade mounted in line with the fist at the end of an H shaped handle. The katar is a unique punch weapon, and the master’s speed and precision is unmatched.",
                     "Damage Types": "Piercing or Slashing",
                     "Weight": 1,
                     "Cost": 5,
@@ -258,39 +304,60 @@
                         "Untrained": {
                             "Damage": "1d4",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Melee",
+                                "Awkward",
+                                "Conceal",
+                                "Light"
                             ]
                         },
                         "Trained": {
                             "Damage": "1d4",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Melee",
+                                "Conceal",
+                                "Light"
                             ]
                         },
                         "Experienced": {
                             "Damage": "1d4",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Melee",
+                                "Conceal",
+                                "Light",
+                                "Nimble"
                             ]
                         },
                         "Expert": {
                             "Damage": "1d4",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Melee",
+                                "Conceal",
+                                "Keen",
+                                "Light",
+                                "Nimble"
                             ]
                         },
                         "Master": {
                             "Damage": "1d6",
                             "Properties": [
-                                ""
+                                "One Handed",
+                                "Melee",
+                                "Conceal",
+                                "Keen",
+                                "Light",
+                                "Nimble"
                             ]
                         }
                     },
-                    "Master Ability": "Description"
+                    "Master Ability": "When you score a critical hit you can make an additional attack as part of this same action. These extra attacks can also activate this ability but only on a natural 20."
                 },
                 {
                     "Name": "Knuckle Axe",
-                    "Description": "",
+                    "Description": "The knuckle axe resembles an axe head with no handle, and either 4 finger holes or a curved handle to rest inside a closed fist. Masters with knuckle axes slash through soft targets much like a real axe, attacking two targets at once.",
                     "Damage Types": "Piercing or Slashing",
                     "Weight": 1,
                     "Cost": 25,
@@ -330,7 +397,7 @@
                 },
                 {
                     "Name": "Punch Dagger",
-                    "Description": "",
+                    "Description": "A small knife attached to a horizontal handle that projects out from the fist when held. It can be easily deployed in a swift punching motion allowing a master true speed and precision unmatched.",
                     "Damage Types": "Piercing or Slashing",
                     "Weight": 0.5,
                     "Cost": 1,
@@ -370,7 +437,7 @@
                 },
                 {
                     "Name": "Side Baton",
-                    "Description": "",
+                    "Description": "Often called a Tonfa, Riot Baton, or Arm Club, this defensive weapon is designed to deflect attacks with the forearm. It is a stout club with a perpendicular handle attached a third of the way down the length, allowing it to be swung out for a swipe, or extend the reach of a thrust. A master uses the handle as a hook just effectively as an axe and maximizes the defensive properties of this weapon.",
                     "Damage Types": "Bludgeoning",
                     "Weight": 2,
                     "Cost": 10,
@@ -410,7 +477,7 @@
                 },
                 {
                     "Name": "Unarmed Strike",
-                    "Description": "",
+                    "Description": "Untrained unarmed strikes are simple punches while training teaches proper punches and kicks. However, a real master of unarmed strikes is as well trained as a traditional monk.",
                     "Damage Types": "Bludgeoning",
                     "Weight": 0,
                     "Cost": 0,
@@ -450,7 +517,7 @@
                 },
                 {
                     "Name": "Whip Dagger",
-                    "Description": "",
+                    "Description": "A dagger with a ring pommel at the end of a silk ribbon. The weapon can be used like a dagger in hand to attack creatures up to 5ft away, or swung about the end of the ribbon to attack creatures up to 10ft away. A master can perform the Scorpion Pull, an ability to impale a target and pull them closer with the attached ribbon.",
                     "Damage Types": "Piercing",
                     "Weight": 2,
                     "Cost": 15,

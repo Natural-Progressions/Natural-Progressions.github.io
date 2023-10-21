@@ -58,6 +58,11 @@ function generatePropertyCards(properties) {
 }
 
 function addProperty(name, property, column) {
+
+    if (property == undefined) {
+        console.log(name);
+        return;
+    }
     
     let card = createCard();
     let cardBody = createCardBody(name);
@@ -287,7 +292,13 @@ function getProperties(training) {
         }
 
         for (const propertyName of training[trainingLevel]["Properties"]) {
-            uniqueProperties.add(propertyName);
+
+            /* Handle "deflect (d4)" properly */
+            if (propertyName.includes(" (")) {
+                uniqueProperties.add(propertyName.split(" (")[0]);
+            } else {
+                uniqueProperties.add(propertyName);
+            }
         }
     }
 
