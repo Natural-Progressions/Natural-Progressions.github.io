@@ -261,7 +261,6 @@ function generateTrainingTableRow(trainingTitle, trainingLevel, table) {
 function generateProperties(training, column, allProperties) {
 
     let usedProperties = getProperties(training);
-    console.log(usedProperties);
 
     generateHR(column);
 
@@ -292,7 +291,13 @@ function getProperties(training) {
             continue;
         }
 
+        let ignoredProperties = ["You cannot wield an intercepter without training", ""];
+
         for (const propertyName of training[trainingLevel]["Properties"]) {
+
+            if (ignoredProperties.includes(propertyName)) {
+                continue;
+            }
 
             /* Handle "deflect (d4)" properly */
             if (propertyName.includes(" (")) {
