@@ -261,6 +261,7 @@ function generateTrainingTableRow(trainingTitle, trainingLevel, table) {
 function generateProperties(training, column, allProperties) {
 
     let usedProperties = getProperties(training);
+    console.log(usedProperties);
 
     generateHR(column);
 
