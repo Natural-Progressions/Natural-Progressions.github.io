@@ -22,6 +22,8 @@ $(function () {
         for (const entry of data["entries"]) {
             processWeaponGroupWrapper(entry, data["properties"]);
         }
+
+        new DataTable('#weapon-table');
     })
 });
 
