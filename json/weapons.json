@@ -4515,7 +4515,7 @@
                             ]
                         },
                         "Experienced": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
+                            "Damage": "Increases by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
                             "Properties": [
                                 ""
                             ]
@@ -4527,7 +4527,7 @@
                             ]
                         },
                         "Master": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Master (for example, from 1d6 to 1d8).",
+                            "Damage": "Increases by 1 dice size at Master (for example, from 1d6 to 1d8).",
                             "Properties": [
                                 ""
                             ]
@@ -4555,7 +4555,7 @@
                             ]
                         },
                         "Experienced": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
+                            "Damage": "Increases by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
                             "Properties": [
                                 ""
                             ]
@@ -4567,7 +4567,7 @@
                             ]
                         },
                         "Master": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Master (for example, from 1d6 to 1d8).",
+                            "Damage": "Increases by 1 dice size at Master (for example, from 1d6 to 1d8).",
                             "Properties": [
                                 ""
                             ]
@@ -4576,7 +4576,7 @@
                     "Master Ability": "Description"
                 },
                 {
-                    "Name": "Horn",
+                    "Name": "Horns",
                     "Description": "",
                     "Damage Types": "Piercing",
                     "Weight": 0,
@@ -4595,7 +4595,7 @@
                             ]
                         },
                         "Experienced": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
+                            "Damage": "Increases by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
                             "Properties": [
                                 ""
                             ]
@@ -4607,7 +4607,7 @@
                             ]
                         },
                         "Master": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Master (for example, from 1d6 to 1d8).",
+                            "Damage": "Increases by 1 dice size at Master (for example, from 1d6 to 1d8).",
                             "Properties": [
                                 ""
                             ]
@@ -4635,7 +4635,7 @@
                             ]
                         },
                         "Experienced": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
+                            "Damage": "Increases by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
                             "Properties": [
                                 ""
                             ]
@@ -4647,7 +4647,7 @@
                             ]
                         },
                         "Master": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Master (for example, from 1d6 to 1d8).",
+                            "Damage": "Increases by 1 dice size at Master (for example, from 1d6 to 1d8).",
                             "Properties": [
                                 ""
                             ]
@@ -4675,7 +4675,7 @@
                             ]
                         },
                         "Experienced": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
+                            "Damage": "Increases by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
                             "Properties": [
                                 ""
                             ]
@@ -4687,7 +4687,7 @@
                             ]
                         },
                         "Master": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Master (for example, from 1d6 to 1d8).",
+                            "Damage": "Increases by 1 dice size at Master (for example, from 1d6 to 1d8).",
                             "Properties": [
                                 ""
                             ]
@@ -4715,7 +4715,7 @@
                             ]
                         },
                         "Experienced": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
+                            "Damage": "Increases by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
                             "Properties": [
                                 ""
                             ]
@@ -4727,7 +4727,7 @@
                             ]
                         },
                         "Master": {
-                            "Damage": "All natural weapons weapon die increase by 1 dice size at Master (for example, from 1d6 to 1d8).",
+                            "Damage": "Increases by 1 dice size at Master (for example, from 1d6 to 1d8).",
                             "Properties": [
                                 ""
                             ]
