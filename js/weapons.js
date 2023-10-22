@@ -291,7 +291,7 @@ function getProperties(training) {
             continue;
         }
 
-        let ignoredProperties = ["You cannot wield an intercepter without training", ""];
+        let ignoredProperties = ["You cannot wield an intercepter without training", "",  "A creature with a natural weapon will always have at least a +2 (Trained) ability modifier with their Natural Weapons.", "All natural weapons weapon die increase by 1 dice size at Experienced (for example, from 1d4 to 1d6).", "All natural weapons weapon die increase by 1 dice size at Master (for example, from 1d6 to 1d8)."];
 
         for (const propertyName of training[trainingLevel]["Properties"]) {
 
