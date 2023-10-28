@@ -1,0 +1,75 @@
+<html data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Natural Progressions</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
+        <link href="https://cdn.datatables.net/v/bs5/dt-1.13.6/sl-1.7.0/datatables.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css"/>
+      </head>
+      <body data-bs-spy="scroll" data-bs-target="#toc">
+        <div id="containerDiv" class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="d-flex align-items-start sticky-top-2">
+                        <div class="nav flex-column nav-pills me-3" id="sidebar-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                            <button class="nav-link" id="armor-and-shields-tab" data-bs-toggle="pill" data-bs-target="#armor-and-shields" type="button" role="tab" aria-controls="armor-and-shields" aria-selected="false">Armor and Shields</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="tab-content" id="sidebar-tabContent">
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
+                            <h2 class="text-center py-2 bg-warning-subtle">Armor</h2>
+                            <p>Armors directly affect your character’s Armor Class, and generally is the second biggest modifier behind your reflex skill modifier. As stated above, your Armor Class is calculated as follows:</p>
+                            <p><b>10 + armor bonus + weapon bonus + shield bonus + reflex skill modifier</b></p>
+                            <p>Unlike weapons and skills, armors do not have a skill modifier that increase with a natural 20. The reflex skill modifier fulfills this role for the Armor Class calculation.</p>
+                            <p>However, like weapons, there are different types of armors: light armor, medium armor, and heavy armor. In order to use any of these types of armor, you need to be trained in them - a character is either trained or untrained in each type of armor. This training status is gotten by your Race/Culture, Background and Class.</p>
+                            <p>Additionally, your type of armor can affect your stealth skill - some armors give disadvantage to stealth checks while being worn.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Shields</h2>
+                            <p>Like armor, shields are a part of the Armor Class calculation and do not have an ability modifier associated with them - characters are trained or untrained with Shields.</p>
+                            <p>Unlike armor, characters still get the AC Bonus associated with each shield if they are untrained.</p>
+                            <p>For every shield, there is a time to don, and that can be different depending if the shield is held or strapped. Shields that are strapped cannot be disarmed, however, a strapped shield is considered using the shield with one hand. This does mean that in order to perform an activity, such as wielding a Great Sword, you would need to doff any shield you are using.</p>
+                        </div>
+                        <div class="tab-pane fade" id="armor-and-shields" role="tabpanel" aria-labelledby="armor-and-shields-tab" tabindex="0">
+                            <p>See the table below for the full list of armor and shields. You can order and search the table by any of the visible columns.</p>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6 border-end">
+                                    <table id="armor-and-shields-table" class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Type</th>
+                                                <th>AC Bonus</th>
+                                                <th>Stealth</th>
+                                                <th>Weight</th>
+                                                <th>Cost</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="armor-and-shields-table-body"></tbody>
+                                    </table>
+                                </div>
+                                <div class="col-6">
+                                    <div class="sticky-top-2 overflow-auto" id="selected-armor-and-shields">
+                                        <p>Click and entry in the table to the left to see details!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/jquery-3.7.1.min.js"></script>
+        <script src="/js/navbar.js"></script>
+        <script src="/js/jsonGenerationUtils.js"></script>
+        <script src="/js/armor_and_shields.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/v/bs5/dt-1.13.6/sl-1.7.0/datatables.min.js"></script>
+      </body>
+</html>

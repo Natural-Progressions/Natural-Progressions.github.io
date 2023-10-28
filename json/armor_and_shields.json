@@ -1,0 +1,190 @@
+{
+    "entries": {
+        "Armor": {
+            "Light Armor": [
+                {
+                    "Name": "Padded",
+                    "AC Bonus": 1,
+                    "Stealth": "Disadvantage",
+                    "Weight": 4,
+                    "Cost": 5,
+                    "Description": "Thick padding made of quilted fabrics or furs, this armor provides little more than slight protection from incidental contact, and restricts the wearer’s movement."
+                },
+                {
+                    "Name": "Leather",
+                    "AC Bonus": 1,
+                    "Stealth": "Normal",
+                    "Weight": 4,
+                    "Cost": 5,
+                    "Description": "Moderately thin, unhardened utility leather that offers slight protection but is cheap and flexible."
+                },
+                {
+                    "Name": "Studded Leather",
+                    "AC Bonus": 2,
+                    "Stealth": "Normal",
+                    "Weight": 6,
+                    "Cost": 45,
+                    "Description": "Thick, hard leather hide that has been studded with metal rivets or scales. The increased time and material to stud the leather adds to the manufacturing cost."
+                },
+                {
+                    "Name": "Lacquered Leather",
+                    "AC Bonus": 3,
+                    "Stealth": "Disadvantage",
+                    "Weight": 6,
+                    "Cost": 300,
+                    "Description": "This leather has been boiled in wax or water and painted with lacquer to toughen it as hard as modern plastics. It offers superior protection to other light armors, but the required skill to create it greatly adds to the cost. Additionally, the hard plates create more noise than softer armors, leaving much to be desired by stealthy assassins."
+                }
+            ],
+            "Medium Armor": [
+                {
+                    "Name": "Chain Shirt",
+                    "AC Bonus": 3,
+                    "Stealth": "Disadvantage",
+                    "Weight": 10,
+                    "Cost": 50,
+                    "Description": "This simple shirt of butted mail is easy to produce as the rings aren’t welded closed. A chain shirt covers less than a hauberk but is lighter and more affordable."
+                },
+                {
+                    "Name": "Ring Mail",
+                    "AC Bonus": 4,
+                    "Stealth": "Normal",
+                    "Weight": 12,
+                    "Cost": 100,
+                    "Description": "A pattern of closed rings stitched to a thick leather backing. This armor takes about as long as a Chain shirt to make and is similar in cost, but due to the combined protection of the leather backing and metal rings, offers greater protection than either one separately. Unfortunately, this combined armor is more restrictive."
+                },
+                {
+                    "Name": "Breastplate",
+                    "AC Bonus": 5,
+                    "Stealth": "Normal",
+                    "Weight": 10,
+                    "Cost": 300,
+                    "Description": "Wearing just the breastplate of a suit of plate armor, this armor provides the easiest mobility of the medium armors and more protection than the chain shirt or ring mail. However, plate is expensive to make and thus has a greatly increased cost."
+                },
+                {
+                    "Name": "Banded Mail",
+                    "AC Bonus": 6,
+                    "Stealth": "Disadvantage",
+                    "Weight": 20,
+                    "Cost": 500,
+                    "Description": "The quintessential half-plate, also known as lorica, this armor is a series of metal ribbons banded together to form more complete protection. Banded mail is cheaper to produce than full plate, but is still quite a process, involving many steel plates and precise shaping."
+                }
+            ],
+            "Heavy Armor": [
+                {
+                    "Name": "Hauberk",
+                    "AC Bonus": 5,
+                    "Stealth": "Disadvantage",
+                    "Weight": 25,
+                    "Cost": 150,
+                    "Description": "A full coat of chainmail made with durable, riveted or welded rings in a tight weave. The Hauberk covers both arms and stops at the knee, offering near complete coverage."
+                },
+                {
+                    "Name": "Scale Mail",
+                    "AC Bonus": 6,
+                    "Stealth": "Disadvantage",
+                    "Weight": 30,
+                    "Cost": 300,
+                    "Description": "Adding a scale to each ring in a hauberk gives a substantial increase to protection without much increase in the manufacturing but adds quite a bit of weight."
+                },
+                {
+                    "Name": "Split",
+                    "AC Bonus": 7,
+                    "Stealth": "Disadvantage",
+                    "Weight": 33,
+                    "Cost": 750,
+                    "Description": "Splint armor can be described as the poor man’s plate. Instead of plates shaped to fit, a series of small, palm-sized plates and finger sized “splints” of metal are tied together to form a coat. It is cheaper to produce but is not as durable."
+                },
+                {
+                    "Name": "Plate",
+                    "AC Bonus": 8,
+                    "Stealth": "Disadvantage",
+                    "Weight": 40,
+                    "Cost": 1500,
+                    "Description": "Plate is extremely difficult and costly to produce, however, no other armor is more protective. All parts of the body are covered, even the wearer’s joints."
+                }
+            ]
+        },
+        "Shields": [
+            {
+                "Name": "Arm Guard",
+                "AC Bonus": 1,
+                "Stealth": "Normal",
+                "Don (Strapped)": "N/A",
+                "Don (Held)": "Free",
+                "Weight": 1,
+                "Cost": 10,
+                "Description": "A fully enclosed arm shield that often had a sword built into is construction to make a gauntlet sword called a pata. Without an attached weapon, the hand which has an arm guard equipped can be used to help wield a weapon or assist with Reload, but cannot be used to wield a weapon by itself; in this case it must be attached to the arm guard. The master has perfected this fighting style.\nWhen trained with Arm Guards, you may attach a light weapon to an arm guard as part of a rest using smith’s tools. The weapon gains the affixed property but can’t be removed without smith’s tools."
+            },
+            {
+                "Name": "Buckler",
+                "AC Bonus": 1,
+                "Stealth": "Normal",
+                "Don (Strapped)": "N/A",
+                "Don (Held)": "Free",
+                "Weight": 3,
+                "Cost": 5,
+                "Description": "A buckler, or target, is a hand shield used by duelists and fencers for its small profile and ease of counter attacks while deflecting. The master’s trained duelist techniques set them up for the perfect riposte.\nWhen trained with Bucklers, bucklers gain the Deflect (d8) weapon trait."
+            },
+            {
+                "Name": "Diskarmor",
+                "AC Bonus": 2,
+                "Stealth": "Normal",
+                "Don (Strapped)": "N/A",
+                "Don (Held)": "Ability Action",
+                "Weight": 5,
+                "Cost": 150,
+                "Description": "An esoteric weapon of gnomish invention, a diskarmor is a round shield attached to a chain mechanism that retracts quickly after the chain reaches its length to make essentially a shield yo-yo. The user can toss it out to wield it like a large flail, then retract it to be used as a shield again.\nWhen trained with Diskarmors, the shield games the following properties: One Handed, Melee d6, Entangle, Reach, Trip. Diskarmor deals bludgeoning damage. A diskarmor is not considered a weapon."
+            },
+            {
+                "Name": "Kite",
+                "AC Bonus": 3,
+                "Stealth": "Disadvantage",
+                "Don (Strapped)": "Action",
+                "Don (Held)": "Action",
+                "Weight": 10,
+                "Cost": 50,
+                "Description": "Kite shields are as wide as the wielder’s torso but extend downward with a point or oval extension to protect the legs, which can also be used offensively to knock an enemy off guard.\nWhen trained with Kite sheilds, you gain advantage on any ability check made to resist being knocked prone or moved along the ground."
+            },
+            {
+                "Name": "Pavise",
+                "AC Bonus": 1,
+                "Stealth": "Disadvantage",
+                "Don (Strapped)": "N/A",
+                "Don (Held)": "N/A",
+                "Weight": 15,
+                "Cost": 35,
+                "Description": "A pavise is a lighter tower shield with a central spike to drive into the ground, or a set of legs to allow the shield to stand freely. While deployed, you can use it as cover. Unfortunately it is unwieldable as a normal shield, only able to be worn on the back. While wearing it, you are unable to equip any other shield.\nWhile deployed, a Pavise can be knocked down if the enemy succeeds on an Athletics Check against your Weapon DC. As an ability action you can pick up a pavise and either deploy it again or don it on your back.\nWhen trained with Pavise shields, as an ability action, you can drive the shield into the ground, essentially creating an obstacle on the battlefield. When in the 5 x 5 square directly behind the embedded shield, you gain +3 to your armor class (rather than +1), and you are considered covered by the shield."
+            },
+            {
+                "Name": "Skirmish",
+                "AC Bonus": 2,
+                "Stealth": "Normal",
+                "Don (Strapped)": "Action",
+                "Don (Held)": "Ability Action",
+                "Weight": 6,
+                "Cost": 10,
+                "Description": "Skirmish shields come in a variety of shapes but are about the size of the user’s torso. A Skirmish shield is large enough to provide better passive protection than the buckler, while still providing the agility missing with a tower shield. The master can extend this agility to even spell attacks and can offensively use the edge of their shield.\nWhen trained with Skirmish shields, you gain an additional +2 shield AC against ranged weapon and spell attacks."
+            },
+            {
+                "Name": "Spiked",
+                "AC Bonus": 2,
+                "Stealth": "Disadvantage",
+                "Don (Strapped)": "Action",
+                "Don (Held)": "Ability Action",
+                "Weight": 8,
+                "Cost": 20,
+                "Description": "A spiked shield is a blanket term for all weaponized shields, with spikes on the face and either a spiked or bladed edge. Somewhat cumbersome compared to a skirmish shield with the added weaponization, a spiked shield is hard to be stealthy and agile with.\nWhen trained with spiked shields, the shield has the following properties: One Handed, Melee d6, Brace, Puncture, Thrown (20/60). Spiked shield deals piercing or slashing damage. A spiked shield is not considered a weapon."
+            },
+            {
+                "Name": "Tower",
+                "AC Bonus": 3,
+                "Stealth": "Disadvantage",
+                "Don (Strapped)": "Action",
+                "Don (Held)": "Ability Action",
+                "Weight": 20,
+                "Cost": 50,
+                "Description": "This massive shield is as tall as you and just as wide; you more fight around it like a door as a piece of mobile cover. The master shieldman can take cover at a moment’s notice, effectively giving the enemy no target.\nWhen trained with tower shields and using the shield as cover, if you are subjected to an effect that allows you to make a Reflex check, and you fail that check, you take only half damage."
+            }
+        ]
+    }
+}
