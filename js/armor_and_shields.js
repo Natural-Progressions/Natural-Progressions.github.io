@@ -27,8 +27,8 @@ $(function () {
         
         new DataTable('#weapon-table', {
             lengthMenu: [
-                [-1, 10, 25],
-                ['All', 10, 25]
+                [-1, 10, 25, 50, 100],
+                ['All', 10, 25, 50, 100]
             ]
         });
     })
@@ -103,7 +103,6 @@ function displayArmorDetails(lowercaseName, armorGroupName, armor) {
     generateParagraphIfNotUndefinedWithHeader(stealth, column, "Stealth");
     generateParagraphIfNotUndefinedWithHeader(weight + " lbs", column, "Weight");
     generateParagraphIfNotUndefinedWithHeader(cost + " gold", column, "Cost");
-    generateTrainingTable(training, column);
 
     nameToDetailHTML[lowercaseName] = column.html();
 }
@@ -156,7 +155,6 @@ function displayShieldDetails(lowercaseName, shield) {
     generateParagraphIfNotUndefinedWithHeader(donHeld, column, "Don (Held)");
     generateParagraphIfNotUndefinedWithHeader(weight + " lbs", column, "Weight");
     generateParagraphIfNotUndefinedWithHeader(cost + " gold", column, "Cost");
-    generateTrainingTable(training, column);
 
     nameToDetailHTML[lowercaseName] = column.html();
 }
