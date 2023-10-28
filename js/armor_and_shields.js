@@ -70,6 +70,8 @@ function createArmorAndShieldTableRow(name, armorGroupName, acBonus, stealth, we
     generateTableCell(stealth, tableRow);
     generateTableCell(weight, tableRow);
     generateTableCell(cost, tableRow);
+
+    return tableRow;
 }
 
 function displayArmorDetails(lowercaseName, armorGroupName, armor) {
