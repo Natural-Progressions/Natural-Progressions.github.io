@@ -35,6 +35,8 @@ $(function () {
 });
 
 function processArmorGroupWrapper(armorGroupName, armorGroup) {
+    console.log(armorGroupName);
+    console.log(armorGroup);
     for (const armor of armorGroup) {
         processArmorGroupWrapper(armorGroupName, armor)
     }
@@ -157,4 +159,10 @@ function displayShieldDetails(lowercaseName, shield) {
     generateTrainingTable(training, column);
 
     nameToDetailHTML[lowercaseName] = column.html();
+}
+
+function delay(milliseconds){
+    return new Promise(resolve => {
+        setTimeout(resolve, milliseconds);
+    });
 }
