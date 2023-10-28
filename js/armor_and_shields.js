@@ -25,10 +25,10 @@ $(function () {
             processShieldEntry(entry);
         }
         
-        new DataTable('#weapon-table', {
+        new DataTable('#armor-and-shields-table', {
             lengthMenu: [
-                [-1, 10, 25, 50, 100],
-                ['All', 10, 25, 50, 100]
+                [-1, 10, 25],
+                ['All', 10, 25]
             ]
         });
     })
@@ -148,7 +148,7 @@ function displayShieldDetails(lowercaseName, shield) {
     let description = shield["Description"];
 
     column.append(createH2(name));
-    generateParagraphIfNotUndefined(description, column);
+    generateParagraphsFromListIfNotUndefined(description, column);
     generateParagraphIfNotUndefinedWithHeader(acBonus, column, "AC Bonus");
     generateParagraphIfNotUndefinedWithHeader(stealth, column, "Stealth");
     generateParagraphIfNotUndefinedWithHeader(donStrapped, column, "Don (Strapped)");
