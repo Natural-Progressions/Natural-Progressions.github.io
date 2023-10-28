@@ -3012,7 +3012,8 @@
                                 "Ranged (25/100)",
                                 "Reload Reaction",
                                 "Keen",
-                                "Hipshot,Puncture"
+                                "Hipshot",
+                                "Puncture"
                             ]
                         }
                     },
@@ -3086,7 +3087,8 @@
                                 "Entangle",
                                 "Heavy",
                                 "Keen",
-                                "Knockback Penetrate",
+                                "Knockback",
+                                "Penetrate",
                                 "Puncture",
                                 "Trip"
                             ]
@@ -6358,7 +6360,7 @@
                             "Damage": "Defined in the ability that gives the natural weapon",
                             "Properties": [
                                 "Natural",
-                                "One-Handed",
+                                "One Handed",
                                 "Melee",
                                 "Affixed",
                                 "Light"
@@ -6368,7 +6370,7 @@
                             "Damage": "Increases by 1 dice size at Experienced (for example, from 1d4 to 1d6).",
                             "Properties": [
                                 "Natural",
-                                "One-Handed",
+                                "One Handed",
                                 "Melee",
                                 "Affixed",
                                 "Entangle",
@@ -6379,7 +6381,7 @@
                             "Damage": "Same as Experienced",
                             "Properties": [
                                 "Natural",
-                                "One-Handed",
+                                "One Handed",
                                 "Melee",
                                 "Affixed",
                                 "Entangle",
@@ -6391,7 +6393,7 @@
                             "Damage": "Increases by 1 dice size at Master (for example, from 1d6 to 1d8).",
                             "Properties": [
                                 "Natural",
-                                "One-Handed",
+                                "One Handed",
                                 "Melee",
                                 "Affixed",
                                 "Entangle",

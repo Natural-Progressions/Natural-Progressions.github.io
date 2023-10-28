@@ -265,7 +265,31 @@ function generateProperties(training, column, allProperties) {
     generateHR(column);
 
     for (const propertyName of usedProperties) {
-        addProperty(propertyName, allProperties[propertyName], column);
+
+        let propertyDefinition = allProperties[propertyName];
+
+        if (propertyDefinition == undefined) {
+            /* Versatile generally is something like "Versatile 1d10" */
+            if (propertyName.startsWith("Versatile")) {
+                propertyDefinition = allProperties["Versatile"];
+            }
+
+            /* Melee may have a different damage amount depending on the weapon */
+            if (propertyName.startsWith("Melee")) {
+                propertyDefinition = allProperties["Melee"];
+            }
+
+            /* Reload will have a time amount associated with it */
+            if (propertyName.startsWith("Reload")) {
+                propertyDefinition = allProperties["Reload"];
+            }
+
+            /* There are no properties associated with Natural Weapons at Untrained */
+            if (propertyName == "[None]") {
+                continue;
+            }
+        }
+        addProperty(propertyName, propertyDefinition, column);
     }
 }
 
