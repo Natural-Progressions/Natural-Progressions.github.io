@@ -35,10 +35,8 @@ $(function () {
 });
 
 function processArmorGroupWrapper(armorGroupName, armorGroup) {
-    console.log(armorGroupName);
-    console.log(armorGroup);
     for (const armor of armorGroup) {
-        processArmorGroupWrapper(armorGroupName, armor)
+        processArmor(armorGroupName, armor)
     }
 }
 
