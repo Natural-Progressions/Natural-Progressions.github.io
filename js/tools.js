@@ -51,7 +51,7 @@ function processToolEntry(tool) {
     let name = tool["Name"];
     let cost = tool["Cost"];
     let weight = tool["Weight"];
-    let skills = tools["Skills"]
+    let skills = tool["Skills"]
 
     let toolsTableTody = $("#tools-table-body");
 
