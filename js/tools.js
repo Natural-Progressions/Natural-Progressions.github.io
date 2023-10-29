@@ -183,11 +183,8 @@ function generateToolsTableBody(table, otherActivities) {
 
         let tr = createTableRow();
 
-        console.log(activityName);
-        console.log(otherActivities);
-
         generateTableCell(activityName, tr);
-        generateTableCell(otherActivities[activityName]);
+        generateTableCell(otherActivities[activityName], tr);
 
         tbody.append(tr);
     }

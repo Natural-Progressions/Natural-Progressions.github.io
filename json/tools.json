@@ -227,7 +227,9 @@
                 "Determine if a body of water is polluted or corrupted in a way that would hard the fish": 15
             },
             "Other": {
-                "Fishing": "As part of a rest, you can attempt to go fishing. For every multiple of 5 you roll, you are able to catch enough fish to feed that amount of people for one day."
+                "Fishing": [
+                    "As part of a rest, you can attempt to go fishing. For every multiple of 5 you roll, you are able to catch enough fish to feed that amount of people for one day."
+                ]
             }
         },
         {
