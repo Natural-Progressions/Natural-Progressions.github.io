@@ -5,7 +5,7 @@
 var nameToDetailHTML = {};
 
 $(function () {
-    fetch("/json/armor_and_shields.json")
+    fetch("/json/tools.json")
     .then((response) => {
         if (!response.ok) {
             throw new Error(`HTTP error, status = ${response.status}`);
