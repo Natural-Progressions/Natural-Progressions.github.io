@@ -86,7 +86,7 @@ function getSkills(skills) {
         uniqueSkills.add(skillName);
     }
 
-    return uniqueSkills;
+    return Array.from(uniqueSkills);
 }
 
 function displayDetails(lowercaseName, tool) {
