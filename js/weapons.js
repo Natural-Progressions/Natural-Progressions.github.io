@@ -207,21 +207,20 @@ function generateTrainingTable(training, column) {
 
     generateHR(column);
 
-    let table = $("<table>")
-
-    table.addClass("table");
-    table.addClass("table-striped");
-    table.addClass("table-hover");
+    let table = createTable();
 
     generateTrainingTableHeader(table);
 
-    /* Hardcoding to ensure order is correct */
-    generateTrainingTableRow("Untrained", training["Untrained"], table);
-    generateTrainingTableRow("Trained", training["Trained"], table);
-    generateTrainingTableRow("Experienced", training["Experienced"], table);
-    generateTrainingTableRow("Expert", training["Expert"], table);
-    generateTrainingTableRow("Master", training["Master"], table);
+    let tbody = createTableBody();
 
+    /* Hardcoding to ensure order is correct */
+    generateTrainingTableRow("Untrained", training["Untrained"], tbody);
+    generateTrainingTableRow("Trained", training["Trained"], tbody);
+    generateTrainingTableRow("Experienced", training["Experienced"], tbody);
+    generateTrainingTableRow("Expert", training["Expert"], tbody);
+    generateTrainingTableRow("Master", training["Master"], tbody);
+    
+    table.append(tbody);
     column.append(table);
 }
 
@@ -235,7 +234,6 @@ function generateTrainingTableHeader(table) {
     generateTableHeaderCell("Properties", tr);
 
     thead.append(tr);
-
     table.append(thead);
 }
 
@@ -244,7 +242,7 @@ function generateTrainingTableHeader(table) {
  *      Damage: String
  *      Properties: List of String
  */
-function generateTrainingTableRow(trainingTitle, trainingLevel, table) {
+function generateTrainingTableRow(trainingTitle, trainingLevel, tbody) {
 
     let damage = trainingLevel["Damage"];
     let properties = trainingLevel["Properties"];
@@ -255,7 +253,7 @@ function generateTrainingTableRow(trainingTitle, trainingLevel, table) {
     generateTableCell(damage, row);
     generateTableCell(properties.join(", "), row);
 
-    table.append(row);
+    tbody.append(row);
 }
 
 function generateProperties(training, column, allProperties) {

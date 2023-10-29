@@ -358,23 +358,3 @@ function createH4(title) {
 
     return h4;
 }
-
-function generateParagraphsFromListWithHeader(list, content, header) {
-    
-    for (let i = 0; i < list.length; i++) {
-        if (i == 0) {
-            generateParagraphIfNotUndefinedWithHeader(list.at(i), content, header);
-        } else {
-            generateParagraph(list.at(i), content);
-        }
-    }
-}
-
-function generateParagraphsFromListIfNotUndefinedWithHeader(list, content, header) {
-
-    if (list == undefined) {
-        return;
-    }
-
-    generateParagraphsFromListWithHeader(list, content, header);
-}

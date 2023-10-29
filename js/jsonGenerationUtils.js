@@ -88,6 +88,26 @@ function generateParagraphsFromListIfNotUndefined(list, content) {
     generateParagraphsFromList(list, content);
 }
 
+function generateParagraphsFromListWithHeader(list, content, header) {
+    
+    for (let i = 0; i < list.length; i++) {
+        if (i == 0) {
+            generateParagraphIfNotUndefinedWithHeader(list.at(i), content, header);
+        } else {
+            generateParagraph(list.at(i), content);
+        }
+    }
+}
+
+function generateParagraphsFromListIfNotUndefinedWithHeader(list, content, header) {
+
+    if (list == undefined) {
+        return;
+    }
+
+    generateParagraphsFromListWithHeader(list, content, header);
+}
+
 function createCard() {
 
     let div = $("<div>");
@@ -191,12 +211,27 @@ function createNavEntry(name) {
     return content;
 }
 
+function createTable() {
+    
+    let table = $("<table>")
+
+    table.addClass("table");
+    table.addClass("table-striped");
+    table.addClass("table-hover");
+
+    return table;
+}
+
 function createTableRow() {
     return $("<tr>");
 }
 
 function createTableHeader() {
     return $("<thead>");
+}
+
+function createTableBody() {
+    return $("<tbody>")
 }
 
 function createTableHeaderCell() {

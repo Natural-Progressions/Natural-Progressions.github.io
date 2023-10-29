@@ -15,45 +15,38 @@
                     <div class="d-flex align-items-start sticky-top-2">
                         <div class="nav flex-column nav-pills me-3" id="sidebar-tab" role="tablist" aria-orientation="vertical">
                             <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
-                            <button class="nav-link" id="armor-and-shields-tab" data-bs-toggle="pill" data-bs-target="#armor-and-shields" type="button" role="tab" aria-controls="armor-and-shields" aria-selected="false">Armor and Shields</button>
+                            <button class="nav-link" id="tools-tab" data-bs-toggle="pill" data-bs-target="#tools" type="button" role="tab" aria-controls="tools" aria-selected="false">Tools</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-10">
                     <div class="tab-content" id="sidebar-tabContent">
                         <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
-                            <h2 class="text-center py-2 bg-warning-subtle">Armor</h2>
-                            <p>Armors directly affect your character’s Armor Class, and generally is the second biggest modifier behind your reflex skill modifier. As stated above, your Armor Class is calculated as follows:</p>
-                            <p><b>10 + armor bonus + weapon bonus + shield bonus + reflex skill modifier</b></p>
-                            <p>Unlike weapons and skills, armors do not have a skill modifier that increase with a natural 20. The reflex skill modifier fulfills this role for the Armor Class calculation.</p>
-                            <p>However, like weapons, there are different types of armors: light armor, medium armor, and heavy armor. In order to use any of these types of armor, you need to be trained in them - a character is either trained or untrained in each type of armor. This training status is gotten by your Race/Culture, Background and Class.</p>
-                            <p>Additionally, your type of armor can affect your stealth skill - some armors give disadvantage to stealth checks while being worn.</p>
-                            <h2 class="text-center py-2 bg-warning-subtle">Shields</h2>
-                            <p>Like armor, shields are a part of the Armor Class calculation and do not have an ability modifier associated with them - characters are trained or untrained with Shields.</p>
-                            <p>Unlike armor, characters still get the AC Bonus associated with each shield if they are untrained.</p>
-                            <p>For every shield, there is a time to don, and that can be different depending if the shield is held or strapped. Shields that are strapped cannot be disarmed, however, a strapped shield is considered using the shield with one hand. This does mean that in order to perform an activity that requires two hands, such as wielding a Great Sword, you would need to doff any shield you are using.</p>
+                            <p>Like weapons and skills, each type of toolkit has its own separate equipment modifier, to a maximum of +11 to your 1d20 roll. This does mean that at higher equipment modifiers, your character may start to auto-pass certain activies with a tool kit. In such situations, at the discretion of your LM, you may not roll for those activities (with an auto-pass).</p>
+                            <p>Normally when making a check with a tool, you roll 1d20 and add your tool modifier (just like skills and weapons). However, when using a tool in conjunction with a skill check, your roll is 1d20 + your skill modifier + your tool modifier. If you roll a natural 20, both the tool and the skill get increased.</p>
+                            <hr>
+                            <p><b>At note for LMs: </b>Each tool has a set of skills that they buff and can be used with. If a player is attempting to do an unlisted combination of tool + skill (for the combined check), it is recommended to allow it so long as they provide a logical argument.</p>
+                            <p>Likewise, if they would like to attempt another activity not listed using a tool set, if you believe it's a feasible thing to try, it is recommend to allow them to roll.</p>
                         </div>
-                        <div class="tab-pane fade" id="armor-and-shields" role="tabpanel" aria-labelledby="armor-and-shields-tab" tabindex="0">
-                            <p>See the table below for the full list of armor and shields. You can order and search the table by any of the visible columns.</p>
+                        <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="tools-tab" tabindex="0">
+                            <p>See the table below for the full list of tools. You can order and search the table by any of the visible columns as well as search for official associated skills.</p>
                             <hr>
                             <div class="row">
                                 <div class="col-6 border-end">
-                                    <table id="armor-and-shields-table" class="table table-striped table-hover">
+                                    <table id="tools-table" class="table table-striped table-hover">
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
-                                                <th>Type</th>
-                                                <th>AC Bonus</th>
-                                                <th>Stealth</th>
-                                                <th>Weight</th>
                                                 <th>Cost</th>
+                                                <th>Weight</th>
+                                                <th>Skills</th>
                                             </tr>
                                         </thead>
-                                        <tbody id="armor-and-shields-table-body"></tbody>
+                                        <tbody id="tools-table-body"></tbody>
                                     </table>
                                 </div>
                                 <div class="col-6">
-                                    <div class="sticky-top-2 overflow-auto" id="selected-armor-and-shields">
+                                    <div class="sticky-top-2 overflow-auto" id="selected-tools">
                                         <p>Click and entry in the table to the left to see details!</p>
                                     </div>
                                 </div>
@@ -67,7 +60,7 @@
         <script src="/js/jquery-3.7.1.min.js"></script>
         <script src="/js/navbar.js"></script>
         <script src="/js/jsonGenerationUtils.js"></script>
-        <script src="/js/armor_and_shields.js"></script>
+        <script src="/js/tools.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/v/bs5/dt-1.13.6/sl-1.7.0/datatables.min.js"></script>
