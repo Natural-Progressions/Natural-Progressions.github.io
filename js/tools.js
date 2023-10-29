@@ -21,12 +21,12 @@ $(function () {
         }
         
         new DataTable('#tools-table', {
-            // columnDefs: [
-            //     {
-            //         target: 3,
-            //         visible: false
-            //     }
-            // ],
+            columnDefs: [
+                {
+                    target: 3,
+                    visible: false
+                }
+            ],
             lengthMenu: [
                 [-1, 10, 25, 50],
                 ['All', 10, 25, 50]
@@ -104,14 +104,14 @@ function displayDetails(lowercaseName, tool) {
         return;
     }
 
-    let name = shield["Name"];
-    let description = shield["Description"];
-    let cost = shield["Cost"];
-    let weight = shield["Weight"];
-    let components = shield["Componenets"];
-    let skills = shield["Skills"];
-    let otherActivities = shield["Other Activities"];
-    let other = shield["Other"];
+    let name = tool["Name"];
+    let description = tool["Description"];
+    let cost = tool["Cost"];
+    let weight = tool["Weight"];
+    let components = tool["Componenets"];
+    let skills = tool["Skills"];
+    let otherActivities = tool["Other Activities"];
+    let other = tool["Other"];
 
     column.append(createH2(name));
     generateParagraphIfNotUndefined(description, column);
