@@ -159,15 +159,15 @@ function generateComponents(components, column) {
     let componentsList = [];
 
     if (verbal != undefined && verbal == true) {
-        componentsList.add("V");
+        componentsList.push("V");
     }
 
     if (somatic != undefined && somatic == true) {
-        componentsList.add("S");
+        componentsList.push("S");
     }
 
     if (material != undefined) {
-        componentsList.add("M (" + material + ")");
+        componentsList.push("M (" + material + ")");
     }
 
     generateParagraphIfNotUndefinedWithHeader(componentsList.join(", "), column, "Components");
