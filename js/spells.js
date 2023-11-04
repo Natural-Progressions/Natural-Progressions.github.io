@@ -156,21 +156,21 @@ function generateComponents(components, column) {
     let somatic = components["verbal"];
     let material = components["verbal"];
 
-    let components = [];
+    let componentsList = [];
 
     if (verbal != undefined && verbal == true) {
-        components.add("V");
+        componentsList.add("V");
     }
 
     if (somatic != undefined && somatic == true) {
-        components.add("S");
+        componentsList.add("S");
     }
 
     if (meterial != undefined) {
-        components.add("M (" + material + ")");
+        componentsList.add("M (" + material + ")");
     }
 
-    generateParagraphIfNotUndefinedWithHeader(components, column, "Components");
+    generateParagraphIfNotUndefinedWithHeader(componentsList.join(", "), column, "Components");
 }
 
 function delay(milliseconds){
