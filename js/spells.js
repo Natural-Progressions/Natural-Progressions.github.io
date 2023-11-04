@@ -15,7 +15,7 @@ $(function () {
     })
     .then((data) => {
 
-        /* Generates tool table entries and viewable panels */
+        /* Generates spell table entries and viewable panels */
         for (const entry of data["entries"]) {
             processSpellEntry(entry);
         }
@@ -40,7 +40,7 @@ $(function () {
 });
 
 /*
- *  Tool:
+ *  Spell:
  *      level: Number
  *      manaCost: Number
  *      name: String
@@ -166,7 +166,7 @@ function generateComponents(components, column) {
         componentsList.add("S");
     }
 
-    if (meterial != undefined) {
+    if (material != undefined) {
         componentsList.add("M (" + material + ")");
     }
 
