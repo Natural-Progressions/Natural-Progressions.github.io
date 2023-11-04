@@ -93,10 +93,10 @@ function createSpellsTableRow(name, level, schoolOfMagic, castingTime, range, da
 
 function displayDetails(lowercaseName, spell) {
 
-    let column = $("#selected-spell");
+    let column = $("#selected-spells");
 
     /* Clear out the selected information */
-    $("#spell-table tr").removeClass("table-info");
+    $("#spells-table tr").removeClass("table-info");
     column.empty();
 
     $(`#${lowercaseName}`).addClass("table-info");
