@@ -1,0 +1,140 @@
+<html data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Natural Progressions</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
+        <link href="https://cdn.datatables.net/v/bs5/dt-1.13.6/sl-1.7.0/datatables.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css"/>
+      </head>
+      <body data-bs-spy="scroll" data-bs-target="#toc">
+        <div id="containerDiv" class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="d-flex align-items-start sticky-top-2">
+                        <div class="nav flex-column nav-pills me-3" id="sidebar-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                            <button class="nav-link active" id="casting-a-spell-tab" data-bs-toggle="pill" data-bs-target="#casting-a-spell" type="button" role="tab" aria-controls="casting-a-spell" aria-selected="true">Casting a Spell</button>
+                            <button class="nav-link" id="spells-tab" data-bs-toggle="pill" data-bs-target="#spells" type="button" role="tab" aria-controls="spells" aria-selected="false">Spells</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="tab-content" id="sidebar-tabContent">
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
+                            <p>In many settings, magic permeates the world. It shapes not only the narrative of any given campaign, but also the world itself. This page will discuss both the rules surrounding spell casting, as well as general information regarding spells.</p>
+                            <p>A spell is a specific magic effect, bounded by the rules set forth in this section and the rules given for the specific spell as well. One should not confuse <i>magical features</i> with spells - the two can appear to be completely identical, but are bounded by a different set of rules.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Armor</h2>
+                            <p>In order to cast while wearing armor, a caster must be Trained in the type of armor they are wearing. Otherwise, the caster is too distracted by the armor to be able to cast.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Armor</h2>
+                            <p>All spells have a casting time. Most spells are an action to cast, but some have a different casting time. Some of the more common casting times are as follow:</p>
+                            <ul>
+                                <li>Action</li>
+                                <li>Ability Action</li>
+                                <li>Part of an Attack (action)</li>
+                                <li>Part of Movement</li>
+                                <li>Reaction</li>
+                                <li>1 minute</li>
+                            </ul>
+                            <p>When casting, you must complete the casting uninterrupted before the spell effects occur. Generally speaking, for spells that take an action or less to cast, one will not be interrupted.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Casting Range</h2>
+                            <p>All spells have a range to their effects. Some are miniscule, effectively only making oneself a target for the spell. Others have massive ranges, allowing a caster to target something miles away. A spell will define what the range is.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Components</h2>
+                            <p>In order to access the magic needed to cast a spell, different components may be needed.</p>
+                            <p><b>Material (M): </b>Some spells require physical objects in order to be cast. The items generally are not valuable, but random objects that one may find laying around. These objects are then consumed by the spell. Due to this requirement, many casters carry around component pouches, holding the items they require for casting.</p>
+                            <p>Some spellcasters do not carry around component pouches. Instead, they have a spellcasting focus, which takes the place of material components that do not have a cost associated with them. Spellcasting focuses are magical objects, typically in the form of an amulet or another piece of jewelry,</p>
+                            <p>Some spellcastings use spellcasting foci better fitting to their surroundings - wizards tend to use their spellbook as a spellcasting focus, and clerics, their holy book or religious amulet.</p>
+                            <p><b>Somatic (S): </b>Other spells require specific hand motions to be cast. Without the movement, the spell effects do not occur. This does mean that a caster who is Grappled or Restrained cannot cast spells with a Somatic requirement.</p>
+                            <p><b>Verbal (V): </b>Finally, some spells require the uttering of magical words. Spells with a verbal component cannot be cast if a character cannot make the sounds to fulfill the requirement.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Duration</h2>
+                            <p>The effects of a spell can last a variable amount of time. Unless otherwise specified, it is assumumed a spell is instantaneous.</p>
+                            <p><b>Concentration: </b>Some spells require the caster to concentrate on the spell effects. These spells have a maximum duration defined before a caster’s concentration is broken. The caster can choose to break concentration earlier as part of any other action.</p>
+                            <p>While the effects of a concentration spell are active, a caster cannot cast another concentration spell without breaking the existing concentration. Likewise, if a caster is knocked unconscious or killed, they lose concentration.</p>
+                            <p>For every instance of damage taken while cocentrating on a spell, a caster must make a Mental Fortitude Saving Throw against a DC of the damage taken. If they fail, they lose concentration.</p>
+                            <p><b>Instantaneous: </b>An instantaneous spell is cast, it’s effects are instantly applied, and the spell is done. The magic from the spell only exists the moment the spellcasting finishes.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Mana</h2>
+                            <p>All spells have a set mana amount. You must have enough mana in order to cast a spell. Once a spell is cast, you expend the required amount of mana.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Targets</h2>
+                            <p>A spell may have a specific set of items and creatures you can target. In order to target a creature fitting the requirements, they must be within the spell’s range, you must be able to see the creature and have an unobstructed path to the target.</p>
+                            <p>Some spells have area of effct (AOE) effects, allowing them to hit multiple targets within the range of the AOE. Spells that cause these types of effects have a shape defining the tiles affected, as well as a point of origin, which is where the effect starts.</p>
+                            <p>AOE effects are generally blocked by full cover, such a wall, but tend to go through half cover, such as a bush.</p>
+                            <p><b>Cone: </b>A cone extends in a direction you choose from its point of origin. The point of origin must be within range of the spell, and the cone extends to the range of the spell. If the spell dictates a size of the cone, only point of origin must be within the range of the spell.</p>
+                            <p>Unless otherwise specified, the cone’s angle is 45°. If a square is at least half-way covered by the cone, it is considered within the area of the cone.</p>
+                            <p><b>Line: </b>A line extends from the point of origin to the range of the spell, assuming it doesn’t hit an object that would be considered full cover. The point of origin does not need to be the caster, and can be anywhere within range of the spell.</p>
+                            <p><b>Sphere: </b>The point of origin of a sphere is the exact center. If the sphere does not have a specified size, the point of origin must be yourself, and the spell extends out to the range of the spell.</p>
+                            <p>If the sphere does have a size, the point of origin must be within the range of the spell, but the entire sphere does not need to be within range.</p>
+                            <p><b>Star: </b>The point of origin of a star is the exact center, where the spell is targetting. From here, the target radiates out by the radius defined in all 8 directions, in straight lines.</p>
+                            <p>Any creature falling on the line within the radius defined by the spell is hit.</p>
+                        </div>
+                        <div class="tab-pane fade show active" id="casting-a-spell" role="tabpanel" aria-labelledby="casting-a-spell-tab" tabindex="0">
+                            <p>Now that the rules and requirements in order to cast a spell have been described, the following are rules regarding what happens when a spell is actually cast.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Attack Roll vs Saving Throw</h2>
+                            <p>Many spells will require an attack roll, a Saving Throw or both. If either are required, the spell will dictate which is needed, as well as the DC to pass it.</p>
+                            <p>The attack rolls of spells are calculated as 1d20 + your modifier for the school of magic. The spell will dictate if it’s a melee or ranged attack. These attacks follow the standard attack rules as outlined in the combat rules.</p>
+                            <p>Spells that require a Saving Throw by their target will have a specified DC to beat. The DC will be your spellcasting DC for the schoole of magic, which is 10 + your modifier for the school of magic.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Overlapping Effects</h2>
+                            <p>Many spells have similar, or even the same, effects as another spell. If a character is affected by two spells giving them the same effects (the strength of the effects can vary), the will only be affected by the more potent of the two effects.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Schools of Magic</h2>
+                            <p>It is believed that all magic falls into one of the below schools. Each school has its own unqiue properties, which binds each spell within the school together.</p>
+                            <h3 class="text-center">Abjuration</h3>
+                            <p>Abjuration spells are protective in nature, although they can be used aggressively. They create magical barriers, negate harmful effects, harm trespassers or banish creatures to other planes of existence. This school tends to hold all blessings.</p>
+                            <h3 class="text-center">Conjuration</h3>
+                            <p>Conjuration spells transport and summon objects from one location to another. Some spells transports objects from one place to another, while others summon objects out of thin air.</p>
+                            <h3 class="text-center">Divination</h3>
+                            <p>Divination spells reveal information, whether in the form of secrets long forgotten, glimpses of the future, the locations of hidden things, the truth behind illusions, or visions of distant people or places.</p>
+                            <h3 class="text-center">Enchantment</h3>
+                            <p>Enchantment spells affect the minds of others, influencing or controlling their behavior. Such spells can make enemies see the caster as a freid, force creatures to take a course of action, or even control another creature like a puppet.</p>
+                            <p>Those who generally use enchantment face the fear and ire of others. If the schools of magic were to be rated on a good-evil scale, Enchantment magic would be rated as the most evil.</p>
+                            <h3 class="text-center">Evocation</h3>
+                            <p>Evocation spells manipuate magic to produce an effect. These effects generally are deadly.</p>
+                            <h3 class="text-center">Illusion</h3>
+                            <p>Illusion spells deceive the sense or minds of others. They cause people to see things that are not there, to miss things that are there, to hear phantom noises, or the remember things that never happened. Some illusions create phantom images that any creature can see, but the most insidious illusions plant an image directly in the mind of a creature.</p>
+                            <h3 class="text-center">Malediction</h3>
+                            <p>Malediction spells curse others. They cause people to grow weak, unable to defend themselves.</p>
+                            <h3 class="text-center">Necromancy</h3>
+                            <p>Necromancy spells manipulate the energies of life and death. Such spells can grant an extra reserve of life force, drain the life from another creature, create the undead, or even bring the dead back to life.</p>
+                            <h3 class="text-center">Transmutation</h3>
+                            <p>Transmutation sdpells change the properties of a creature, object or environment. They might turn an enemy into a harmless creature, bolster the strength of an ally, make an object move at the caster’s command, or enhance a creature’s innate healing abilities to rapidly recover from an injury.</p>
+                        </div>
+                        <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab" tabindex="0">
+                            <p>See the table below for the full list of spells. You can order and search the table by any of the visible columns as well as search for the associted damage types and classes.</p>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6 border-end">
+                                    <table id="spells-table" class="table table-striped table-hover" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Level</th>
+                                                <th>School of Magic</th>
+                                                <th>Casting Time</th>
+                                                <th>Range</th>
+                                                <th>Damage Types</th>
+                                                <th>Classes</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="spells-table-body"></tbody>
+                                    </table>
+                                </div>
+                                <div class="col-6">
+                                    <div class="sticky-top-2 overflow-auto" id="selected-spells">
+                                        <p>Click and entry in the table to the left to see details!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/jquery-3.7.1.min.js"></script>
+        <script src="/js/navbar.js"></script>
+        <script src="/js/jsonGenerationUtils.js"></script>
+        <script src="/js/spells.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/v/bs5/dt-1.13.6/sl-1.7.0/datatables.min.js"></script>
+      </body>
+</html>

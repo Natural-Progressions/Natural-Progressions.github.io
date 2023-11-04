@@ -108,7 +108,7 @@ function displayDetails(lowercaseName, tool) {
     let description = tool["Description"];
     let cost = tool["Cost"];
     let weight = tool["Weight"];
-    let components = tool["Componenets"];
+    let components = tool["Components"];
     let skills = tool["Skills"];
     let otherActivities = tool["Other Activities"];
     let other = tool["Other"];
