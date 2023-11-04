@@ -128,13 +128,14 @@ function displayDetails(lowercaseName, spell) {
     generateParagraphIfNotUndefinedWithHeader(schoolOfMagic, column, "School of Magic");
     
     if (damageTypes != undefined && damageTypes.length != 0) {
-        generateParagraphIfNotUndefinedWithHeader(damageTypes.join(", "), column);
+        generateParagraphIfNotUndefinedWithHeader(damageTypes.join(", "), column, "Damage Types");
     }
 
     if (classes != undefined && classes.length != 0) {
-        generateParagraphIfNotUndefinedWithHeader(classes.join(", "), column);
+        generateParagraphIfNotUndefinedWithHeader(classes.join(", "), column, "Classes");
     }
 
+    generateHR(column);
     generateParagraphsFromListIfNotUndefined(effect, column);
 
     nameToDetailHTML[lowercaseName] = column.html();
