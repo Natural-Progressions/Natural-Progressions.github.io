@@ -36,6 +36,21 @@ $(function () {
                 ['All', 10, 25, 50, 100]
             ]
         });
+
+        DataTable.ext.search.push(function (settings, data, dataIndex) {
+
+            let text = $('#weapon-table').DataTable().search();
+
+            if (text == undefined || text == '') {
+                return true;
+            }
+
+            return false;
+            // console.log(settings);
+            // console.log(data);
+            // console.log(dataIndex);
+            // return true;
+        });
     })
 });
 
