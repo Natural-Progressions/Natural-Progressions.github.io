@@ -154,8 +154,8 @@ function generateComponents(components, column) {
     }
 
     let verbal = components["verbal"];
-    let somatic = components["verbal"];
-    let material = components["verbal"];
+    let somatic = components["somatic"];
+    let material = components["material"];
 
     let componentsList = [];
 
