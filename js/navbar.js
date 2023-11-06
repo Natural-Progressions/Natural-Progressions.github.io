@@ -12,6 +12,7 @@ $(function () {
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="/core_rules.html">Assumptions and Terminology</a></li>
                         <li><a class="dropdown-item" href="/skills.html">Abilities and Skills</a></li>
+                        <li><a class="dropdown-item" href="/combat.html">Combat</a></li>
                     </ul>
                 </li>
             </ul>

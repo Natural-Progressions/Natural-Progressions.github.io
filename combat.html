@@ -1,0 +1,291 @@
+<html data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Natural Progressions</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+      </head>
+      <body data-bs-spy="scroll" data-bs-target="#toc">
+        <div id="containerDiv" class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="d-flex align-items-start sticky-top-2">
+                        <div class="nav flex-column nav-pills me-3" id="sidebar-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true" onclick="redrawTOC()">Overview</button>
+                            <button class="nav-link" id="conditions-tab" data-bs-toggle="pill" data-bs-target="#conditions" type="button" role="tab" aria-controls="conditions" aria-selected="false" onclick="redrawTOC()">Conditions</button>
+                            <button class="nav-link" id="turns-tab" data-bs-toggle="pill" data-bs-target="#turns" type="button" role="tab" aria-controls="turns" aria-selected="false" onclick="redrawTOC()">Turns</button>
+                            <button class="nav-link" id="damage_types-tab" data-bs-toggle="pill" data-bs-target="#damage_types" type="button" role="tab" aria-controls="damage_types" aria-selected="false" onclick="redrawTOC()">Damage Types</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="tab-content" id="sidebar-tabContent">
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview" tabindex="0">
+                            <p>As with any game dependent on adventuring, there will be times when combat is necessary. This chapter will outline the rules surround combat within Natural Progressions</p>
+                            <hr>
+                            <h2 class="text-center py-2 bg-warning-subtle">Initiative</h2>
+                            <p>Turn order within combat is determined by a character’s initiative. The roll needed for initiative can vary depending on the context of combat.</p>
+                            <p>For example, if the party is ambushing a group on the road, a stealth check should be used for initiative. Likewise, if the party is being ambushed, perception or reflex could be used. Generally speaking, initiative checks will be either a stealth, perception or reflex check, although other checks are possible.</p>
+                            <p>For a standard combat where two groups are charging at each other, all individuals will use reflex to determine their initiative order.</p>
+                            <h3 class="text-center">Order of Violence</h3>
+                            <p>While in combat, the order is determined by each character’s (or group’s) initiative roll. Each character does not need to roll the same type of check when calculating the initative order - it may make sense to have one character roll reflex when the rest are rolling perception.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Armor Class</h2>
+                            <p>Armor class is an abstraction of a character’s ability to avoid injury, whether that be through the strength of armor or speed of their reactions. A character is able to avoid any damage if the attack roll (plus modifiers) is less than their armor class.</p>
+                            <p>Your Armor class is calculated as: 10 + armor bonus + weapon bonus + shield bonus + reflex skill modifier. For a more in depth description, please refer to the Armor section in the Armors and Shields page</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Hit Points</h2>
+                            <p>Hit points represent a character’s health and general physical well-being. They are are only regenerated on a rest. After a rest is completed, a character regains lost hit points up to their level + Constitution modifier.</p>
+                            <p>A character’s maximum hp can be calulated as follows:</p>
+                            <p>11 + level * Constitution modifier + number of levels in Martial archetypes * Reflex modifier</p>
+                            <h3 class="text-center">Constitution and Reflex Increases</h3>
+                            <p>When a character’s Constitution or Reflex modifier increases, their maximum hit points retroactively increase to use the new modifiers. Their current hit points would remain the same, however.</p>
+                            <p>For instance, if a level 5 Novitiate with 4 levels in Figher and 1 level in Wizard increases their Constitution modifier by 1, their maximum health would increase by 5. If they were at full health previously, they would be missing 5 hit points from their maximum after increases their maximum hit points.</p>
+                            <p>Likewise, if that same level 5 Novitiate increased their Reflex modifier by 1, their maximum hit points would increase by 4.</p>
+                            <h3 class="text-center">Temporary Hit Points</h3>
+                            <p>Some abilities and spells give creatures temporary hit points. These hitpoints are not counted towards your maximum hit points, and there is no limit as to how many temporary hit points you can have. Rather, they are a secondary health pool that will be drawn from first when taking damage.</p>
+                            <p>Should you exit combat still retaining temporary hit points, they will last until the ability or spell that triggered them is over, or until you take a rest.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Hitting 0 Hit Points</h2>
+                            <p>When a character drops to 0 hitpoints, they gain the Dying condition, and on their turn, need to start making Death Saving Throws. A player is still conscious while they are rolling Dealth Saving Throws.</p>
+                            <p>There are no standard modifiers added to this roll. Roll a d20. On a roll of 1-10, you have accrued a failure, and on a roll of 11-20, you have made a success.</p>
+                            <p>Upon 3 failures, your character dies. Upon 3 successes, your character has stabilized with 1 hit point, but retains the Dying condition until the end of combat. This unconsciousness cannot be broken by any non-magical means. After their rest, the character regains hit points equal to their level + Constitution modifier.</p>
+                            <p>While rolling Death Saving Throws, your companions can attempt to make a DC 15 Medicine check to help stabilize you. Upon a success, you gain one success. Should you be healed while rolling Death Saving Throws, you are automatically stabilized, but still retain the Dying condition until after combat is finished.</p>
+                            <p>If you are attacked while rolling Death Saving Throws, you automatically gain one failure.</p>
+                            <p>If you roll a natural 20, you gain 1 hit point and lose the Dying condition. However, you will still be prone until you your half of your movement to stand up.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Critical Hits</h2>
+                            <p>Critical hits represent’s a character striking a creature in it’s weak spot, dealing extra damage. A character scores a critical hit whenever they roll a natural 20 on the attack roll (which will also increase their attack modifier) or they roll at least 10 higher than the armor class of the target (including any modifiers on that roll).</p>
+                            <p>When dealing damage from a critical hit, you roll your normal damage, but add an additional damage equal to the maximum damage you roll. For example, suppose a character with a +2 modifier to a short sword, and no other damage modifiers rolls a critical hit. Their damage would be 1d6 + 2 (from modifier damage) + 6 (from critical hit).</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Cover</h2>
+                            <p>During combat, can gain cover, protecting them from some attacks and damage. There are two tiers of cover: Half Cover and Full Cover.</p>
+                            <p><b>Half Cover: </b>A character or creature that has Half Cover has attacks rolled against them with disadvantage. The character or creature can still be seen, and can be targetted by spells and abilities that do not have an attack roll with no penalty.</p>
+                            <p><b>Full Cover: </b>A character or creature with Full Cover cannot be seen, and therefore cannot be targetted by attacks. Additionally, the character or creature has advantage on Saving Throws caused by any area of effects spells or abilities.</p>
+                            <p>Both of these tiers are subject to the point of view of one creature as well as the application by the LM. For example, a creature hiding behind a wall from one party member would be considered to have Full Cover. But if there was a second party member who was behind this same wall, the creature would not have Full Cover according to the second party member’s perspective.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle">Surprise</h2>
+                            <p>By default, before the start of combat, both parties will notice each other. However, if one, or both, sides attempt to be stealthy and hide from the other party before launching their attack, it’s possible that one party may not notice the other.</p>
+                            <p>In these instances, the party attempting to be stealthy makes a Stealth check contested against each member’s passive Perception (or an active Perception Saving Throw if the second party is suspicious). Any creature that fails their Perception check does not know the first party is present, and will be Stunned during the first round of combat.</p>
+                        </div>
+                        <div class="tab-pane fade" id="conditions" role="tabpanel" aria-labelledby="conditions" tabindex="0">
+                            <p>In and out of combat, a character may be subject to various conditions. Unless otherwise specified, one condition will be cured upon completion of a rest. If a character has multiple conditions, the LM will inform the player what condition has been cured.</p>
+                            <hr>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Blinded</h2>
+                            <ul>
+                                <li>A blinded creature cannot see any automatically fails any roll that relies upon sight.</li>
+                                <li>If a creature does not have a sense that does not require vision, such as Blindsight, the creature’s Armor Class is 10 + their armor bonus until they are cured.</li>
+                                <li>If a creature does not have a sense that does not require vision, they gain disadvantage to all attack rolls. Abilities that grant advantage to attack rolls do not cancel this disadvantage unless they also grant a sense that doesn’t require vision.</li>
+                                <li>If a creature does not have a sense that does not require vision, creatures making Saving Throws against area of effects caused by your spells and abilities do so with advantage.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Charmed</h2>
+                            <ul>
+                                <li>A charmed creature cannot target the charmer with harmful effects or spells.</li>
+                                <li>The charmer has advantage to interact with the creature socially.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Defeaned</h2>
+                            <ul>
+                                <li>A deafened creature cannot hear and automatically fails any skill check or saving throw that relies solely upon hearing.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Dying</h2>
+                            <ul>
+                                <li>A dying creature cannot take any actions, ability actions, reactions, or use any spells or abilities.</li>
+                                <li>A dying creature also has the prone condition.</li>
+                                <li>A creature when gaining the dying condition falls to the ground, taking any associated damage from the fall. If there is fall damage present from this, it counts as the first Death Saving Throw failure.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Exhausted I</h2>
+                            <ul>
+                                <li>Exhaustion has multiple levels. A creature with Exhausted I has disadvantage on all skill checks.</li>
+                                <li>Exhausted I will always be cured upon completion of a rest.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Exhausted II</h2>
+                            <ul>
+                                <li>A creature with Exhausted II has all of the effects of Exhausted I and additionally has disadvantage on all saving throws and attacks.</li>
+                                <li>Upon completion of a rest, a creature will lose Exhausted II and gain Exhausted I.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Exhausted III</h2>
+                            <ul>
+                                <li>A creature with Exhausted III has all of the effects of Exhausted II and can only use actions during combat.</li>
+                                <li>Upon completion of a rest, a creature will lose Exhausted III and gain Exhausted II.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Exhausted IV</h2>
+                            <ul>
+                                <li>A creature with Exhausted IV has all of the effects of Exhausted IV, but is also considered Unconscious and resting.</li>
+                                <li>Upon completion of their forced rest, a creature will lose Exhausted IV and gain Exhausted III.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Frightened</h2>
+                            <ul>
+                                <li>A frightened creature has disadvantage on skill checks and attack rolls while they can sense their source of fear.</li>
+                                <li>They cannot willingly move closer to the source of their fear.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Incapacitated</h2>
+                            <ul>
+                                <li>An incapacited creature cannot take actions, ability actions, reactions or move.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Invisible</h2>
+                            <ul>
+                                <li>An invisible creature cannot be seen without magic or a special sense. You gain advantage to Stealth checks while invisible.</li>
+                                <li>When attacking an invisible creature, attackers that cannot see the creature do so with disadvantage.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Paralyzed</h2>
+                            <ul>
+                                <li>A paralyzed creature also has the Incapacitated condition.</li>
+                                <li>The creature automatically fails Athletics, Endurance, Acrobatics, Reflex, Sleight of Hand and Stealth checks and Saving Throws.</li>
+                                <li>The Armor Class of a paralyzed creature is equal to 10 + their armor bonus.</li>
+                                <li>Any hit against a paralyzed creature is considered a critical hit.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Petrified</h2>
+                            <ul>
+                                <li>A petrified creature, along with everything on their person, is transformed into a nonmagical, solid object. It’s weight increases by a factor of 10, and the creature stops aging.</li>
+                                <li>A petrified creature also has the Paralyzed condition with the .exception that successful attacks are not considered critical hits</li>
+                                <li>The creature gains resistance to all non-magical damage</li>
+                                <li>The creature is immune to poison damage and disease, but is not cured of any disease or poison already in their system when they were petrified.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Prone</h2>
+                            <ul>
+                                <li>A prone creature cannot use their normal movement speed. They can either crawl 5 feet per round of combat, or stand up. Upon standing up, a creature will have half of their normal movement speed remaining for that round.</li>
+                                <li>A creature has disadvantage on attack rolls.</li>
+                                <li>Melee attacks against the creature have advantage. Ranged attacks have disadvantage.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Restrained</h2>
+                            <ul>
+                                <li>A restrained creature’s speed becoems 0 and is not affected by any modifier to their speed.</li>
+                                <li>Attack rolls againsted the restrained are made with advantage. The attack rolls of the restrainer against this creature are not affected by this advantage.</li>
+                                <li>The restrainer cannot attack other creatures without release the restrained.</li>
+                                <li>The restrained has disadvantage attacking the restrainer.</li>
+                                <li>The grappled automatically fails Reflex Saving Throws except Reflex Saving Throws to escape the restraint.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Stunned</h2>
+                            <ul>
+                                <li>A stunned creature is Incapacitated.</li>
+                                <li>The creature automatically fails Athletics, Endurance, Acrobatics, Reflex, Sleight of Hand and Stealth checks and Saving Throws.</li>
+                                <li>Attacks are made with advantage against a Stunned creature.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Unconscious</h2>
+                            <ul>
+                                <li>An Unconscious creature is Incapacitated and unaware of its surroundings.</li>
+                                <li>They drop whatever themselves and whatever they are holding. They are considered to have the Prone condition.</li>
+                                <li>The creature automatically fails Athletics, Endurance, Acrobatics, Reflex, Sleight of Hand and Stealth checks and Saving Throws.</li>
+                                <li>Any successful melee attack against an unconscious foe is considered a critical hit.</li>
+                            </ul>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Wounded</h2>
+                            <ul>
+                                <li><b>This condition is optional</b></li>
+                                <li>A creature at or less than 50% of their total health automatically gains the Wounded condition.</li>
+                                <li>A creature cannot lose the Wounded condition while their health is at or below 50%. If a spell or some other mechanism gives a creature the Wounded condition, this can be cured via Lesser Restoration.</li>
+                                <li>While wounded, a creature cannot add their Weapon or Spellcasting modifier to their weapon and spell attacks.</li>
+                                <li>Additionally, a creature cannot add their Reflex modifier to their Armor Class.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="turns" role="tabpanel" aria-labelledby="turns" tabindex="0">
+                            <p>Each round, every character has 4 different parts of their turn: action, ability action, reaction and movement. Unless they are affected by something that allows them to take one part multiple times, each part can only be used once per round.</p>
+                            <ul>
+                                <li>The action represents the primary activity that they are doing for this round of combat. Some standard actions are listed below.</li>
+                                <li>Depending on your character’s build, you may have access to spells or other abilties that are considered and ability action. Generally speaking, these abilities take less time to perform that an action.</li>
+                                <li>The reaction represents a character’s action upon another character performing a certain action.</li>
+                                <li>Movement, also referred as speed, is how far a character can move in once turn. This is based upon a character’s race, and can differ depending on build and the effects a character hs.</li>
+                            </ul>
+                            <hr>
+                            <h1 class="text-center py-3 bg-danger-subtle" data-toc-skip>Actions</h1>
+                            <p>Below is a list of official actions. Note that this list is not exhaustive, so feel free to add and remove actions as you see fit.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Attack</h2>
+                            <p>Make one melee or ranged attack. If you do not have a weapon currently equipped, you may draw as part of your action. When making an attack, roll a d20, add your weapon modifier in addition to any other modifiers you may have. If your attack roll is at equal or greater than the armor class of your target, your attack hits.</p>
+                            <p>You then roll damage, and decrease the hit points of the target by the damage dealt (after resistances and vulnerabilities are applied).</p>
+                            <p>If you have the Extra Attack class feature, you can make more attacks per action as defined by your class feature. If the weapon you are using has the Disarm, Entangle, Knockback or Trip property, you can choose to make an attack of the corresponding type. Refer to the property definitions in the Weapons page for the rules regarding these types of attacks.</p>
+                            <h3 class="text-center">Ranged Attacks</h3>
+                            <p>Ranged weapons, such as bows, have two specified ranges in which they are effective. The smaller range represents the range at which the weapon is most effective. The larger range represents the outside range at which a weapon can be used. Any attacks within this range are done so at disadvantage. If using a ranged weapon outside of the larger range, the attack automatically misses.</p>
+                            <p>Additionally, when fighting with a ranged weapon, if there is an opponent within 5 ft of you, you have disadvantage on any attack rolls.</p>
+                            <h3 class="text-center">Two Weapon Fighting (Dual-Wielding)</h3>
+                            <p>When you are wielding two light weapons, or a weapon with the double-ended property, you can use your ability action to make an attack with your offhand weapon. You do not add your weapon skill bonus to the damage of this attack.</p>
+                            <h3 class="text-center">Flanking</h3>
+                            <p>By default, there are no modifiers applied to attack rolls due to flanking. As an optional rule, having multiple allies adjacent to a target yields attack bonuses.</p>
+                            <p>When you have one ally ajacent to an enemy you are attacking, you gain +2 to all melee attack rolls against a target. When there are two or more allies ajacent to an enemy, you gain +5 to all melee attack rolls.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Cast a Spell</h2>
+                            <p>Cast one spell with a casting time of one action (or less).</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Dash</h2>
+                            <p>When a character dashes, they gain movement equal to their current movement speed, after an modifiers are applied. For example, if a character has a movement speed of 30 ft, taking the dash action gives them another 30 ft, for a total of 60 ft of movement for this round.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Other Damage Modifiers</h2>
+                            <p>Sometimes, creatures innately have strengths or weaknesses in terms of the types of damage - some may be immune to specific types of damage, and others may take extra damage from specific types.</p>
+                            <h3 class="text-center">Immunity</h3>
+                            <p>A creature immune to a specific type of damage takes 0 damage whenever they are hit with an attack that deals that type of damage.</p>
+                            <h3 class="text-center">Resistance</h3>
+                            <p>A creature resistant to a type of damage takes half damage whenever they are hit with an attack that deals that type of damage.</p>
+                            <h3 class="text-center">Vulnerability</h3>
+                            <p>A creature vulnerable to a type of damage takes double damage whenever they are hit with an attack that deals that type of damage.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Disengage</h2>
+                            <p>The disengage action allows a character to move outside the attack range of any character without provoking attacks of opportunity.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Dodge</h2>
+                            <p>Taking the dodge action gives the character greater avoidance of attacks. While the character is conscious, any attack roll against the character, whether it be a melee, ranged or spell attack, is made at disadvantage.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Grapple</h2>
+                            <p>On your turn, you can choose an adjacent opponent to grapple. Make an Athletics check contested against your target’s Athletics or Reflex Saving Throw. If your check ties or beats your target’s Saving Throw, your target gains the Restrained condition. You can choose if you are standing while grappling your opponent (such as a headlock), or if you have tackled them to the ground.</p>
+                            <p>Your target is restrained until they take an action to pass a contested Athletics or Reflex check against your Athletics Saving Throw.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Help</h2>
+                            <p>During combat, you can use your action to aid another character in their next action. However this takes form should be decided by the player depending on the action that the other character is attempting. When taking this action, the other character gains advantage on their roll.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Shove</h2>
+                            <p>On your turn, you can choose to shove an opponent. Make an Athletics check contested against your target’s Athletics or Reflex Saving Throw. If your check ties or beats your target’s Saving Throw by at most 4, you push your target back 5 ft. If your check beats your target’s Saving Throw by at least 5, you have pushed your target to the ground.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Use an Object</h2>
+                            <p>Generally speaking, using an object is already part of an action, such as drawing a weapon as part of an attack. However, if you with to use an object that that requires an action to use, take the Use an Object action and follow the action defined by the object.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Use an Ability Action</h2>
+                            <p>As an action, you can choose to use one of your ability actions - as ability actions are generally shorter than actions, one can reasonably perform them in the time it would take to use an action. The one restriction is that you cannot use your action and ability action to perform the same ability action twice in one turn.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Improvise an Action</h2>
+                            <p>The actions above will generally cover most actions that a character takes during combat. However, if there is something that you would like to do for your action that do not fit into the predefined rolls, confer with your dm as to how that would best work, and take the Improvise and Action action.</p>
+                            <hr>
+                            <h1 class="text-center py-3 bg-danger-subtle" data-toc-skip>Ability Actions</h1>
+                            <p>Generally speaking, all Ability Actions will be defined by a character’s build. The only standard ability actions that all characters have access to is to make an Offhand Attack</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Offhand Attack</h2>
+                            <p>As described in the Two Weapon Fighting subsection, when a character is wielding two weapons with the light property, or one weapon with the double-ended property with two hands, you can use your Ability Action to make an attacks with your offhand weapon. You do not add your weapon ability modifier to the damage of this roll.</p>
+                            <hr>
+                            <h1 class="text-center py-3 bg-danger-subtle" data-toc-skip>Reactions</h1>
+                            <p>With the exception of Opportunity Attacks and Ready, there are no standard reactions that all characters will have. That being said, it is possible for a character to have more reactions depending on their build or magic items that they may have.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Opportunity Attack</h2>
+                            <p>When using a melee weapon and an opponent willingly moves out of your reach, you are able to use your reaction to make an attack of opportunity on the moving foe. You do not benefit from anything that gives you more than one attack per attack action when performing an attack of opportunity.</p>
+                            <p>Additionally, if a character is moved against their will outside of your attack range, those movement does not cause opportunity attacks.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Ready</h2>
+                            <p>Occasionally, a character may wish to hold their turn for certain circumstances to occur.</p>
+                            <p>Describe the conditions on which your character is waiting. If those conditions occur before your next turn, your character may choose to perform their action. If the conditions do not occur, you lose your turn for this round.</p>
+                            <p>When the prescribed conditions occur, you use your Reaction to perform your turn.</p>
+                        </div>
+                        <div class="tab-pane fade" id="damage_types" role="tabpanel" aria-labelledby="damage_types-tab" tabindex="0">
+                            <p>Below is a listing of each of the damage types. Most damage types, with the exception of Force damage, have both a magic and non-magic version. Force damage is always magical. Resistances, unless otherwise specified, cover both magical and non-magical damage for the given type.</p>
+                            <p>Damage directly caused by a spell is always magical.</p>
+                            <p>Generally speaking, damage can be chosen to be lethal or non-lethal, regardless if melee, ranged, magical or nonmagical. If it doesn't make sense for damage to be non-lethal, such as a headshot with any weapon, the damage must be lethal.</p>
+                            <hr>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Acid</h2>
+                            <p>Acid damage corrodes a creature, breaking it apart until nothing remains. Generally speaking, acid damage from a natural source is non-magical, and those from a spell is magical.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Bludgeoning</h2>
+                            <p>Bludegeoning damage is blunt force attacks. Bludeoning damage is almost always nonmagical, unless the weapon dealing it is magical.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Cold</h2>
+                            <p>The bitter cold can kill just about anything. Most sources that deal cold damage are magical, but natural sources, such as a blizzard, are not magical.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Fire</h2>
+                            <p>Like the cold, heat and flames can kill almost everything. Fire is generally non-magical, unless the source is magical.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Force</h2>
+                            <p>Force damage is pure magic damage. Force damage is always magical.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Lightning</h2>
+                            <p>Electricity may run the modern world, but it’s a force of destruction in others. Lightning damage is generally magical, but can come from non-magical sources, such as a thunderstorm.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Necrotic</h2>
+                            <p>All things rot and decay. Necrotic damage can be either magic or non-magical depending on the source. Any type of necrotic damage heals undead creatures.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Piercing</h2>
+                            <p>An arrow whistles overhead, punching through its target’s armor. Piercing damage is generaly non-magical, unless the weapon it comes from is magical.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Poison</h2>
+                            <p>Both poisons and venom is considered poison damage. Poison damage is generally non-magical, but can be magical depending on the source.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Psychic</h2>
+                            <p>Words can hurt just as much as a sword. Psychic damage generally only comes from magical sources, but can come from non-magical sources.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Radiant</h2>
+                            <p>The sun, and any other source of light, can burn those who get too close. Radiant damage can be magical or non-magical, depending on the source. Undead creatures are vulnerable to Radiant damage.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Slashing</h2>
+                            <p>A sword swing cuts across a creatures chest. Slashing damage comes from any blade that requires a swing motion to damage the enemy. It can be magical if the weapon is magical, but Slashing damage is generally non-magical.</p>
+                            <h2 class="text-center py-2 bg-warning-subtle" data-toc-skip>Thunder</h2>
+                            <p>Loud or high pitched sounds can hurt as much as any weapon. Thunder damage is generally magical, but can come from natural sources.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <nav id="toc" class="sticky-top-2"></nav>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/jquery-3.7.1.min.js"></script>
+        <script src="/js/navbar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+        <script src="/js/toc.js"></script>
+      </body>
+</html>
