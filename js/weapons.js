@@ -50,30 +50,30 @@ $(function () {
             ]
         });
 
-        DataTable.ext.search.push(function (settings, data, dataIndex) {
+        // DataTable.ext.search.push(function (settings, data, dataIndex) {
 
-            let text = $('#weapon-table').DataTable().search();
-            // console.log(settings);
-            // console.log(data);
-            // console.log(dataIndex);
+        //     let text = $('#weapon-table').DataTable().search();
+        //     // console.log(settings);
+        //     // console.log(data);
+        //     // console.log(dataIndex);
 
-            if (text == undefined || text == '') {
-                return true;
-            }
+        //     if (text == undefined || text == '') {
+        //         return true;
+        //     }
 
-            /* If the text doesn't have a colon, do a normal check; data is a list of Strings (a row in the table) */
-            if (!text.includes(":")) {
-                // console.log(data);
-                // console.log(text);
-                if (data[0].startsWith('Bar')) {
-                    checkCellDEBUG(data, text);
-                }
+        //     /* If the text doesn't have a colon, do a normal check; data is a list of Strings (a row in the table) */
+        //     if (!text.includes(":")) {
+        //         // console.log(data);
+        //         // console.log(text);
+        //         if (data[0].startsWith('Bar')) {
+        //             checkCellDEBUG(data, text);
+        //         }
                 
-                return checkCell(data, text);
-            }
+        //         return checkCell(data, text);
+        //     }
 
-            return false;
-        });
+        //     return false;
+        // });
     })
 });
 
