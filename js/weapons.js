@@ -53,11 +53,10 @@ $(function () {
                     .columns()
                     .every(function () {
                         let column = this;
-                        let title = column.footer().textContent;
          
                         // Create input element
                         let input = document.createElement('input');
-                        input.placeholder = title;
+                        input.placeholder = "";
                         column.footer().replaceChildren(input);
          
                         // Event listener for user input
