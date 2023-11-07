@@ -4,6 +4,19 @@
  */
 var nameToDetailHTML = {};
 
+/*
+ *  Column Names:
+ *      Map of String -> index
+ */
+var columnNames = {
+    "WEAPON": 0,
+    "WEAPON GROUP": 1,
+    "DAMAGE TYPE": 2,
+    "WEIGHT": 3,
+    "COST": 4,
+    "PROPERTY": 5
+}
+
 $(function () {
     fetch("/json/weapons.json")
     .then((response) => {
@@ -40,19 +53,42 @@ $(function () {
         DataTable.ext.search.push(function (settings, data, dataIndex) {
 
             let text = $('#weapon-table').DataTable().search();
+            console.log(settings);
+            console.log(data);
+            console.log(dataIndex);
 
             if (text == undefined || text == '') {
                 return true;
             }
 
+            /* If the text doesn't have a colon, do a normal check; data is a list of Strings (a row in the table) */
+            if (!text.includes(":")) {
+                return checkCell(data, text);
+            }
+
             return false;
-            // console.log(settings);
-            // console.log(data);
-            // console.log(dataIndex);
-            // return true;
         });
     })
 });
+
+/* If the whole does not contain the part, the index will be -1. ! applied to have the effect fit the name */
+function stringContains(whole, part) {
+    return !whole.toUpperCase().indexOf(part) === -1;
+}
+
+function checkCell(data, text) {
+    for (const cell of data) {
+        if (cell == undefined || cell == '') {
+            continue;
+        }
+
+        if (stringContains(cell, text)) {
+            return true;
+        }
+    }
+
+    return false;
+}
 
 function generatePropertyCards(properties) {
 
