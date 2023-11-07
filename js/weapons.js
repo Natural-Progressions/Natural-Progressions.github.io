@@ -88,7 +88,7 @@ function checkCell(data, text) {
             continue;
         }
 
-        if (stringContains(cell, text)) {
+        if (stringContains(text, cell)) {
             return true;
         }
     }
@@ -104,11 +104,10 @@ function checkCellDEBUG(data, text) {
         if (cell == undefined || cell == '') {
             continue;
         }
+        
+        console.log(stringContains(text, cell));
 
-        console.log(stringContains(cell, text));
-        console.log(stringContains(text, cell))
-
-        if (stringContains(cell, text)) {
+        if (stringContains(text, cell)) {
             return true;
         }
     }
