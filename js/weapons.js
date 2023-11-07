@@ -37,76 +37,17 @@ $(function () {
         }
 
         /* We don't want to the properties tab to be visible, but we want it to be searchable */
-        // new DataTable('#weapon-table', {
-        //     columnDefs: [
-        //         {
-        //             target: 5,
-        //             visible: false
-        //         }
-        //     ],
-        //     lengthMenu: [
-        //         [-1, 10, 25, 50, 100],
-        //         ['All', 10, 25, 50, 100]
-        //     ]
-        // });
-
-        $('#weapon-table thead tr')
-        .clone(true)
-        .addClass('filters')
-        .appendTo('#weapon-table thead');
- 
-        var table = $('#weapon-table').DataTable({
-            orderCellsTop: true,
-            fixedHeader: true,
-            initComplete: function () {
-                var api = this.api();
-    
-                // For each column
-                api
-                    .columns()
-                    .eq(0)
-                    .each(function (colIdx) {
-                        // Set the header cell to contain the input element
-                        var cell = $('.filters th').eq(
-                            $(api.column(colIdx).header()).index()
-                        );
-                        var title = $(cell).text();
-                        $(cell).html('<input type="text" placeholder="' + title + '" />');
-    
-                        // On every keypress in this input
-                        $(
-                            'input',
-                            $('.filters th').eq($(api.column(colIdx).header()).index())
-                        )
-                            .off('keyup change')
-                            .on('change', function (e) {
-                                // Get the search value
-                                $(this).attr('title', $(this).val());
-                                var regexr = '({search})'; //$(this).parents('th').find('select').val();
-    
-                                var cursorPosition = this.selectionStart;
-                                // Search the column for that value
-                                api
-                                    .column(colIdx)
-                                    .search(
-                                        this.value != ''
-                                            ? regexr.replace('{search}', '(((' + this.value + ')))')
-                                            : '',
-                                        this.value != '',
-                                        this.value == ''
-                                    )
-                                    .draw();
-                            })
-                            .on('keyup', function (e) {
-                                e.stopPropagation();
-    
-                                $(this).trigger('change');
-                                $(this)
-                                    .focus()[0]
-                                    .setSelectionRange(cursorPosition, cursorPosition);
-                            });
-                    });
-            },
+        new DataTable('#weapon-table', {
+            columnDefs: [
+                {
+                    target: 5,
+                    visible: false
+                }
+            ],
+            lengthMenu: [
+                [-1, 10, 25, 50, 100],
+                ['All', 10, 25, 50, 100]
+            ]
         });
     })
 });
