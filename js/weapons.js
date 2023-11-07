@@ -63,6 +63,8 @@ $(function () {
 
             /* If the text doesn't have a colon, do a normal check; data is a list of Strings (a row in the table) */
             if (!text.includes(":")) {
+                console.log(data);
+                console.log(text);
                 return checkCell(data, text);
             }
 
