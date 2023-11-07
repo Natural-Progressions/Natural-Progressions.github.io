@@ -77,9 +77,8 @@ $(function () {
     })
 });
 
-/* If the whole does not contain the part, the index will be -1. ! applied to have the effect fit the name */
 function stringContains(whole, part) {
-    return !whole.toUpperCase().indexOf(part) === -1;
+    return whole.toUpperCase().includes(part.toUpperCase());;
 }
 
 function checkCell(data, text) {
