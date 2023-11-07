@@ -105,6 +105,9 @@ function checkCellDEBUG(data, text) {
             continue;
         }
 
+        console.log(stringContains(cell, text));
+        console.log(stringContains(text, cell))
+
         if (stringContains(cell, text)) {
             return true;
         }
