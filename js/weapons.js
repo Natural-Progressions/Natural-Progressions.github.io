@@ -78,7 +78,7 @@ $(function () {
 });
 
 function stringContains(whole, part) {
-    return whole.toUpperCase().includes(part.toUpperCase());;
+    return whole.toUpperCase().includes(part.toUpperCase());
 }
 
 function checkCell(data, text) {
@@ -87,7 +87,8 @@ function checkCell(data, text) {
             continue;
         }
 
-        if (stringContains(text, cell)) {
+        /* When searching "bar" in weapons, we want to check if "bar" is in "Bar Mace", not if "Bar Mace" is in "bar" */
+        if (stringContains(cell, text)) {
             return true;
         }
     }
@@ -104,9 +105,9 @@ function checkCellDEBUG(data, text) {
             continue;
         }
         
-        console.log(stringContains(text, cell));
+        console.log(stringContains(cell, text));
 
-        if (stringContains(text, cell)) {
+        if (stringContains(cell, text)) {
             return true;
         }
     }
