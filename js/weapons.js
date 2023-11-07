@@ -61,19 +61,21 @@ $(function () {
                 return true;
             }
 
+            console.log(text.includes(":"));
+
             /* If the text doesn't have a colon, do a normal check; data is a list of Strings (a row in the table) */
             if (!text.includes(":")) {
                 // console.log(data);
                 // console.log(text);
-                if (data[0].startsWith('Bar')) {
-                    checkCellDEBUG(data, text);
-                }
+                // if (data[0].startsWith('Bar')) {
+                //     checkCellDEBUG(data, text);
+                // }
                 
                 return checkCell(data, text);
             }
 
             /* At this point, the search is something like Weapon:Bar Mace -- it's assumed to be in the format of column:search */
-            let columnSearch = text.split(":");
+            let columnSearch = text.toUpperCase().split(":");
             console.log(columnSearch);
             console.log(columnSearch[0]);
             console.log(columnSearch[1]);
