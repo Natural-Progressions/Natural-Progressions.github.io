@@ -50,30 +50,38 @@ $(function () {
             ]
         });
 
-        // DataTable.ext.search.push(function (settings, data, dataIndex) {
+        DataTable.ext.search.push(function (settings, data, dataIndex) {
 
-        //     let text = $('#weapon-table').DataTable().search();
-        //     // console.log(settings);
-        //     // console.log(data);
-        //     // console.log(dataIndex);
+            let text = $('#weapon-table').DataTable().search();
+            // console.log(settings);
+            // console.log(data);
+            // console.log(dataIndex);
 
-        //     if (text == undefined || text == '') {
-        //         return true;
-        //     }
+            if (text == undefined || text == '') {
+                return true;
+            }
 
-        //     /* If the text doesn't have a colon, do a normal check; data is a list of Strings (a row in the table) */
-        //     if (!text.includes(":")) {
-        //         // console.log(data);
-        //         // console.log(text);
-        //         if (data[0].startsWith('Bar')) {
-        //             checkCellDEBUG(data, text);
-        //         }
+            /* If the text doesn't have a colon, do a normal check; data is a list of Strings (a row in the table) */
+            if (!text.includes(":")) {
+                // console.log(data);
+                // console.log(text);
+                if (data[0].startsWith('Bar')) {
+                    checkCellDEBUG(data, text);
+                }
                 
-        //         return checkCell(data, text);
-        //     }
+                return checkCell(data, text);
+            }
 
-        //     return false;
-        // });
+            /* At this point, the search is something like Weapon:Bar Mace -- it's assumed to be in the format of column:search */
+            let columnSearch = text.split(":");
+            console.log(columnSearch);
+            console.log(columnSearch[0]);
+            console.log(columnSearch[1]);
+            console.log(columnNames[columnSearch[0]]);
+            console.log(data[columnNames[columnSearch[0]]]);
+
+            return stringContains(data[columnNames[columnSearch[0]]], columNSearch[1]);
+        });
     })
 });
 
