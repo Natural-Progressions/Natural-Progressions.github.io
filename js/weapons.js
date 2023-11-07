@@ -47,7 +47,8 @@ $(function () {
             lengthMenu: [
                 [-1, 10, 25, 50, 100],
                 ['All', 10, 25, 50, 100]
-            ]
+            ],
+            paging: false
         });
 
         DataTable.ext.search.push(function (settings, data, dataIndex) {
