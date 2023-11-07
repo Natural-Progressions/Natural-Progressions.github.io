@@ -53,9 +53,9 @@ $(function () {
         DataTable.ext.search.push(function (settings, data, dataIndex) {
 
             let text = $('#weapon-table').DataTable().search();
-            console.log(settings);
-            console.log(data);
-            console.log(dataIndex);
+            // console.log(settings);
+            // console.log(data);
+            // console.log(dataIndex);
 
             if (text == undefined || text == '') {
                 return true;
@@ -63,8 +63,12 @@ $(function () {
 
             /* If the text doesn't have a colon, do a normal check; data is a list of Strings (a row in the table) */
             if (!text.includes(":")) {
-                console.log(data);
-                console.log(text);
+                // console.log(data);
+                // console.log(text);
+                if (data[0].startsWith('Bar')) {
+                    checkCellDEBUG(data, text);
+                }
+                
                 return checkCell(data, text);
             }
 
@@ -80,6 +84,23 @@ function stringContains(whole, part) {
 
 function checkCell(data, text) {
     for (const cell of data) {
+        if (cell == undefined || cell == '') {
+            continue;
+        }
+
+        if (stringContains(cell, text)) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function checkCellDEBUG(data, text) {
+    console.log(data);
+    console.log(text);
+    for (const cell of data) {
+        console.log(cell);
         if (cell == undefined || cell == '') {
             continue;
         }
