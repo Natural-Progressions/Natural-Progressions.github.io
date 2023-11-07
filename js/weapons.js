@@ -37,112 +37,79 @@ $(function () {
         }
 
         /* We don't want to the properties tab to be visible, but we want it to be searchable */
-        new DataTable('#weapon-table', {
-            columnDefs: [
-                {
-                    target: 5,
-                    visible: false
-                }
-            ],
-            lengthMenu: [
-                [-1, 10, 25, 50, 100],
-                ['All', 10, 25, 50, 100]
-            ],
+        // new DataTable('#weapon-table', {
+        //     columnDefs: [
+        //         {
+        //             target: 5,
+        //             visible: false
+        //         }
+        //     ],
+        //     lengthMenu: [
+        //         [-1, 10, 25, 50, 100],
+        //         ['All', 10, 25, 50, 100]
+        //     ]
+        // });
+
+        $('#weapon-table thead tr')
+        .clone(true)
+        .addClass('filters')
+        .appendTo('#weapon-table thead');
+ 
+        var table = $('#weapon-table').DataTable({
+            orderCellsTop: true,
+            fixedHeader: true,
             initComplete: function () {
-                this.api()
+                var api = this.api();
+    
+                // For each column
+                api
                     .columns()
-                    .every(function () {
-                        let column = this;
-         
-                        // Create input element
-                        let input = document.createElement('input');
-                        input.placeholder = "";
-                        column.footer().replaceChildren(input);
-         
-                        // Event listener for user input
-                        input.addEventListener('keyup', () => {
-                            if (column.search() !== this.value) {
-                                column.search(input.value).draw();
-                            }
-                        });
+                    .eq(0)
+                    .each(function (colIdx) {
+                        // Set the header cell to contain the input element
+                        var cell = $('.filters th').eq(
+                            $(api.column(colIdx).header()).index()
+                        );
+                        var title = $(cell).text();
+                        $(cell).html('<input type="text" placeholder="' + title + '" />');
+    
+                        // On every keypress in this input
+                        $(
+                            'input',
+                            $('.filters th').eq($(api.column(colIdx).header()).index())
+                        )
+                            .off('keyup change')
+                            .on('change', function (e) {
+                                // Get the search value
+                                $(this).attr('title', $(this).val());
+                                var regexr = '({search})'; //$(this).parents('th').find('select').val();
+    
+                                var cursorPosition = this.selectionStart;
+                                // Search the column for that value
+                                api
+                                    .column(colIdx)
+                                    .search(
+                                        this.value != ''
+                                            ? regexr.replace('{search}', '(((' + this.value + ')))')
+                                            : '',
+                                        this.value != '',
+                                        this.value == ''
+                                    )
+                                    .draw();
+                            })
+                            .on('keyup', function (e) {
+                                e.stopPropagation();
+    
+                                $(this).trigger('change');
+                                $(this)
+                                    .focus()[0]
+                                    .setSelectionRange(cursorPosition, cursorPosition);
+                            });
                     });
-            }
-        });
-
-        DataTable.ext.search.push(function (settings, data, dataIndex) {
-
-            let text = $('#weapon-table').DataTable().search();
-            // console.log(settings);
-            // console.log(data);
-            // console.log(dataIndex);
-
-            if (text == undefined || text == '') {
-                return true;
-            }
-
-            console.log(text.includes(":"));
-
-            /* If the text doesn't have a colon, do a normal check; data is a list of Strings (a row in the table) */
-            if (!text.includes(":")) {
-                // console.log(data);
-                // console.log(text);
-                // if (data[0].startsWith('Bar')) {
-                //     checkCellDEBUG(data, text);
-                // }
-                
-                return checkCell(data, text);
-            }
-
-            /* At this point, the search is something like Weapon:Bar Mace -- it's assumed to be in the format of column:search */
-            let columnSearch = text.toUpperCase().split(":");
-            console.log(columnSearch);
-            console.log(columnSearch[0]);
-            console.log(columnSearch[1]);
-            console.log(columnNames[columnSearch[0]]);
-            console.log(data[columnNames[columnSearch[0]]]);
-
-            return stringContains(data[columnNames[columnSearch[0]]], columNSearch[1]);
+            },
         });
     })
 });
-
-function stringContains(whole, part) {
-    return whole.toUpperCase().includes(part.toUpperCase());
-}
-
-function checkCell(data, text) {
-    for (const cell of data) {
-        if (cell == undefined || cell == '') {
-            continue;
-        }
-
-        /* When searching "bar" in weapons, we want to check if "bar" is in "Bar Mace", not if "Bar Mace" is in "bar" */
-        if (stringContains(cell, text)) {
-            return true;
-        }
-    }
-
-    return false;
-}
-
-function checkCellDEBUG(data, text) {
-    console.log(data);
-    console.log(text);
-    for (const cell of data) {
-        console.log(cell);
-        if (cell == undefined || cell == '') {
-            continue;
-        }
-        
-        console.log(stringContains(cell, text));
-
-        if (stringContains(cell, text)) {
-            return true;
-        }
-    }
-
-    return false;
-}
 
 function generatePropertyCards(properties) {
 
