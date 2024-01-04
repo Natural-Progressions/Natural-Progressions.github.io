@@ -18,7 +18,7 @@
             },
             "Other": {
                 "Alchemical Crafting": [
-                    "A character can spend money to collect raw materials, which weigh 1 pound for every 25 gp spent. Each point of raw materials allows you to make one item, and you can only make one item per day.",
+                    "A character can spend money to collect raw materials, which weigh 1 pound for every 5 gp spent. Each point of raw materials allows you to make one item, and you can only make one item per day.",
                     "Some items that can be crafted include:<ul><li><b>A Vial of Acid</b>, which can be thrown onto a target. The target must make a Reflex Saving Throw. On a failure, the target takes 2d6 acid damage</li><li><b>Alchemist's Fire</b>, a fluid that ignites upon contact with the air. A flask of alchemist’s fire can be thrown onto a target within 20 ft. The target must make a reflex check. On a failure, the target takes 1d4 fire damage each round, including the round it was hit, until it uses an action and passes the reflex check.</li><li><b>A Vial of Antitoxin</b>, which allows the consumer to gain advantage on checks against poison for 1 hour.</li><li><b>A Flask of Oil</b>, which can be used as fuel in a lantern. In combat, this flask can be thrown on the ground as an action, covering 1 square. If lit, it burns for 2 rounds and any character that starts their turn in the square or passes through the square while the oil is list takes 5 fire damage.</li><li><b>A Bottle of Perfume</b>, which allows adventurers to hide their horrid stink temporarily</li><li><b>A Bar of Soap</b>, which allows adventurers to remove their stink</li>"
                 ]
             }
@@ -123,7 +123,7 @@
             "Description": "A climber’s kit is a much needed item for any adventure that wishes to traverse rugged terrain.",
             "Cost": 25,
             "Weight": 12,
-            "Components": "A climber’s kit includes special pitons, boot tips, gloves, and a harness.",
+            "Components": "A climber’s kit includes special pitons, boot tips, gloves, 25 ft of rope, and a harness.",
             "Skills": {
                 "Investigation": "Your usage of a Climber’s Kit gives you unique insight into rappelling down and climbing up a wall. It is easier for you to determine where you should attempt to rappel or climb and to determine if a wall has seen recent activity from those with a Climber’s Kit.",
                 "Athletics": "Your skill with a Climber’s Kit allows you to attempt public climbing feats more easily. For instance, you could enter a climbing contest and have a leg up on your competition.",

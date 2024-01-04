@@ -21,20 +21,17 @@
                         ]
                     },
                     {
-                        "Name": "Battle Smith",
+                        "Name": "Expert Tinkerer",
                         "Description": [
-                            "At the second level, your skills with crafting have made you very precise. When you take the attack action, you are able to directly target the your opponent’s armor in a direct attempt to damage it. If your weapon attack hits your target, you are able to forgo all damage your attack would do in favor of damaging the armor. A Damaged piece of armor has a -2 to the AC until it is repaired by <b>Leatherworker’s</b>, <b>Tinkers’</b> or <b>Smith’s Tools</b>.",
-                            "The creature must be wearing armor for this ability to work. If the opponent is wearing <b>Padded</b>, <b>Leather</b> or any other armor with less than 2 AC bonus, their AC bonus from armor is reduced to 0."
+                            "At the second level, your experience crafting new materials starts to enlighting your repair abilities. When using Tinkers' Tools to repair objects, you automatically success in your attempts. If an object is magical, you will automatically succeed, but the magical effect may be lost. Refer to your LM to determine if magical abilities are kept.",
+                            "When repairing items, you still make a Tinkers' Tools check to determine if your skill modifier increases."
                         ]
                     },
                     {
-                        "Name": "TODO",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
+                        "Name": "Battle Smith",
+                        "Description": [
+                            "At the third level, your skills with crafting have made you very precise. When you take the attack action, you are able to directly target the your opponent’s armor in a direct attempt to damage it. If your weapon attack hits your target, you are able to forgo all damage your attack would do in favor of damaging the armor. A Damaged piece of armor has a -2 to the AC until it is repaired by <b>Leatherworker’s</b>, <b>Tinkers’</b> or <b>Smith’s Tools</b>.",
+                            "The creature must be wearing armor for this ability to work. If the opponent is wearing <b>Padded</b>, <b>Leather</b> or any other armor with less than 2 AC bonus, their AC bonus from armor is reduced to 0."
                         ]
                     },
                     {
@@ -218,7 +215,7 @@
                     {
                         "Name": "Inspiration",
                         "Description": [
-                            "At the first level, you are able to inspire your allies with your theatrics. You have a number of Inspiration Die (d4) equal to your levels in Entertainer. Once per round, you are able to give this inspiration to your allies, allowing them to an extra d4 on any attack, skill check or saving throw.",
+                            "At the first level, you are able to inspire your allies with your theatrics. You have a number of Inspiration Die (d4) equal to your levels in Entertainer. Once per round, you are able to give this inspiration to your allies, allowing them to add an extra d4 on any attack, skill check or saving throw.",
                             "You can give this inspiration after the role has been made, but before you know the outcome. The player must immediately use this Inspiration Die. You regain all spent Inspiration Die upon completion of a rest."
                         ]
                     },
@@ -229,13 +226,10 @@
                         ]
                     },
                     {
-                        "Name": "TODO",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
+                        "Name": "Flourish",
+                        "Description": [
+                            "At the third level, you are able to use your Inspiration on yourself to divine clever ways to distract your foes. As an ability action, you can expend one Inspiration Die to reduce one foe's reflex bonus to their armor class. Make a Performance check against their Insight Saving Throw. On a success, you decrease their reflex bonus to their armor class by 1d4 until you leave their line of sight or they pass their saving throw.",
+                            "At the start of your turn, your targeted foe can remake the Insight Saving Throw against your Performance check. This usage does not count as giving inspiration to your allies. Your targeted foe must be able to see or hear you."
                         ]
                     },
                     {
@@ -245,20 +239,17 @@
                         ]
                     },
                     {
-                        "Name": "TODO",
-                        "Description": [],
-                        "Options": [
-                            {
-                                "Name": "Name",
-                                "Description": []
-                            }
+                        "Name": "Improved Inspiration",
+                        "Description": [
+                            "At the fifth level, your Inspiration Die given by your first level Inspiration ability are d6 rather than d4s. Your armor class reduction from the usage of Flourish increases to 1d6",
+                            "Additionally, whoever gains your Inspiration Die no longer have to immediately spend them. They can be held and spent later in the day. A character can only hold one Inspiration Die - they can be given a second, but must immediately use it on the triggering roll."
                         ]
                     },
                     {
-                        "Name": "Improved Inspiration",
+                        "Name": "Improved Flourish",
                         "Description": [
-                            "At the sixth level, your Inspiration Die given by your first level Inspiration ability are d6 rather than d4s.",
-                            "Additionally, whoever gains your Inspiration Die no longer have to immediately spend them. They can be held and spent later in the day. A character can only hold one Inspiration Die - they can be given a second, but must immediately use it on the triggering roll."
+                            "At the sixth level, your antics becomes so distracting that any enemy that has a direct line of sight of you or can hear you above the general sounds of the combat can be affected by <b>Flourish</b>, and will need to make an Insight Saving Throw against your Performance check.",
+                            "Generally speaking, an enemy facing you, but with another creature between you and them will not have a direct line of sight of you. You still select one creature as your primary target, even if they do not have a direct line of sight."
                         ]
                     },
                     {
@@ -288,7 +279,7 @@
                         ]
                     },
                     {
-                        "Name": "Flourish",
+                        "Name": "Weapon Flourish",
                         "Description": [
                             "At the eleventh level, your skill with your weapon reflects your acting prowess. You are able to embed your own style into your fighting. Your movement speed increases by 10 ft. Once per turn, you can expend one of your Inspiration Die choose one of the following flourishes to embed as part of your action:"
                         ],
