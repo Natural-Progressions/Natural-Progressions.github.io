@@ -23,8 +23,8 @@
                     {
                         "Name": "Expert Tinkerer",
                         "Description": [
-                            "At the second level, your experience crafting new materials starts to enlighting your repair abilities. When using Tinkers' Tools to repair objects, you automatically success in your attempts. If an object is magical, you will automatically succeed, but the magical effect may be lost. Refer to your LM to determine if magical abilities are kept.",
-                            "When repairing items, you still make a Tinkers' Tools check to determine if your skill modifier increases."
+                            "At the second level, your experience crafting new materials starts to enlighting your repair abilities. When using <b>Tinkers' Tools</b> to repair objects, you automatically success in your attempts. If an object is magical, you will automatically succeed, but the magical effect may be lost. Refer to your LM to determine if magical abilities are kept.",
+                            "When repairing items, you still make a <b>Tinkers' Tools</b> check to determine if your skill modifier increases."
                         ]
                     },
                     {
@@ -228,8 +228,8 @@
                     {
                         "Name": "Flourish",
                         "Description": [
-                            "At the third level, you are able to use your Inspiration on yourself to divine clever ways to distract your foes. As an ability action, you can expend one Inspiration Die to reduce one foe's reflex bonus to their armor class. Make a Performance check against their Insight Saving Throw. On a success, you decrease their reflex bonus to their armor class by 1d4 until you leave their line of sight or they pass their saving throw.",
-                            "At the start of your turn, your targeted foe can remake the Insight Saving Throw against your Performance check. This usage does not count as giving inspiration to your allies. Your targeted foe must be able to see or hear you."
+                            "At the third level, you are able to use your <b>Inspiration</b> on yourself to divine clever ways to distract your foes. As an ability action, you can expend one Inspiration Die to reduce one foe's Reflex bonus to their Armor Class. Make a <b>Performance check</b> against their <b>Insight Saving Throw</b>. On a success, you decrease their Reflex bonus to their Armor Class by 1d4 until you leave their line of sight or they pass their Saving Throw.",
+                            "At the start of your turn, your targeted foe can remake the <b>Insight Saving Throw</b> against your <b>Performance check</b>. This usage does not count as giving <b>Inspiration</b> to your allies. Your targeted foe must be able to see or hear you."
                         ]
                     },
                     {
@@ -248,7 +248,7 @@
                     {
                         "Name": "Improved Flourish",
                         "Description": [
-                            "At the sixth level, your antics becomes so distracting that any enemy that has a direct line of sight of you or can hear you above the general sounds of the combat can be affected by <b>Flourish</b>, and will need to make an Insight Saving Throw against your Performance check.",
+                            "At the sixth level, your antics becomes so distracting that any enemy that has a direct line of sight of you or can hear you above the general sounds of the combat can be affected by <b>Flourish</b>, and will need to make an <b>Insight Saving Throw</b> against your <b>Performance check</b>.",
                             "Generally speaking, an enemy facing you, but with another creature between you and them will not have a direct line of sight of you. You still select one creature as your primary target, even if they do not have a direct line of sight."
                         ]
                     },
