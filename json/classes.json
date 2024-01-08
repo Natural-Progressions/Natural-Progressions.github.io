@@ -536,7 +536,7 @@
                     {
                         "Name": "Improved Danger Sense",
                         "Description": [
-                            "At the eighth level, your Danger Sense has improved to the point that cannot be surprised. You gain advantage on all initiative rolls."
+                            "At the eighth level, your Danger Sense has improved to the point that cannot be surprised in combat. You gain advantage on all initiative rolls."
                         ]
                     },
                     {
@@ -864,7 +864,7 @@
                             {
                                 "Name": "Blind Fighting",
                                 "Description": [
-                                    "Your Blindsight increases to 25 ft, and you cannot be surprised by creatures within range of your Blindsight. Additionally, if combat starts from a creature within 25 ft of your Blindsight, you gain advantage on the initiative roll."
+                                    "Your Blindsight increases to 25 ft, and you cannot be surprised in combat by creatures within range of your Blindsight. Additionally, if combat starts from a creature within 25 ft of your Blindsight, you gain advantage on the initiative roll."
                                 ]
                             },
                             {
@@ -1187,7 +1187,7 @@
                     {
                         "Name": "Primeval Awareness",
                         "Description": [
-                            "At the third level, your time in the wild begins to shine. You always are on alert for potential danger and cannot be surprised.",
+                            "At the third level, your time in the wild begins to shine. You always are on alert for potential danger and cannot be surprised in combat.",
                             "Additionally, when in terrain that has game of some kind, you are always able to hunt food and find water for yourself and your companions."
                         ]
                     },
